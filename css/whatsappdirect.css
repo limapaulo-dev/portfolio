@@ -1,0 +1,202 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+
+  color: white;
+  background-color: #1a2125;
+  background-image: url(../img/713-infinity-low-contrast.svg);
+  background-size: 400px;
+}
+
+textarea:hover,
+textarea:focus,
+textarea:active,
+input:active,
+input:hover,
+input:focus,
+label:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+}
+
+button:focus,
+button:active,
+button:hover,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.material-symbols-outlined {
+  cursor: pointer;
+}
+
+.whats-icon {
+  display: inline-block;
+  -webkit-mask: url(../img/whatsapp-bubble-outline.svg) no-repeat;
+  mask: url(../img/whatsapp-bubble-outline.svg) no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+.title-section h1 {
+  font-weight: 700;
+}
+
+.text-green {
+  color: #00a884;
+}
+
+.text-light-green {
+  color: #2affc3;
+}
+
+.title-section .whats-icon-background {
+  border-radius: 7px;
+  background-color: #025144;
+}
+
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+
+.main-form,
+.how-it-works {
+  background-color: rgba(0, 0, 0, 0.411);
+  height: 100%;
+}
+
+label {
+  font-weight: 600;
+}
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.material-symbols-outlined {
+  cursor: pointer;
+}
+
+.country-code .dropdown-toggle-split {
+  /*   border: 1px solid #ced4da; */
+  border-left: 1px solid #ced4da;
+  width: 41px;
+}
+
+.dropdown-menu {
+  max-height: 150px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #00b884;
+}
+
+.dropdown-menu .dropdown-item:active {
+  background-color: #33daaa;
+}
+
+.dropdown-menu a.dropdown-item {
+  padding-left: 8px;
+}
+
+.li-flag {
+  max-width: 45px;
+  background-color: #ced4da;
+  border: solid 1px #ced4da;
+  border-radius: 7px;
+  margin-right: 7px;
+}
+
+button .li-flag {
+  max-width: 35px;
+}
+
+.dropdown-item:hover .li-flag {
+  background-color: #00a884;
+  border-color: #00a884;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn .whats-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.btn-success,
+.btn-success:visited,
+.btn-success:active {
+  background-color: #00b884;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #04856b;
+  opacity: 0.9;
+}
+
+.how-it-works li {
+  list-style: decimal;
+}
+
+.ul-features li {
+  list-style: disc;
+}
+
+.how-it-works li span {
+  color: white;
+}
+
+.how-it-works ul li a {
+  color: #19c997;
+  text-decoration: none;
+}
+
+.how-it-works ul li a:hover {
+  opacity: 0.7;
+}
+
+span.badge {
+  background-color: #07946c;
+}
+
+/* WhatsApp Colors {
+  background-color: #0b141a;
+  background-color: #111b21;
+  background-color: #2a3942;
+  background-color: #025144;
+  background-color: #1f7061;
+  background-color: #559187;
+  background-color: #04856b;
+  background-color: #00a884;
+  background-color: #dde6e7;
+
+  background-color: #222e35;
+  background-color: #364147;
+  background-color: #3f6f7d;
+  background-color: #316474;
+  background-color: #7d8488;
+  background-color: #8696a0;
+  background-color: #dff3ed;
+  background-color: #42cba5;
+} */

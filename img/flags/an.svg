@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="flag-icons-ac"
+   viewBox="0 0 640 480"
+   version="1.1"
+   sodipodi:docname="an.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs153" />
+  <sodipodi:namedview
+     id="namedview151"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="1.1166395"
+     inkscape:cx="334.93353"
+     inkscape:cy="205.07962"
+     inkscape:window-width="2400"
+     inkscape:window-height="1271"
+     inkscape:window-x="2391"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="flag-icons-ac" />
+  <g
+     id="g306"
+     transform="matrix(13.48251,0,0,13.48251,320,186.06996)">
+    <path
+       d="M -27,-14 H 27 V 22 H -27 Z"
+       fill="#ffffff"
+       id="path155" />
+    <path
+       d="M -6,-14 H 6 V 22 H -6 Z"
+       fill="#dc171d"
+       id="path157" />
+    <path
+       d="M -27,-2 H 27 V 10 H -27 Z"
+       fill="#012a87"
+       id="path159" />
+    <g
+       id="a"
+       fill="#ffffff"
+       transform="scale(1.5)">
+      <g
+         id="b">
+        <path
+           id="c"
+           d="M 0,0 V 1 H 0.5 Z"
+           transform="rotate(18,3.1568758,-0.49999998)" />
+        <use
+           transform="scale(-1,1)"
+           xlink:href="#c"
+           id="use162" />
+      </g>
+      <use
+         transform="rotate(72)"
+         xlink:href="#b"
+         id="use165" />
+      <use
+         transform="rotate(-72)"
+         xlink:href="#b"
+         id="use167" />
+      <use
+         transform="rotate(144)"
+         xlink:href="#b"
+         id="use169" />
+      <use
+         transform="rotate(-144)"
+         xlink:href="#b"
+         id="use171" />
+    </g>
+    <g
+       id="d">
+      <use
+         transform="translate(8,3.313708)"
+         xlink:href="#a"
+         id="use174" />
+      <use
+         transform="translate(3.313708,8)"
+         xlink:href="#a"
+         id="use176" />
+    </g>
+    <use
+       transform="scale(-1,1)"
+       xlink:href="#d"
+       id="use179" />
+  </g>
+</svg>
