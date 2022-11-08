@@ -1,5 +1,5 @@
 Hi! I´m Paulo Lima,
-I'm a Front-End web developer!
+a Front-End web developer!
 
 This repo is the shelter of all my portifolio projects.
 
