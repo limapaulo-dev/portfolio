@@ -304,21 +304,28 @@ section#contact p {
 .contact-icons {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  
-  width: 100%;
-
+  justify-content: flex-start;
 }
 
 .email, .github, .phone{
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   background-color: #f72585;
-  padding: 0.5em;
-  margin: 1em;
-  border-radius: 10%;
+  margin-top: 0.5em;
+  margin-right: 1em;
+  border-radius: 10px;
   border: #f72585 1px solid;
+}
+
+.contact-icons svg{
+  width: 2em;
+  height: 2em;
+  padding: 1em;
+}
+
+.contact-icons label{
+  margin-right: 1em;
 }
 
 footer {
