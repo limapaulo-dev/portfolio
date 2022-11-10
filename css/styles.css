@@ -74,9 +74,13 @@ p {
 
 nav {
   display: flex;
-  /* border: #00adff solid 0.1em; */
+  border-bottom: #00adff solid 0.1em;
   background-color: #131416;
   justify-content: space-between;
+  /* overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
 }
 
 nav div {
