@@ -129,6 +129,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   color: #f5f3f4;
@@ -149,6 +153,7 @@ section {
 
 section:not(:nth-of-type(1)) {
   padding: 5em 15em 5em 15em;
+  min-height: 100%;
 }
 
 h1 {
@@ -226,6 +231,7 @@ nav div {
   display: none;
   color: #f5f3f4;
   width: 3em;
+  transition: 0.5s ease;
 }
 
 .nav-icon img:hover,
@@ -240,11 +246,13 @@ nav div > * {
   color: #f5f3f4;
   font-size: 1.5em;
   font-weight: 400;
+  transition: 0.5s ease;
 }
 
 nav div a:nth-child(4) {
   color: #f72585;
   margin-right: 0;
+  transition: 0.5s ease;
 }
 
 nav div a:nth-child(4):hover,
@@ -324,6 +332,11 @@ section#about {
   background-color: #f5f3f4;
   text-align: end;
   padding: 0.3em;
+  
+}
+
+.skills-range {
+
 }
 
 .skills-range div.HTML p:nth-child(2),
@@ -445,6 +458,7 @@ section#contact p {
   margin-top: 0.5em;
   margin-right: 1em;
   border-radius: 10px;
+  transition: 0.5s ease;
 }
 
 .contact-icons > a > div:active,
@@ -474,6 +488,7 @@ footer a {
   text-decoration: none;
   color: #f5f3f4;
   font-weight: 200;
+  transition: 0.5s ease;
 }
 
 footer a:hover,
@@ -481,6 +496,10 @@ footer a:active {
   color: #00adff;
 }
 
+/* Animation, Transition and other effects */
+
+
+/*  responsive formatting  */
 @media (max-width: 1300px) {
   section:not(:nth-of-type(1)) {
     padding: 5em 5em 5em 5em;
@@ -546,10 +565,6 @@ footer a:active {
   .nav-links {
     /* hamburger menu */
     flex-direction: column;
-  }
-
-  .hamburger-menu,
-  .hamburger-menu-close {
   }
 
   h1 {
