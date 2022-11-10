@@ -145,12 +145,10 @@ section {
   align-content: center;
   align-items: center;
   height: 100vh;
-  min-height: -webkit-fill-available;
 }
 
 section:not(:nth-of-type(1)) {
   padding: 5em 15em 5em 15em;
-  height: 100%;
 }
 
 h1 {
