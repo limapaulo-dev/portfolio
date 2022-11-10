@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  letter-spacing: 0.05em;
 }
 
 body {
@@ -20,7 +21,11 @@ section {
   align-content: center;
   align-items: center;
   height: 100vh;
-  border-top: #00adff solid 0.05em;
+}
+
+section:not(:nth-of-type(1)) {
+  padding: 5em 15em 5em 15em;
+  height: 100%;
 }
 
 h1 {
@@ -48,6 +53,25 @@ h1:nth-child(2) span {
   /*alternate color: #f72585; */
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 2.5em;
+  margin-bottom: 0.15em;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 0.15em;
+}
+
+p {
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-bottom: 0.7em;
+  font-size: 1.0em;
+}
+
 nav {
   display: flex;
   /* border: #00adff solid 0.1em; */
@@ -64,22 +88,18 @@ nav div {
   display: flex;
 }
 
-.nav-icon a {
+.nav-icon img {
+  width: 100%;
+  border-radius: 15%;
+  border: 2px #f72585 solid;
   background-color: #f72585;
-  border-radius: 50%;
   width: 3em;
   margin-left: 2em;
 }
 
-.nav-icon a:hover,
-.nav-icon a:active {
+.nav-icon img:hover,
+.nav-icon img:active {
   background-color: #00adff;
-}
-
-.nav-icon img {
-  width: 100%;
-  border-radius: 50%;
-  border: 2px #f72585 solid;
 }
 
 .nav-icon img:hover,
@@ -111,10 +131,9 @@ a:active {
 
 section#about {
   flex-direction: row;
-  padding: 0 15em 0 15em;
 }
 
-.text-pic {
+.about-text-pic {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,21 +141,24 @@ section#about {
   width: 100%;
 }
 
-.text-wall {
+.about-text-wall {
   text-align: justify;
+  width: 100%;
 }
 
-.text-wall span {
+.about-text-wall p:nth-child(2) span {
+  color: #00adff;
+}
+
+.about-text-wall p:nth-child(3) span {
   color: #f72585;
 }
 
 .pic-summary img {
   border: 3px #00adff solid;
-  border-radius: 20%;
+  border-radius: 5%;
   background-color: #00adff;
-}
-
-.pic-summary img {
+  margin-top: 0.5em;
   width: 20em;
 }
 
@@ -185,7 +207,8 @@ section#about {
   width: 16%;
 }
 
-.skills-range div.python p:nth-child(2) {
+.skills-range div.python p:nth-child(2),
+.skills-range div.Bootstrap p:nth-child(2) {
   width: 24%;
 }
 
@@ -202,17 +225,117 @@ section#about {
   width: 48%;
 }
 
-.skills-range div.InDesign p:nth-child(2) {
+.skills-range div.Jira p:nth-child(2) {
   width: 56%;
 }
 
+section#portfolio {
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em 15em 5em 15em;
+  background-color: #131416;
+  height: auto;
+}
+
+.portfolio-text-wall {
+  text-align: justify;
+  width: 100%;
+}
+
+.portfolio-projects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.portfolio-projects > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px #00adff solid;
+  border-radius: 5%;
+  background-color: #131416;
+  text-align: center;
+  width: 15em;
+  height: 15em;
+  margin-top: 0.5em;
+  font-weight: 500;
+}
+
+.portfolio-projects p {
+  font-weight: 400;
+  width: 100%;
+  color: #f72585;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.portfolio-projects img {
+  width: 100%;
+  border-radius: 5% 5% 0 0;
+}
+
 section#contact {
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: flex-start;
+  padding: 5em 15em 5em 15em;
+  height: auto;
+  text-align: justify;
+}
+
+section#contact p {
+  line-height: 0.7em;
+}
+
+.contact-text-wall {
+  text-align: justify;
+  width: 100%;
+}
+
+.contact-text-wall a {
+  text-decoration: none;
+  color: #f5f3f4;
+  font-weight: 400;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  width: 100%;
+
+}
+
+.email, .github, .phone{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #f72585;
+  padding: 0.5em;
+  margin: 1em;
+  border-radius: 10%;
+  border: #f72585 1px solid;
 }
 
 footer {
   display: flex;
   justify-content: center;
-  border-top: #00adff solid 0.05em;
+  align-items: center;
+  background-color: #131416;
+  height: 3em;
 }
+
+footer a {
+  text-decoration: none;
+  color: #f5f3f4;
+  font-weight: 200;
+}
+
+footer a:hover, footer a:active {
+  color: #00adff;
+}
+
