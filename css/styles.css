@@ -93,7 +93,6 @@ nav div {
 }
 
 .nav-icon img {
-  width: 100%;
   border-radius: 15%;
   border: 2px #f72585 solid;
   background-color: #f72585;
@@ -104,10 +103,6 @@ nav div {
 .nav-icon img:hover,
 .nav-icon img:active {
   background-color: #00adff;
-}
-
-.nav-icon img:hover,
-.nav-icon img:active {
   border: 2px #00adff solid;
 }
 
@@ -236,7 +231,6 @@ section#about {
 section#portfolio {
   flex-direction: column;
   justify-content: center;
-  padding: 5em 15em 5em 15em;
   background-color: #131416;
   height: auto;
 }
@@ -255,7 +249,7 @@ section#portfolio {
   margin-top: 2em;
 }
 
-.portfolio-projects > div {
+.portfolio-projects a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -267,6 +261,10 @@ section#portfolio {
   height: 15em;
   margin-top: 0.5em;
   font-weight: 500;
+  text-decoration: none;
+  color: #f5f3f4;
+  margin: 0;
+  padding: 0;
 }
 
 .portfolio-projects p {
@@ -285,7 +283,6 @@ section#portfolio {
 section#contact {
   flex-direction: column;
   justify-content: flex-start;
-  padding: 5em 15em 5em 15em;
   height: auto;
   text-align: justify;
 }
@@ -311,7 +308,7 @@ section#contact p {
   justify-content: flex-start;
 }
 
-.email, .github, .phone{
+.contact-icons > a > div{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -319,7 +316,12 @@ section#contact p {
   margin-top: 0.5em;
   margin-right: 1em;
   border-radius: 10px;
-  border: #f72585 1px solid;
+}
+
+
+.contact-icons > a > div:active, 
+.contact-icons > a > div:hover {
+  background-color: #00adff;
 }
 
 .contact-icons svg{
@@ -350,3 +352,98 @@ footer a:hover, footer a:active {
   color: #00adff;
 }
 
+@media (max-width: 1300px){
+
+  section:not(:nth-of-type(1)) {
+    padding: 5em 5em 5em 5em;
+  }
+
+}
+
+@media (max-width: 1025px){
+
+  section:not(:nth-of-type(1)) {
+    padding: 5em 10em 5em 10em;
+  }
+
+  .nav-icon img {
+    width: 2.5em;
+  }
+
+  nav a {
+    font-size: 1.2em;
+  }
+
+  section#about {
+    flex-direction: column;
+  }
+
+  .pic-summary img {
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    width: 20em;
+  }
+
+  .skills-range {
+    width: 100%;
+  }
+
+  .portfolio-projects {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .portfolio-projects a {
+    margin-top: 1.5em;
+  }
+
+}
+
+@media (max-width: 768px){
+  section:not(:nth-of-type(1)) {
+    padding: 5em 5em 5em 5em;
+  }
+
+  .nav-icon img {
+    width: 2em;
+  }
+
+  nav a {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.8em;
+   }
+}
+
+@media (max-width: 500px){
+  section:not(:nth-of-type(1)) {
+    padding: 2em 2em 2em 2em;
+  }
+
+  nav a {
+    /* hamburger menu */
+  }
+
+  h1 {
+    font-size: 2em;
+   }
+
+   p {
+    font-size: 0.8em;
+   }
+
+  .pic-summary img {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 15em;
+  }
+
+}
+
+@media (max-width: 360px){
+  h1 {
+   font-size: 1.5em;
+  }
+ }
