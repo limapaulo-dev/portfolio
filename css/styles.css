@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   letter-spacing: 0.05em;
 }
 
@@ -579,7 +577,6 @@ footer a:active {
 
 @media (max-width: 500px) {
   section:not(#header) {
-    scroll-margin-top: 3em;
     padding: 2em 2em 2em 2em;
   }
 
