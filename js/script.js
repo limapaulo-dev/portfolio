@@ -16,14 +16,32 @@ function elementInView(element) {
 
 onscroll = () => {
   if (!elementInView(headerSection)) {
-    document.getElementById('about').style.paddingTop = "10em";
-    document.getElementById('navbar').style.overflow = "hidden";
-    document.getElementById('navbar').style.position = "fixed";
+    document.getElementById('about').style.paddingTop = '10em';
+    document.getElementById('navbar').style.overflow = 'hidden';
+    document.getElementById('navbar').style.position = 'fixed';
     document.getElementById('navbar').style.top = 0;
   } else {
-    document.getElementById('about').style.paddingTop = "5em";
-    document.getElementById('navbar').style.overflow = "";
-    document.getElementById('navbar').style.position = "";
-    document.getElementById('navbar').style.top = "";
+    document.getElementById('about').style.paddingTop = '5em';
+    document.getElementById('navbar').style.overflow = '';
+    document.getElementById('navbar').style.position = '';
+    document.getElementById('navbar').style.top = '';
+  }
+};
+
+hamburgIconSwap = () => {
+  const navLinksDisplay = document.querySelector('.nav-links').style.display;
+  if (navLinksDisplay === "" || navLinksDisplay === "none"){
+    document.querySelector('.nav-links').style.display = "flex";
+  } else {
+    document.querySelector('.nav-links').style.display = "none";
+  }
+};
+
+onresize = () => {
+  const bodyWidht = document.querySelector('body').clientWidth;
+  if (bodyWidht > 500){
+    document.querySelector('.nav-links').style.display = "flex";
+  } else {
+    document.querySelector('.nav-links').style.display = "none";
   }
 };
