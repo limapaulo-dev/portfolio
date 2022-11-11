@@ -15,6 +15,12 @@ function elementInView(element) {
 }
 
 onscroll = () => {
+  const bodyWidht = document.querySelector('body').clientWidth;
+
+  if (bodyWidht <= 500) {
+    document.querySelector('.nav-links').style.display = 'none';
+  }
+
   if (!elementInView(headerSection)) {
     document.getElementById('about').style.paddingTop = '10em';
     document.getElementById('navbar').style.overflow = 'hidden';
@@ -30,18 +36,18 @@ onscroll = () => {
 
 hamburgIconSwap = () => {
   const navLinksDisplay = document.querySelector('.nav-links').style.display;
-  if (navLinksDisplay === "" || navLinksDisplay === "none"){
-    document.querySelector('.nav-links').style.display = "flex";
+  if (navLinksDisplay === '' || navLinksDisplay === 'none') {
+    document.querySelector('.nav-links').style.display = 'flex';
   } else {
-    document.querySelector('.nav-links').style.display = "none";
+    document.querySelector('.nav-links').style.display = 'none';
   }
 };
 
 onresize = () => {
   const bodyWidht = document.querySelector('body').clientWidth;
-  if (bodyWidht > 500){
-    document.querySelector('.nav-links').style.display = "flex";
+  if (bodyWidht > 500) {
+    document.querySelector('.nav-links').style.display = 'flex';
   } else {
-    document.querySelector('.nav-links').style.display = "none";
+    document.querySelector('.nav-links').style.display = 'none';
   }
 };
