@@ -7,23 +7,25 @@ function elementInView(element) {
   var elementBounding = element.getBoundingClientRect();
   var elementTop = elementBounding.top;
   var elementBottom = elementBounding.bottom;
-  // Only completely visible elements return true:
-  // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-  // Partially visible elements return true:
+
   isVisible = elementTop < window.innerHeight && elementBottom >= 0;
   return isVisible;
 }
 
 onscroll = () => {
-  const bodyWidht = document.querySelector('body').clientWidth;
+  let bodyWidht = document.querySelector('body').clientWidth;
 
   if (bodyWidht <= 500) {
     document.querySelector('.nav-links').style.display = 'none';
-    document.querySelector('hamburger-menu-open').style.color = '#f5f3f4';
+    document.querySelector('.hamburger-menu-open').style.color = '#f5f3f4';
   }
-
+  
   if (!elementInView(headerSection)) {
-    document.getElementById('about').style.paddingTop = '10em';
+    if (bodyWidht <= 500) {
+      document.getElementById('about').style.paddingTop = '8.5em';
+    } else {
+      document.getElementById('about').style.paddingTop = '9em';
+    }
     document.getElementById('navbar').style.overflow = 'hidden';
     document.getElementById('navbar').style.position = 'fixed';
     document.getElementById('navbar').style.top = 0;
