@@ -19,6 +19,7 @@ onscroll = () => {
 
   if (bodyWidht <= 500) {
     document.querySelector('.nav-links').style.display = 'none';
+    document.querySelector('hamburger-menu-open').style.color = '#f5f3f4';
   }
 
   if (!elementInView(headerSection)) {
@@ -38,8 +39,10 @@ hamburgIconSwap = () => {
   const navLinksDisplay = document.querySelector('.nav-links').style.display;
   if (navLinksDisplay === '' || navLinksDisplay === 'none') {
     document.querySelector('.nav-links').style.display = 'flex';
+    document.querySelector('hamburger-menu-open').style.color = '#f5f3f4';
   } else {
     document.querySelector('.nav-links').style.display = 'none';
+    document.querySelector('hamburger-menu-open').style.color = '#f5f3f4';
   }
 };
 
