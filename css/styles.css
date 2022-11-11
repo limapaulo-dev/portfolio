@@ -152,6 +152,7 @@ section {
 }
 
 section:not(:nth-of-type(1)) {
+  scroll-margin-top: 4rem;
   padding: 5em 15em 5em 15em;
   height: 100%;
   min-height: 100%;
@@ -585,6 +586,7 @@ footer a:active {
 
 @media (max-width: 500px) {
   section:not(:nth-of-type(1)) {
+    scroll-margin-top: 3em;
     padding: 2em 2em 2em 2em;
   }
 
