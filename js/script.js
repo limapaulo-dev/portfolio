@@ -50,7 +50,8 @@ const hamburgIconSwap = () => {
 
 window.onresize = () => {
   const bodyWidht = document.querySelector('body').clientWidth;
-  if (bodyWidht > 500) {
+
+  if (bodyWidht >= 485) {
     document.querySelector('.nav-links').style.display = 'flex';
   } else {
     document.querySelector('.nav-links').style.display = 'none';
