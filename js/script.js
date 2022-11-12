@@ -12,7 +12,7 @@ function elementInView(element) {
   return isVisible;
 }
 
-const onscroll = () => {
+window.onscroll = () => {
   let bodyWidht = document.querySelector('body').clientWidth;
 
   if (bodyWidht <= 500) {
@@ -48,7 +48,7 @@ const hamburgIconSwap = () => {
   }
 };
 
-const onresize = () => {
+window.onresize = () => {
   const bodyWidht = document.querySelector('body').clientWidth;
   if (bodyWidht > 500) {
     document.querySelector('.nav-links').style.display = 'flex';
