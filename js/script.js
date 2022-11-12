@@ -3,29 +3,6 @@ const userLocale = navigator.languages && navigator.languages.length ? navigator
 
 const headerSection = document.getElementById('header');
 
-const navIcons = [
-  {
-    iconName: 'contemplative',
-    src: 'img/png/contemplative.png',
-  },
-  {
-    iconName: 'crazyHappy',
-    src: 'img/png/crazyhappy.png',
-  },
-  {
-    iconName: 'crookedNeck',
-    src: 'img/png/crookedneck.png',
-  },
-  {
-    iconName: 'normalHappy',
-    src: 'img/png/normalhappy.png',
-  },
-  {
-    iconName: 'stunningBoyo',
-    src: 'img/png/stunningboyo.png',
-  },
-];
-
 function elementInView(element) {
   var elementBounding = element.getBoundingClientRect();
   var elementTop = elementBounding.top;
@@ -79,6 +56,29 @@ const onresize = () => {
     document.querySelector('.nav-links').style.display = 'none';
   }
 };
+
+// const navIcons = [
+//   {
+//     iconName: 'contemplative',
+//     src: 'img/png/contemplative.png',
+//   },
+//   {
+//     iconName: 'crazyHappy',
+//     src: 'img/png/crazyhappy.png',
+//   },
+//   {
+//     iconName: 'crookedNeck',
+//     src: 'img/png/crookedneck.png',
+//   },
+//   {
+//     iconName: 'normalHappy',
+//     src: 'img/png/normalhappy.png',
+//   },
+//   {
+//     iconName: 'stunningBoyo',
+//     src: 'img/png/stunningboyo.png',
+//   },
+// ];
 
 
 // const navIconSwap = () => {
