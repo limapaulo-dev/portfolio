@@ -1,0 +1,24 @@
+{
+  "navIcons": [
+    {
+      "iconName": "contemplative",
+      "src": "img/png/contemplative.png"
+    },
+    {
+      "iconName": "crazyHappy",
+      "src": "img/png/crazyhappy.png"
+    },
+    {
+      "iconName": "crookedNeck",
+      "src": "img/png/crookedneck.png"
+    },
+    {
+      "iconName": "normalHappy",
+      "src": "img/png/normalhappy.png"
+    },
+    {
+      "iconName": "stunningBoyo",
+      "src": "img/png/stunningboyo.png"
+    }
+  ]
+}

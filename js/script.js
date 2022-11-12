@@ -3,6 +3,29 @@ const userLocale = navigator.languages && navigator.languages.length ? navigator
 
 const headerSection = document.getElementById('header');
 
+const navIcons = [
+  {
+    iconName: 'contemplative',
+    src: 'img/png/contemplative.png',
+  },
+  {
+    iconName: 'crazyHappy',
+    src: 'img/png/crazyhappy.png',
+  },
+  {
+    iconName: 'crookedNeck',
+    src: 'img/png/crookedneck.png',
+  },
+  {
+    iconName: 'normalHappy',
+    src: 'img/png/normalhappy.png',
+  },
+  {
+    iconName: 'stunningBoyo',
+    src: 'img/png/stunningboyo.png',
+  },
+];
+
 function elementInView(element) {
   var elementBounding = element.getBoundingClientRect();
   var elementTop = elementBounding.top;
@@ -12,14 +35,14 @@ function elementInView(element) {
   return isVisible;
 }
 
-onscroll = () => {
+const onscroll = () => {
   let bodyWidht = document.querySelector('body').clientWidth;
 
   if (bodyWidht <= 500) {
     document.querySelector('.nav-links').style.display = 'none';
     document.querySelector('.hamburger-menu-open').style.color = '#f5f3f4';
   }
-  
+
   if (!elementInView(headerSection)) {
     if (bodyWidht <= 500) {
       document.getElementById('about').style.paddingTop = '8.5em';
@@ -37,7 +60,7 @@ onscroll = () => {
   }
 };
 
-hamburgIconSwap = () => {
+const hamburgIconSwap = () => {
   const navLinksDisplay = document.querySelector('.nav-links').style.display;
   if (navLinksDisplay === '' || navLinksDisplay === 'none') {
     document.querySelector('.nav-links').style.display = 'flex';
@@ -48,11 +71,24 @@ hamburgIconSwap = () => {
   }
 };
 
-// onresize = () => {
-//   const bodyWidht = document.querySelector('body').clientWidth;
-//   if (bodyWidht > 500) {
-//     document.querySelector('.nav-links').style.display = 'flex';
-//   } else {
-//     document.querySelector('.nav-links').style.display = 'none';
+const onresize = () => {
+  const bodyWidht = document.querySelector('body').clientWidth;
+  if (bodyWidht > 500) {
+    document.querySelector('.nav-links').style.display = 'flex';
+  } else {
+    document.querySelector('.nav-links').style.display = 'none';
+  }
+};
+
+
+// const navIconSwap = () => {
+//   const currentNavIcon = document.querySelector('.nav-icon img').src;
+//   const getRandIconSrc = () => navIcons[Math.floor(Math.random() * 4)].src;
+//   let newIcon = getRandIconSrc();
+
+//   while (currentNavIcon.endsWith(newIcon)) {
+//     newIcon = getRandIconSrc();
 //   }
-// };
+//   document.querySelector('.nav-icon img').src = newIcon;
+  
+// }

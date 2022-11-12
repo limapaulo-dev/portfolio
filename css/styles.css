@@ -425,11 +425,13 @@ section#portfolio {
 .portfolio-projects a:hover,
 .portfolio-projects a:active {
   border: 3px #f72585 solid;
+  transition: 1s ease;
 }
 
 .portfolio-projects a:hover p,
 .portfolio-projects a:active p {
   color: #00adff;
+  transition: 1s ease;
 }
 
 .portfolio-projects img {
