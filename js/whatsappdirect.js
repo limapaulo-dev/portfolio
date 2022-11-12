@@ -8,6 +8,26 @@ if (isMobile()) {
   }
 }
 
+fetch('/data/countriesData.json')
+  .then((res) => res.json())
+  .then((data) => (countriesData = data['Countries Data']));
+
+const ok = countriesData;
+
+for (const [i, country] of countriesData.entries()) {
+  console.log(i, country);
+  // const newLi = document.createElement("li");
+  // const newAnchor = document.createElement("a");
+  // newAnchor.classList.add("dropdown-item text-truncate");
+  // newAnchor.setAttribute("onclick","getCountry()");
+
+  // const fixedDialCode = country["dialCode"].replace(/([+ -])/g, '')
+
+  // newAnchor.setAttribute("value",country["dialCode"]);
+  // document.querySelector('.dropdown-item text-truncate').appendChild(newLi);
+  // document.querySelector(`.dropdown-item text-truncate li:nth-of-type(${i})`).appendChild(newLi);
+}
+
 const contact = () => {
   const contactMsg = 'Hi! This is my contact number 📞';
   document.querySelector('textarea.form-control').value = contactMsg;
@@ -39,7 +59,7 @@ const services = () => {
   document.querySelector('textarea.form-control').value = servicesMsg;
 };
 
-function getCountry() {
+const getCountry = () => {
   document.querySelector('#dropdown-country-code').onclick = (liCountry) => {
     console.log(liCountry);
     const liCountryText = liCountry.target.innerText;
@@ -53,44 +73,13 @@ function getCountry() {
     document.querySelector('#country-code-btn img').src = liCountryFlag;
     document.querySelector('#country-code-btn').value = liCountryValue;
   };
-}
+};
 
-function directMsg() {
+const directMsg = () => {
   const countryCode = document.querySelector('#country-code-btn').value;
   const phoneNumb = document.querySelector('#phone-number-input').value;
-  document.querySelector('#phone-number-input').value = `${countryCode}${phoneNumb}`
-  setTimeout (() => {document.querySelector('#phone-number-input').value = phoneNumb}, 10);
-}
-
-let countriesData;
-
-// fetch("data/countriesData.json")
-//     .then(res => res.json())
-//     .then(data => countriesData = JSON.parse(data));
-
-//     const options = {
-//       method: 'GET',
-//       headers: {
-//         'X-RapidAPI-Key': '0d3718cc05msh2a0f2886517b39ap10e7ecjsnbd483a7f676a',
-//         'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
-//       }
-//     };
-    
-//     fetch('https://imdb8.p.rapidapi.com/title/get-quotes?tconst=tt0944947', options)
-//       .then(response => response.json())
-//       .then(response => console.log(response))
-//       .catch(err => console.error(err));
-
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': '0d3718cc05msh2a0f2886517b39ap10e7ecjsnbd483a7f676a',
-// 		'X-RapidAPI-Host': 'imdb8.p.rapidapi.com'
-// 	}
-// };
-
-// fetch('https://imdb8.p.rapidapi.com/title/get-top-rated-movies', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
-
+  document.querySelector('#phone-number-input').value = `${countryCode}${phoneNumb}`;
+  setTimeout(() => {
+    document.querySelector('#phone-number-input').value = phoneNumb;
+  }, 10);
+};
