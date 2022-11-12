@@ -8,25 +8,25 @@ if (isMobile()) {
   }
 }
 
-fetch('/data/countriesData.json')
-  .then((res) => res.json())
-  .then((data) => (countriesData = data['Countries Data']));
+// fetch('/data/countriesData.json')
+//   .then((res) => res.json())
+//   .then((data) => (countriesData = data['Countries Data']));
 
-const ok = countriesData;
+// const ok = countriesData;
 
-for (const [i, country] of countriesData.entries()) {
-  console.log(i, country);
-  // const newLi = document.createElement("li");
-  // const newAnchor = document.createElement("a");
-  // newAnchor.classList.add("dropdown-item text-truncate");
-  // newAnchor.setAttribute("onclick","getCountry()");
+// for (const [i, country] of countriesData.entries()) {
+//   console.log(i, country);
+//   // const newLi = document.createElement("li");
+//   // const newAnchor = document.createElement("a");
+//   // newAnchor.classList.add("dropdown-item text-truncate");
+//   // newAnchor.setAttribute("onclick","getCountry()");
 
-  // const fixedDialCode = country["dialCode"].replace(/([+ -])/g, '')
+//   // const fixedDialCode = country["dialCode"].replace(/([+ -])/g, '')
 
-  // newAnchor.setAttribute("value",country["dialCode"]);
-  // document.querySelector('.dropdown-item text-truncate').appendChild(newLi);
-  // document.querySelector(`.dropdown-item text-truncate li:nth-of-type(${i})`).appendChild(newLi);
-}
+//   // newAnchor.setAttribute("value",country["dialCode"]);
+//   // document.querySelector('.dropdown-item text-truncate').appendChild(newLi);
+//   // document.querySelector(`.dropdown-item text-truncate li:nth-of-type(${i})`).appendChild(newLi);
+// }
 
 const contact = () => {
   const contactMsg = 'Hi! This is my contact number 📞';
