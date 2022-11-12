@@ -1,0 +1,1463 @@
+﻿{
+    "Planilha1": [
+        {
+            "country": "Andorra",
+            "abbr": "AD",
+            "dialCode": "+376",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ad.svg"
+        },
+        {
+            "country": "United Arab Emirates",
+            "abbr": "AE",
+            "dialCode": "+971",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ae.svg"
+        },
+        {
+            "country": "Afghanistan",
+            "abbr": "AF",
+            "dialCode": "+93",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/af.svg"
+        },
+        {
+            "country": "Antigua and Barbuda",
+            "abbr": "AG",
+            "dialCode": "+1-268",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ag.svg"
+        },
+        {
+            "country": "Anguilla",
+            "abbr": "AI",
+            "dialCode": "+1-264",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ai.svg"
+        },
+        {
+            "country": "Albania",
+            "abbr": "AL",
+            "dialCode": "+355",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/al.svg"
+        },
+        {
+            "country": "Armenia",
+            "abbr": "AM",
+            "dialCode": "+374",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/am.svg"
+        },
+        {
+            "country": "Netherlands Antilles",
+            "abbr": "AN",
+            "dialCode": "+599",
+            "flagSrc": "img/flags/an.svg ",
+            "undefined": " "
+        },
+        {
+            "country": "Angola",
+            "abbr": "AO",
+            "dialCode": "+244",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ao.svg"
+        },
+        {
+            "country": "Antarctica",
+            "abbr": "AQ",
+            "dialCode": "+672",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/aq.svg"
+        },
+        {
+            "country": "Argentina",
+            "abbr": "AR",
+            "dialCode": "+54",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ar.svg"
+        },
+        {
+            "country": "American Samoa",
+            "abbr": "AS",
+            "dialCode": "+1-684",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/as.svg"
+        },
+        {
+            "country": "Austria",
+            "abbr": "AT",
+            "dialCode": "+43",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/at.svg"
+        },
+        {
+            "country": "Australia",
+            "abbr": "AU",
+            "dialCode": "+61",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/au.svg"
+        },
+        {
+            "country": "Aruba",
+            "abbr": "AW",
+            "dialCode": "+297",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/aw.svg"
+        },
+        {
+            "country": "Azerbaijan",
+            "abbr": "AZ",
+            "dialCode": "+994",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/az.svg"
+        },
+        {
+            "country": "Bosnia and Herzegovina",
+            "abbr": "BA",
+            "dialCode": "+387",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ba.svg"
+        },
+        {
+            "country": "Barbados",
+            "abbr": "BB",
+            "dialCode": "+1-246",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bb.svg"
+        },
+        {
+            "country": "Bangladesh",
+            "abbr": "BD",
+            "dialCode": "+880",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bd.svg"
+        },
+        {
+            "country": "Belgium",
+            "abbr": "BE",
+            "dialCode": "+32",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/be.svg"
+        },
+        {
+            "country": "Burkina Faso",
+            "abbr": "BF",
+            "dialCode": "+226",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bf.svg"
+        },
+        {
+            "country": "Bulgaria",
+            "abbr": "BG",
+            "dialCode": "+359",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bg.svg"
+        },
+        {
+            "country": "Bahrain",
+            "abbr": "BH",
+            "dialCode": "+973",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bh.svg"
+        },
+        {
+            "country": "Burundi",
+            "abbr": "BI",
+            "dialCode": "+257",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bi.svg"
+        },
+        {
+            "country": "Benin",
+            "abbr": "BJ",
+            "dialCode": "+229",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bj.svg"
+        },
+        {
+            "country": "Saint Barthelemy",
+            "abbr": "BL",
+            "dialCode": "+590",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bl.svg"
+        },
+        {
+            "country": "Bermuda",
+            "abbr": "BM",
+            "dialCode": "+1-441",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bm.svg"
+        },
+        {
+            "country": "Brunei",
+            "abbr": "BN",
+            "dialCode": "+673",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bn.svg"
+        },
+        {
+            "country": "Bolivia",
+            "abbr": "BO",
+            "dialCode": "+591",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bo.svg"
+        },
+        {
+            "country": "Brazil",
+            "abbr": "BR",
+            "dialCode": "+55",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/br.svg"
+        },
+        {
+            "country": "Bahamas",
+            "abbr": "BS",
+            "dialCode": "+1-242",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bs.svg"
+        },
+        {
+            "country": "Bhutan",
+            "abbr": "BT",
+            "dialCode": "+975",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bt.svg"
+        },
+        {
+            "country": "Botswana",
+            "abbr": "BW",
+            "dialCode": "+267",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bw.svg"
+        },
+        {
+            "country": "Belarus",
+            "abbr": "BY",
+            "dialCode": "+375",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/by.svg"
+        },
+        {
+            "country": "Belize",
+            "abbr": "BZ",
+            "dialCode": "+501",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/bz.svg"
+        },
+        {
+            "country": "Canada",
+            "abbr": "CA",
+            "dialCode": "+1",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ca.svg"
+        },
+        {
+            "country": "Cocos Islands",
+            "abbr": "CC",
+            "dialCode": "+61",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cc.svg"
+        },
+        {
+            "country": "Democratic Republic of the Congo",
+            "abbr": "CD",
+            "dialCode": "+243",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cd.svg"
+        },
+        {
+            "country": "Central African Republic",
+            "abbr": "CF",
+            "dialCode": "+236",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cf.svg"
+        },
+        {
+            "country": "Republic of the Congo",
+            "abbr": "CG",
+            "dialCode": "+242",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cg.svg"
+        },
+        {
+            "country": "Switzerland",
+            "abbr": "CH",
+            "dialCode": "+41",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ch.svg"
+        },
+        {
+            "country": "Ivory Coast",
+            "abbr": "CI",
+            "dialCode": "+225",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ci.svg"
+        },
+        {
+            "country": "Cook Islands",
+            "abbr": "CK",
+            "dialCode": "+682",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ck.svg"
+        },
+        {
+            "country": "Chile",
+            "abbr": "CL",
+            "dialCode": "+56",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cl.svg"
+        },
+        {
+            "country": "Cameroon",
+            "abbr": "CM",
+            "dialCode": "+237",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cm.svg"
+        },
+        {
+            "country": "China",
+            "abbr": "CN",
+            "dialCode": "+86",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cn.svg"
+        },
+        {
+            "country": "Colombia",
+            "abbr": "CO",
+            "dialCode": "+57",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/co.svg"
+        },
+        {
+            "country": "Costa Rica",
+            "abbr": "CR",
+            "dialCode": "+506",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cr.svg"
+        },
+        {
+            "country": "Cuba",
+            "abbr": "CU",
+            "dialCode": "+53",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cu.svg"
+        },
+        {
+            "country": "Cape Verde",
+            "abbr": "CV",
+            "dialCode": "+238",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cv.svg"
+        },
+        {
+            "country": "Curacao",
+            "abbr": "CW",
+            "dialCode": "+599",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cw.svg"
+        },
+        {
+            "country": "Christmas Island",
+            "abbr": "CX",
+            "dialCode": "+61",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cx.svg"
+        },
+        {
+            "country": "Cyprus",
+            "abbr": "CY",
+            "dialCode": "+357",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cy.svg"
+        },
+        {
+            "country": "Czech Republic",
+            "abbr": "CZ",
+            "dialCode": "+420",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/cz.svg"
+        },
+        {
+            "country": "Germany",
+            "abbr": "DE",
+            "dialCode": "+49",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/de.svg"
+        },
+        {
+            "country": "Djibouti",
+            "abbr": "DJ",
+            "dialCode": "+253",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/dj.svg"
+        },
+        {
+            "country": "Denmark",
+            "abbr": "DK",
+            "dialCode": "+45",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/dk.svg"
+        },
+        {
+            "country": "Dominica",
+            "abbr": "DM",
+            "dialCode": "+1-767",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/dm.svg"
+        },
+        {
+            "country": "Dominican Republic",
+            "abbr": "DO",
+            "dialCode": "+1-809",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/do.svg"
+        },
+        {
+            "country": "Dominican Republic",
+            "abbr": "DO",
+            "dialCode": "+1-829",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/do.svg"
+        },
+        {
+            "country": "Dominican Republic",
+            "abbr": "DO",
+            "dialCode": "+1-849",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/do.svg"
+        },
+        {
+            "country": "Algeria",
+            "abbr": "DZ",
+            "dialCode": "+213",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/dz.svg"
+        },
+        {
+            "country": "Ecuador",
+            "abbr": "EC",
+            "dialCode": "+593",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ec.svg"
+        },
+        {
+            "country": "Estonia",
+            "abbr": "EE",
+            "dialCode": "+372",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ee.svg"
+        },
+        {
+            "country": "Egypt",
+            "abbr": "EG",
+            "dialCode": "+20",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/eg.svg"
+        },
+        {
+            "country": "Western Sahara",
+            "abbr": "EH",
+            "dialCode": "+212",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/eh.svg"
+        },
+        {
+            "country": "Eritrea",
+            "abbr": "ER",
+            "dialCode": "+291",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/er.svg"
+        },
+        {
+            "country": "Spain",
+            "abbr": "ES",
+            "dialCode": "+34",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/es.svg"
+        },
+        {
+            "country": "Ethiopia",
+            "abbr": "ET",
+            "dialCode": "+251",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/et.svg"
+        },
+        {
+            "country": "Finland",
+            "abbr": "FI",
+            "dialCode": "+358",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/fi.svg"
+        },
+        {
+            "country": "Fiji",
+            "abbr": "FJ",
+            "dialCode": "+679",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/fj.svg"
+        },
+        {
+            "country": "Falkland Islands",
+            "abbr": "FK",
+            "dialCode": "+500",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/fk.svg"
+        },
+        {
+            "country": "Micronesia",
+            "abbr": "FM",
+            "dialCode": "+691",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/fm.svg"
+        },
+        {
+            "country": "Faroe Islands",
+            "abbr": "FO",
+            "dialCode": "+298",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/fo.svg"
+        },
+        {
+            "country": "France",
+            "abbr": "FR",
+            "dialCode": "+33",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/fr.svg"
+        },
+        {
+            "country": "Gabon",
+            "abbr": "GA",
+            "dialCode": "+241",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ga.svg"
+        },
+        {
+            "country": "United Kingdom",
+            "abbr": "GB",
+            "dialCode": "+44",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gb.svg"
+        },
+        {
+            "country": "Grenada",
+            "abbr": "GD",
+            "dialCode": "+1-473",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gd.svg"
+        },
+        {
+            "country": "Georgia",
+            "abbr": "GE",
+            "dialCode": "+995",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ge.svg"
+        },
+        {
+            "country": "Guernsey",
+            "abbr": "GG",
+            "dialCode": "+44-1481",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gg.svg>"
+        },
+        {
+            "country": "Ghana",
+            "abbr": "GH",
+            "dialCode": "+233",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gh.svg"
+        },
+        {
+            "country": "Gibraltar",
+            "abbr": "GI",
+            "dialCode": "+350",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gi.svg"
+        },
+        {
+            "country": "Greenland",
+            "abbr": "GL",
+            "dialCode": "+299",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gl.svg"
+        },
+        {
+            "country": "Gambia",
+            "abbr": "GM",
+            "dialCode": "+220",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gm.svg"
+        },
+        {
+            "country": "Guinea",
+            "abbr": "GN",
+            "dialCode": "+224",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gn.svg"
+        },
+        {
+            "country": "Equatorial Guinea",
+            "abbr": "GQ",
+            "dialCode": "+240",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gq.svg"
+        },
+        {
+            "country": "Greece",
+            "abbr": "GR",
+            "dialCode": "+30",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gr.svg"
+        },
+        {
+            "country": "Guatemala",
+            "abbr": "GT",
+            "dialCode": "+502",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gt.svg"
+        },
+        {
+            "country": "Guam",
+            "abbr": "GU",
+            "dialCode": "+1-671",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gu.svg"
+        },
+        {
+            "country": "Guinea-Bissau",
+            "abbr": "GW",
+            "dialCode": "+245",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gw.svg"
+        },
+        {
+            "country": "Guyana",
+            "abbr": "GY",
+            "dialCode": "+592",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/gy.svg"
+        },
+        {
+            "country": "Hong Kong",
+            "abbr": "HK",
+            "dialCode": "+852",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/hk.svg"
+        },
+        {
+            "country": "Honduras",
+            "abbr": "HN",
+            "dialCode": "+504",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/hn.svg"
+        },
+        {
+            "country": "Croatia",
+            "abbr": "HR",
+            "dialCode": "+385",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/hr.svg"
+        },
+        {
+            "country": "Haiti",
+            "abbr": "HT",
+            "dialCode": "+509",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ht.svg"
+        },
+        {
+            "country": "Hungary",
+            "abbr": "HU",
+            "dialCode": "+36",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/hu.svg"
+        },
+        {
+            "country": "Indonesia",
+            "abbr": "ID",
+            "dialCode": "+62",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/id.svg"
+        },
+        {
+            "country": "Ireland",
+            "abbr": "IE",
+            "dialCode": "+353",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ie.svg"
+        },
+        {
+            "country": "Israel",
+            "abbr": "IL",
+            "dialCode": "+972",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/il.svg"
+        },
+        {
+            "country": "Isle of Man",
+            "abbr": "IM",
+            "dialCode": "+44-1624",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/im.svg>"
+        },
+        {
+            "country": "India",
+            "abbr": "IN",
+            "dialCode": "+91",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/in.svg"
+        },
+        {
+            "country": "British Indian Ocean Territory",
+            "abbr": "IO",
+            "dialCode": "+246",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/io.svg"
+        },
+        {
+            "country": "Iraq",
+            "abbr": "IQ",
+            "dialCode": "+964",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/iq.svg"
+        },
+        {
+            "country": "Iran",
+            "abbr": "IR",
+            "dialCode": "+98",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ir.svg"
+        },
+        {
+            "country": "Iceland",
+            "abbr": "IS",
+            "dialCode": "+354",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/is.svg"
+        },
+        {
+            "country": "Italy",
+            "abbr": "IT",
+            "dialCode": "+39",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/it.svg"
+        },
+        {
+            "country": "Jersey",
+            "abbr": "JE",
+            "dialCode": "+44-1534",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/je.svg>"
+        },
+        {
+            "country": "Jamaica",
+            "abbr": "JM",
+            "dialCode": "+1-876",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/jm.svg"
+        },
+        {
+            "country": "Jordan",
+            "abbr": "JO",
+            "dialCode": "+962",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/jo.svg"
+        },
+        {
+            "country": "Japan",
+            "abbr": "JP",
+            "dialCode": "+81",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/jp.svg"
+        },
+        {
+            "country": "Kenya",
+            "abbr": "KE",
+            "dialCode": "+254",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ke.svg"
+        },
+        {
+            "country": "Kyrgyzstan",
+            "abbr": "KG",
+            "dialCode": "+996",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/kg.svg"
+        },
+        {
+            "country": "Cambodia",
+            "abbr": "KH",
+            "dialCode": "+855",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/kh.svg"
+        },
+        {
+            "country": "Kiribati",
+            "abbr": "KI",
+            "dialCode": "+686",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ki.svg"
+        },
+        {
+            "country": "Comoros",
+            "abbr": "KM",
+            "dialCode": "+269",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/km.svg"
+        },
+        {
+            "country": "Saint Kitts and Nevis",
+            "abbr": "KN",
+            "dialCode": "+1-869",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/kn.svg"
+        },
+        {
+            "country": "North Korea",
+            "abbr": "KP",
+            "dialCode": "+850",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/kp.svg"
+        },
+        {
+            "country": "South Korea",
+            "abbr": "KR",
+            "dialCode": "+82",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/kr.svg"
+        },
+        {
+            "country": "Kuwait",
+            "abbr": "KW",
+            "dialCode": "+965",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/kw.svg"
+        },
+        {
+            "country": "Cayman Islands",
+            "abbr": "KY",
+            "dialCode": "+1-345",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ky.svg"
+        },
+        {
+            "country": "Kazakhstan",
+            "abbr": "KZ",
+            "dialCode": "+7",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/kz.svg"
+        },
+        {
+            "country": "Laos",
+            "abbr": "LA",
+            "dialCode": "+856",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/la.svg"
+        },
+        {
+            "country": "Lebanon",
+            "abbr": "LB",
+            "dialCode": "+961",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/lb.svg"
+        },
+        {
+            "country": "Saint Lucia",
+            "abbr": "LC",
+            "dialCode": "+1-758",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/lc.svg"
+        },
+        {
+            "country": "Liechtenstein",
+            "abbr": "LI",
+            "dialCode": "+423",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/li.svg"
+        },
+        {
+            "country": "Sri Lanka",
+            "abbr": "LK",
+            "dialCode": "+94",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/lk.svg"
+        },
+        {
+            "country": "Liberia",
+            "abbr": "LR",
+            "dialCode": "+231",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/lr.svg"
+        },
+        {
+            "country": "Lesotho",
+            "abbr": "LS",
+            "dialCode": "+266",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ls.svg"
+        },
+        {
+            "country": "Lithuania",
+            "abbr": "LT",
+            "dialCode": "+370",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/lt.svg"
+        },
+        {
+            "country": "Luxembourg",
+            "abbr": "LU",
+            "dialCode": "+352",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/lu.svg"
+        },
+        {
+            "country": "Latvia",
+            "abbr": "LV",
+            "dialCode": "+371",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/lv.svg"
+        },
+        {
+            "country": "Libya",
+            "abbr": "LY",
+            "dialCode": "+218",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ly.svg"
+        },
+        {
+            "country": "Morocco",
+            "abbr": "MA",
+            "dialCode": "+212",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ma.svg"
+        },
+        {
+            "country": "Monaco",
+            "abbr": "MC",
+            "dialCode": "+377",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mc.svg"
+        },
+        {
+            "country": "Moldova",
+            "abbr": "MD",
+            "dialCode": "+373",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/md.svg"
+        },
+        {
+            "country": "Montenegro",
+            "abbr": "ME",
+            "dialCode": "+382",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/me.svg"
+        },
+        {
+            "country": "Saint Martin",
+            "abbr": "MF",
+            "dialCode": "+590",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mf.svg"
+        },
+        {
+            "country": "Madagascar",
+            "abbr": "MG",
+            "dialCode": "+261",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mg.svg"
+        },
+        {
+            "country": "Marshall Islands",
+            "abbr": "MH",
+            "dialCode": "+692",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mh.svg"
+        },
+        {
+            "country": "Macedonia",
+            "abbr": "MK",
+            "dialCode": "+389",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mk.svg"
+        },
+        {
+            "country": "Mali",
+            "abbr": "ML",
+            "dialCode": "+223",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ml.svg"
+        },
+        {
+            "country": "Myanmar",
+            "abbr": "MM",
+            "dialCode": "+95",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mm.svg"
+        },
+        {
+            "country": "Mongolia",
+            "abbr": "MN",
+            "dialCode": "+976",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mn.svg"
+        },
+        {
+            "country": "Macau",
+            "abbr": "MO",
+            "dialCode": "+853",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mo.svg"
+        },
+        {
+            "country": "Northern Mariana Islands",
+            "abbr": "MP",
+            "dialCode": "+1-670",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mp.svg"
+        },
+        {
+            "country": "Mauritania",
+            "abbr": "MR",
+            "dialCode": "+222",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mr.svg"
+        },
+        {
+            "country": "Montserrat",
+            "abbr": "MS",
+            "dialCode": "+1-664",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ms.svg"
+        },
+        {
+            "country": "Malta",
+            "abbr": "MT",
+            "dialCode": "+356",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mt.svg"
+        },
+        {
+            "country": "Mauritius",
+            "abbr": "MU",
+            "dialCode": "+230",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mu.svg"
+        },
+        {
+            "country": "Maldives",
+            "abbr": "MV",
+            "dialCode": "+960",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mv.svg"
+        },
+        {
+            "country": "Malawi",
+            "abbr": "MW",
+            "dialCode": "+265",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mw.svg"
+        },
+        {
+            "country": "Mexico",
+            "abbr": "MX",
+            "dialCode": "+52",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mx.svg"
+        },
+        {
+            "country": "Malaysia",
+            "abbr": "MY",
+            "dialCode": "+60",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/my.svg"
+        },
+        {
+            "country": "Mozambique",
+            "abbr": "MZ",
+            "dialCode": "+258",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/mz.svg"
+        },
+        {
+            "country": "Namibia",
+            "abbr": "NA",
+            "dialCode": "+264",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/na.svg"
+        },
+        {
+            "country": "New Caledonia",
+            "abbr": "NC",
+            "dialCode": "+687",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/nc.svg"
+        },
+        {
+            "country": "Niger",
+            "abbr": "NE",
+            "dialCode": "+227",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ne.svg"
+        },
+        {
+            "country": "Nigeria",
+            "abbr": "NG",
+            "dialCode": "+234",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ng.svg"
+        },
+        {
+            "country": "Nicaragua",
+            "abbr": "NI",
+            "dialCode": "+505",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ni.svg"
+        },
+        {
+            "country": "Netherlands",
+            "abbr": "NL",
+            "dialCode": "+31",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/nl.svg"
+        },
+        {
+            "country": "Norway",
+            "abbr": "NO",
+            "dialCode": "+47",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/no.svg"
+        },
+        {
+            "country": "Nepal",
+            "abbr": "NP",
+            "dialCode": "+977",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/np.svg"
+        },
+        {
+            "country": "Nauru",
+            "abbr": "NR",
+            "dialCode": "+674",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/nr.svg"
+        },
+        {
+            "country": "Niue",
+            "abbr": "NU",
+            "dialCode": "+683",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/nu.svg"
+        },
+        {
+            "country": "New Zealand",
+            "abbr": "NZ",
+            "dialCode": "+64",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/nz.svg"
+        },
+        {
+            "country": "Oman",
+            "abbr": "OM",
+            "dialCode": "+968",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/om.svg"
+        },
+        {
+            "country": "Panama",
+            "abbr": "PA",
+            "dialCode": "+507",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/pa.svg"
+        },
+        {
+            "country": "Peru",
+            "abbr": "PE",
+            "dialCode": "+51",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/pe.svg"
+        },
+        {
+            "country": "French Polynesia",
+            "abbr": "PF",
+            "dialCode": "+689",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/pf.svg"
+        },
+        {
+            "country": "Papua New Guinea",
+            "abbr": "PG",
+            "dialCode": "+675",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/pg.svg"
+        },
+        {
+            "country": "Philippines",
+            "abbr": "PH",
+            "dialCode": "+63",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ph.svg"
+        },
+        {
+            "country": "Pakistan",
+            "abbr": "PK",
+            "dialCode": "+92",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/pk.svg"
+        },
+        {
+            "country": "Poland",
+            "abbr": "PL",
+            "dialCode": "+48",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/pl.svg"
+        },
+        {
+            "country": "Saint Pierre and Miquelon",
+            "abbr": "PM",
+            "dialCode": "+508",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/pm.svg"
+        },
+        {
+            "country": "Pitcairn",
+            "abbr": "PN",
+            "dialCode": "+64",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/pn.svg"
+        },
+        {
+            "country": "Puerto Rico",
+            "abbr": "PR",
+            "dialCode": "+1-787",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/pr.svg"
+        },
+        {
+            "country": "Puerto Rico",
+            "abbr": "PR",
+            "dialCode": "+1-939",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/pr.svg"
+        },
+        {
+            "country": "Palestine",
+            "abbr": "PS",
+            "dialCode": "+970",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ps.svg"
+        },
+        {
+            "country": "Portugal",
+            "abbr": "PT",
+            "dialCode": "+351",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/pt.svg"
+        },
+        {
+            "country": "Palau",
+            "abbr": "PW",
+            "dialCode": "+680",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/pw.svg"
+        },
+        {
+            "country": "Paraguay",
+            "abbr": "PY",
+            "dialCode": "+595",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/py.svg"
+        },
+        {
+            "country": "Qatar",
+            "abbr": "QA",
+            "dialCode": "+974",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/qa.svg"
+        },
+        {
+            "country": "Reunion",
+            "abbr": "RE",
+            "dialCode": "+262",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/re.svg"
+        },
+        {
+            "country": "Romania",
+            "abbr": "RO",
+            "dialCode": "+40",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ro.svg"
+        },
+        {
+            "country": "Serbia",
+            "abbr": "RS",
+            "dialCode": "+381",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/rs.svg"
+        },
+        {
+            "country": "Russia",
+            "abbr": "RU",
+            "dialCode": "+7",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ru.svg"
+        },
+        {
+            "country": "Rwanda",
+            "abbr": "RW",
+            "dialCode": "+250",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/rw.svg"
+        },
+        {
+            "country": "Saudi Arabia",
+            "abbr": "SA",
+            "dialCode": "+966",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sa.svg"
+        },
+        {
+            "country": "Solomon Islands",
+            "abbr": "SB",
+            "dialCode": "+677",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sb.svg"
+        },
+        {
+            "country": "Seychelles",
+            "abbr": "SC",
+            "dialCode": "+248",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sc.svg"
+        },
+        {
+            "country": "Sudan",
+            "abbr": "SD",
+            "dialCode": "+249",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sd.svg"
+        },
+        {
+            "country": "Sweden",
+            "abbr": "SE",
+            "dialCode": "+46",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/se.svg"
+        },
+        {
+            "country": "Singapore",
+            "abbr": "SG",
+            "dialCode": "+65",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sg.svg"
+        },
+        {
+            "country": "Saint Helena",
+            "abbr": "SH",
+            "dialCode": "+290",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sh.svg"
+        },
+        {
+            "country": "Slovenia",
+            "abbr": "SI",
+            "dialCode": "+386",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/si.svg"
+        },
+        {
+            "country": "Svalbard and Jan Mayen",
+            "abbr": "SJ",
+            "dialCode": "+47",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sj.svg"
+        },
+        {
+            "country": "Slovakia",
+            "abbr": "SK",
+            "dialCode": "+421",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sk.svg"
+        },
+        {
+            "country": "Sierra Leone",
+            "abbr": "SL",
+            "dialCode": "+232",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sl.svg"
+        },
+        {
+            "country": "San Marino",
+            "abbr": "SM",
+            "dialCode": "+378",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sm.svg"
+        },
+        {
+            "country": "Senegal",
+            "abbr": "SN",
+            "dialCode": "+221",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sn.svg"
+        },
+        {
+            "country": "Somalia",
+            "abbr": "SO",
+            "dialCode": "+252",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/so.svg"
+        },
+        {
+            "country": "Suriname",
+            "abbr": "SR",
+            "dialCode": "+597",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sr.svg"
+        },
+        {
+            "country": "South Sudan",
+            "abbr": "SS",
+            "dialCode": "+211",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ss.svg"
+        },
+        {
+            "country": "Sao Tome and Principe",
+            "abbr": "ST",
+            "dialCode": "+239",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/st.svg"
+        },
+        {
+            "country": "El Salvador",
+            "abbr": "SV",
+            "dialCode": "+503",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sv.svg"
+        },
+        {
+            "country": "Sint Maarten",
+            "abbr": "SX",
+            "dialCode": "+1-721",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sx.svg"
+        },
+        {
+            "country": "Syria",
+            "abbr": "SY",
+            "dialCode": "+963",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sy.svg"
+        },
+        {
+            "country": "Swaziland",
+            "abbr": "SZ",
+            "dialCode": "+268",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/sz.svg"
+        },
+        {
+            "country": "Turks and Caicos Islands",
+            "abbr": "TC",
+            "dialCode": "+1-649",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/tc.svg"
+        },
+        {
+            "country": "Chad",
+            "abbr": "TD",
+            "dialCode": "+235",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/td.svg"
+        },
+        {
+            "country": "Togo",
+            "abbr": "TG",
+            "dialCode": "+228",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/tg.svg"
+        },
+        {
+            "country": "Thailand",
+            "abbr": "TH",
+            "dialCode": "+66",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/th.svg"
+        },
+        {
+            "country": "Tajikistan",
+            "abbr": "TJ",
+            "dialCode": "+992",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/tj.svg"
+        },
+        {
+            "country": "Tokelau",
+            "abbr": "TK",
+            "dialCode": "+690",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/tk.svg"
+        },
+        {
+            "country": "East Timor",
+            "abbr": "TL",
+            "dialCode": "+670",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/tl.svg"
+        },
+        {
+            "country": "Turkmenistan",
+            "abbr": "TM",
+            "dialCode": "+993",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/tm.svg"
+        },
+        {
+            "country": "Tunisia",
+            "abbr": "TN",
+            "dialCode": "+216",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/tn.svg"
+        },
+        {
+            "country": "Tonga",
+            "abbr": "TO",
+            "dialCode": "+676",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/to.svg"
+        },
+        {
+            "country": "Turkey",
+            "abbr": "TR",
+            "dialCode": "+90",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/tr.svg"
+        },
+        {
+            "country": "Trinidad and Tobago",
+            "abbr": "TT",
+            "dialCode": "+1-868",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/tt.svg"
+        },
+        {
+            "country": "Tuvalu",
+            "abbr": "TV",
+            "dialCode": "+688",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/tv.svg"
+        },
+        {
+            "country": "Taiwan",
+            "abbr": "TW",
+            "dialCode": "+886",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/tw.svg"
+        },
+        {
+            "country": "Tanzania",
+            "abbr": "TZ",
+            "dialCode": "+255",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/tz.svg"
+        },
+        {
+            "country": "Ukraine",
+            "abbr": "UA",
+            "dialCode": "+380",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ua.svg"
+        },
+        {
+            "country": "Uganda",
+            "abbr": "UG",
+            "dialCode": "+256",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ug.svg"
+        },
+        {
+            "country": "United States",
+            "abbr": "US",
+            "dialCode": "+1",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/us.svg"
+        },
+        {
+            "country": "Uruguay",
+            "abbr": "UY",
+            "dialCode": "+598",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/uy.svg"
+        },
+        {
+            "country": "Uzbekistan",
+            "abbr": "UZ",
+            "dialCode": "+998",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/uz.svg"
+        },
+        {
+            "country": "Vatican",
+            "abbr": "VA",
+            "dialCode": "+379",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/va.svg"
+        },
+        {
+            "country": "Saint Vincent and the Grenadines",
+            "abbr": "VC",
+            "dialCode": "+1-784",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/vc.svg"
+        },
+        {
+            "country": "Venezuela",
+            "abbr": "VE",
+            "dialCode": "+58",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ve.svg"
+        },
+        {
+            "country": "British Virgin Islands",
+            "abbr": "VG",
+            "dialCode": "+1-284",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/vg.svg"
+        },
+        {
+            "country": "U.S. Virgin Islands",
+            "abbr": "VI",
+            "dialCode": "+1-340",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/vi.svg"
+        },
+        {
+            "country": "Vietnam",
+            "abbr": "VN",
+            "dialCode": "+84",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/vn.svg"
+        },
+        {
+            "country": "Vanuatu",
+            "abbr": "VU",
+            "dialCode": "+678",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/vu.svg"
+        },
+        {
+            "country": "Wallis and Futuna",
+            "abbr": "WF",
+            "dialCode": "+681",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/wf.svg"
+        },
+        {
+            "country": "Samoa",
+            "abbr": "WS",
+            "dialCode": "+685",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ws.svg"
+        },
+        {
+            "country": "Kosovo",
+            "abbr": "XK",
+            "dialCode": "+383",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/xk.svg"
+        },
+        {
+            "country": "Yemen",
+            "abbr": "YE",
+            "dialCode": "+967",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/ye.svg"
+        },
+        {
+            "country": "Mayotte",
+            "abbr": "YT",
+            "dialCode": "+262",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/yt.svg"
+        },
+        {
+            "country": "South Africa",
+            "abbr": "ZA",
+            "dialCode": "+27",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/za.svg"
+        },
+        {
+            "country": "Zambia",
+            "abbr": "ZM",
+            "dialCode": "+260",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/zm.svg"
+        },
+        {
+            "country": "Zimbabwe",
+            "abbr": "ZW",
+            "dialCode": "+263",
+            "flagSrc": "https://flagicons.lipis.dev/flags/4x3/zw.svg"
+        }
+    ]
+}
