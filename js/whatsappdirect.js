@@ -6,27 +6,67 @@ if (isMobile()) {
   for (element of pcOnly) {
     element.style.display = 'none';
   }
-}
+};
 
-// fetch('/data/countriesData.json')
-//   .then((res) => res.json())
-//   .then((data) => (countriesData = data['Countries Data']));
+const sortArray = (array) => {
+  array.sort((a,b) => {
+    const nameA = a.name.toUpperCase();
+    const nameB = b.name.toUpperCase();
 
-// const ok = countriesData;
+    if (nameA < nameB){
+      return -1;
+    } else if (nameA > nameB) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+};
 
-// for (const [i, country] of countriesData.entries()) {
-//   console.log(i, country);
-//   // const newLi = document.createElement("li");
-//   // const newAnchor = document.createElement("a");
-//   // newAnchor.classList.add("dropdown-item text-truncate");
-//   // newAnchor.setAttribute("onclick","getCountry()");
+const countriesDataFetch = () => {
+  fetch('/data/countriesData.json')
+  .then((res) => res.json())
+  .then((data) => {
 
-//   // const fixedDialCode = country["dialCode"].replace(/([+ -])/g, '')
+    const countriesData = data["Countries Data"];
+  
+    countriesData.sort((a,b) => {
+      const nameA = a.name.toUpperCase();
+      const nameB = b.name.toUpperCase();
+  
+      if (nameA < nameB){
+        return -1;
+      } else if (nameA > nameB) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
 
-//   // newAnchor.setAttribute("value",country["dialCode"]);
-//   // document.querySelector('.dropdown-item text-truncate').appendChild(newLi);
-//   // document.querySelector(`.dropdown-item text-truncate li:nth-of-type(${i})`).appendChild(newLi);
-// }
+    const createLi = (country) => {
+      const newImg = document.createElement("img");
+      newImg.classList.add("li-flag");
+      newImg.setAttribute("src", country.flagSrc);
+
+      const newAnchor = document.createElement("a");
+      newAnchor.classList.add("dropdown-item", "text-truncate");
+      newAnchor.setAttribute("onclick","getCountry()");
+      const fixedDialCode = country["dialCode"].replace(/([+ -])/g, '')
+      newAnchor.setAttribute("value", fixedDialCode); 
+      newAnchor.appendChild(newImg)
+
+      const newLi = document.createElement("li");
+      newLi.appendChild(newAnchor)
+      newAnchor.innerHTML += country.dialCode +" "+ country.name;
+  
+      document.querySelector('ul#dropdown-country-code').appendChild(newLi);
+    };
+
+    countriesData.map(createLi);
+  })
+};
+
+window.onload = countriesDataFetch();
 
 const contact = () => {
   const contactMsg = 'Hi! This is my contact number 📞';
@@ -61,14 +101,10 @@ const services = () => {
 
 const getCountry = () => {
   document.querySelector('#dropdown-country-code').onclick = (liCountry) => {
-    console.log(liCountry);
     const liCountryText = liCountry.target.innerText;
-    console.log(liCountryText);
     const liCountryValue = liCountry.target.getAttribute('value');
     //console.log(document.querySelector('#country-code-btn').value);
-    console.log(liCountryValue);
     const liCountryFlag = liCountry.target.querySelector('img').src;
-    console.log(liCountryFlag);
     document.querySelector('#country-code-btn span').innerText = liCountryText;
     document.querySelector('#country-code-btn img').src = liCountryFlag;
     document.querySelector('#country-code-btn').value = liCountryValue;

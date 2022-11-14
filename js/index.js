@@ -1,6 +1,3 @@
-const isMobile = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-const userLocale = navigator.languages && navigator.languages.length ? navigator.languages[0] : navigator.language;
-
 const headerSection = document.getElementById('header');
 
 function elementInView(element) {
@@ -19,22 +16,7 @@ window.onscroll = () => {
     document.querySelector('.nav-links').style.display = 'none';
     document.querySelector('.hamburger-menu-open').style.color = '#f5f3f4';
   }
-
-  if (!elementInView(headerSection)) {
-    if (bodyWidht <= 500) {
-      document.getElementById('about').style.paddingTop = '8.5em';
-    } else {
-      document.getElementById('about').style.paddingTop = '9em';
-    }
-    document.getElementById('navbar').style.overflow = 'hidden';
-    document.getElementById('navbar').style.position = 'fixed';
-    document.getElementById('navbar').style.top = 0;
-  } else {
-    document.getElementById('about').style.paddingTop = '5em';
-    document.getElementById('navbar').style.overflow = '';
-    document.getElementById('navbar').style.position = '';
-    document.getElementById('navbar').style.top = '';
-  }
+  
 };
 
 const hamburgIconSwap = () => {
@@ -81,7 +63,6 @@ window.onresize = () => {
 //   },
 // ];
 
-
 // const navIconSwap = () => {
 //   const currentNavIcon = document.querySelector('.nav-icon img').src;
 //   const getRandIconSrc = () => navIcons[Math.floor(Math.random() * 4)].src;
@@ -91,5 +72,5 @@ window.onresize = () => {
 //     newIcon = getRandIconSrc();
 //   }
 //   document.querySelector('.nav-icon img').src = newIcon;
-  
+
 // }

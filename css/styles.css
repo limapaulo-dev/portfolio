@@ -207,6 +207,8 @@ nav {
   background-color: #131416;
   justify-content: space-between;
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 nav div {
@@ -224,6 +226,12 @@ nav div {
 
 .hamburger-menu {
   display: none;
+
+  /* burger animation
+
+_ turn -45º
+_ middel one moves to right
+_ turn 45º */
 }
 
 .hamburger-menu-open,
