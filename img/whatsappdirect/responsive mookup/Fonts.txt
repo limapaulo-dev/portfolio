@@ -1,9 +1,0 @@
-Fonts used in this design:
-
-Font: Oswald
-Author: Vernon Adams
-Url: http://www.fontsquirrel.com/fonts/oswald
-
-Font: Abel
-Author: MADType
-Url: https://www.fontsquirrel.com/fonts/abel

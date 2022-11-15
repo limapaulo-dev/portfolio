@@ -1,13 +1,3 @@
-const isMobile = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-const pcOnly = document.getElementsByClassName('pc');
-const userLocale = navigator.languages && navigator.languages.length ? navigator.languages[0] : navigator.language;
-
-if (isMobile()) {
-  for (element of pcOnly) {
-    element.style.display = 'none';
-  }
-};
-
 const sortArray = (array) => {
   array.sort((a,b) => {
     const nameA = a.name.toUpperCase();
