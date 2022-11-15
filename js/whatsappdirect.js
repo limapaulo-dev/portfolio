@@ -1,3 +1,11 @@
+const pcOnly = document.querySelector('.pc');
+
+if (isMobile()) {
+  for (element of pcOnly) {
+    element.style.display = 'none';
+  }
+}
+
 const sortArray = (array) => {
   array.sort((a,b) => {
     const nameA = a.name.toUpperCase();

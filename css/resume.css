@@ -136,13 +136,6 @@ body {
   box-sizing: border-box;
 }
 
-div.style {
-  background-color: #00adff;
-  opacity: 0.3;
-  position: absolute;
-  z-index: -1;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -166,6 +159,7 @@ header img {
   border: 3px #f5f3f4 solid;
   background-color: #161a1d;
   border-radius: 10px;
+  transition: 1s ease;
 }
 
 header h1 {
@@ -173,6 +167,7 @@ header h1 {
   font-weight: 700;
   margin-bottom: 0.3em;
   color: #00adff;
+  transition: 1s ease;
 }
 
 header h2 {
@@ -186,7 +181,6 @@ header nav {
   flex-grow: 1;
   flex-direction: column;
   align-items: flex-end;
-  transition: 1s ease;
 }
 
 header nav div {
@@ -391,5 +385,390 @@ a:last-child {
   header nav {
     display: none;
   }
+}
 
+/*  responsive layout  */
+@media (max-width: 1300px) {
+}
+
+@media (max-width: 1025px) {
+  .dot {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1.5em;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  header {
+    gap: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  header img {
+    width: 6em;
+  }
+
+  header h1 {
+    font-size: 1.9em;
+    margin-bottom: 0.2em;
+  }
+
+  header h2 {
+    font-weight: 400;
+    font-size: 0.65em;
+  }
+
+  header nav {
+    flex-grow: 1;
+  }
+
+  header nav div {
+  }
+
+  header nav div {
+    height: 6em;
+    width: 6em;
+  }
+
+  header a {
+    font-size: 1em;
+  }
+
+  section {
+    margin-bottom: 1em;
+  }
+
+  section.full-panel {
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 1.5em;
+    height: 100%;
+  }
+
+  .br {
+    display: none;
+  }
+
+  .dot {
+    display: inline-block;
+  }
+
+  section {
+    margin-bottom: 1.5em;
+  }
+
+  section:last-child {
+    margin-bottom: 0em;
+  }
+  
+  div.panels-divisor {
+    display: none;
+  }
+
+  section#right-panel {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+  }
+
+  h4 {
+    font-size: 1em;
+    margin-bottom: 0.4em;
+  }
+
+  h4 a {
+    font-weight: 500;
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+
+  h5 {
+    font-size: 0.9em;
+    line-height: 1.6em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin-bottom: 0.8em;
+  }
+
+  section p:last-child {
+    margin-bottom: 1em;
+  }
+
+  a {
+    font-size: 1em;
+    line-height: 1.3em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }
+
+  .footer h5 {
+    font-size: 0.75em;
+  }
+  
+}
+
+@media (max-width: 500px) {
+
+  main {
+    padding: 0.5em;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  header {
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+    justify-content: space-between;
+  }
+
+  header img {
+    width: 4em;
+  }
+
+  header h1 {
+    font-size: 1.75em;
+  }
+
+  header h2 {
+    font-weight: 400;
+    font-size: 0.6em;
+  }
+
+  header nav {
+    flex-grow: 0;
+  }
+
+  header nav div {
+    flex-grow: 0;
+  }
+
+  header nav div {
+    height: 4em;
+    width: 4em;
+  }
+
+  header a {
+    font-size: 0.5em;
+  }
+
+  section {
+    margin-bottom: 0.5em;
+  }
+
+  section.full-panel {
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.5em;
+    height: 100%;
+  }
+
+  .br {
+    display: none;
+  }
+
+  .dot {
+    display: inline-block;
+  }
+
+  section {
+    margin-bottom: 1em;
+  }
+
+  section:last-child {
+    margin-bottom: 0.5em;
+  }
+  
+
+  div.panels-divisor {
+    display: none;
+  }
+
+  section#right-panel {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+  }
+
+  h4 {
+    font-size: 0.7em;
+  }
+
+  h4 a {
+    font-weight: 500;
+    font-size: 1em;
+    margin-bottom: 0.2em;
+  }
+
+  h5 {
+    font-size: 0.7em;
+    line-height: 1.6em;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 0.7em;
+    line-height: 1.4em;
+    margin-bottom: 0.5em;
+  }
+
+  section p:last-child {
+    margin-bottom: 1em;
+  }
+
+  a {
+    font-size: 0.7em;
+    line-height: 1em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }
+
+  .footer h5 {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 360px) {
+  main {
+    padding: 0.5em;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  header {
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+    justify-content: space-between;
+  }
+
+  header img {
+    width: 4em;
+  }
+
+  header h1 {
+    font-size: 1.75em;
+  }
+
+  header h2 {
+    font-weight: 400;
+    font-size: 0.6em;
+  }
+
+  header nav {
+    flex-grow: 0;
+  }
+
+  header nav div {
+    flex-grow: 0;
+  }
+
+  header nav div {
+    height: 4em;
+    width: 4em;
+  }
+
+  header a {
+    font-size: 0.5em;
+  }
+
+  section {
+    margin-bottom: 0.5em;
+  }
+
+  section.full-panel {
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0.5em;
+    height: 100%;
+  }
+
+  .br {
+    display: none;
+  }
+
+  .dot {
+    display: inline-block;
+  }
+
+  section {
+    margin-bottom: 1em;
+  }
+
+  section:last-child {
+    margin-bottom: 0.5em;
+  }
+  
+
+  div.panels-divisor {
+    display: none;
+  }
+
+  section#right-panel {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+  }
+
+  h4 {
+    font-size: 0.7em;
+  }
+
+  h4 a {
+    font-weight: 500;
+    font-size: 1em;
+    margin-bottom: 0.2em;
+  }
+
+  h5 {
+    font-size: 0.7em;
+    line-height: 1.6em;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 0.7em;
+    line-height: 1.4em;
+    margin-bottom: 0.5em;
+  }
+
+  section p:last-child {
+    margin-bottom: 1em;
+  }
+
+  a {
+    font-size: 0.7em;
+    line-height: 1em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }
+
+  .footer h5 {
+    font-size: 0.75em;
+  }
 }

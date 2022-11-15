@@ -16,7 +16,6 @@ window.onscroll = () => {
     document.querySelector('.nav-links').style.display = 'none';
     document.querySelector('.hamburger-menu-open').style.color = '#f5f3f4';
   }
-  
 };
 
 const hamburgIconSwap = () => {

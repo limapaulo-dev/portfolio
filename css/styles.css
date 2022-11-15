@@ -539,7 +539,7 @@ footer a:active {
 
 /* Animation, Transition and other effects */
 
-/*  responsive formatting  */
+/*  responsive layout  */
 @media (max-width: 1300px) {
   section:not(#header) {
     padding: 5em 5em 5em 5em;
