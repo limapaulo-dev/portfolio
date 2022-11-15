@@ -270,8 +270,6 @@ nav div > * {
 nav div a:nth-child(5) {
   color: #f72585;
   transition: 0.5s ease;
-  padding: 0.4em;
-  border-radius: 10px;
 }
 
 nav div a:nth-child(5):hover,

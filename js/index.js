@@ -10,9 +10,9 @@ function elementInView(element) {
 }
 
 window.onscroll = () => {
-  let bodyWidht = document.querySelector('body').clientWidth;
+  let bodyWidth = document.querySelector('body').clientWidth;
 
-  if (bodyWidht <= 500) {
+  if (bodyWidth <= 485) {
     document.querySelector('.nav-links').style.display = 'none';
     document.querySelector('.hamburger-menu-open').style.color = '#f5f3f4';
   }
