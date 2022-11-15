@@ -181,6 +181,42 @@ header h2 {
   margin-bottom: 0;
 }
 
+header nav {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: 1s ease;
+}
+
+header nav div {
+  height: 8em;
+  width: 8em;
+  border: 3px #2d3133 dotted;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+}
+
+header nav div:hover,
+header nav div:active {
+  border: 3px #f5f3f4 dotted;;
+}
+
+header a {
+  color: #2d3133;
+  font-size: 1em;
+  transition: 1s ease;
+}
+
+header nav a:hover,
+header nav a:active {
+  color: #f5f3f4;
+}
+
 section.full-panel {
   display: flex;
   flex-direction: row;
@@ -302,11 +338,41 @@ a:last-child {
   margin-bottom: 0;
 }
 
-footer h5 {
+.footer {
+  display: flex;
+  flex-direction: column;
   color: #acacac;
-  text-align: right;
-
   height: 100%;
+  align-content: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  margin-bottom: 0.5em;
+  margin-right: 0;
+}
+
+.footer svg {
+  margin-right: 0.3em;
+  width: 1em;
+}
+
+.footer h5 {
+  font-size: 0.75em;
+  font-style: italic;
+
+  text-align: right;
+  margin-bottom: 0;
+  line-height: 0;
+}
+.footer span {
+  font-size: 2em;
+  margin-bottom: 0;
+  line-height: 0;
 }
 
 @media print {
@@ -317,4 +383,9 @@ footer h5 {
     margin: 0;
     display: block;
   }
+
+  header nav {
+    display: none;
+  }
+
 }
