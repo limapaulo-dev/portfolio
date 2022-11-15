@@ -142,8 +142,8 @@ main {
   padding: 1.5em;
   width: 825px;
   max-width: 825px;
-  height: 1175px;
-  max-height: 1175px;
+  height: auto;
+  max-height: autox;
 }
 
 header {
@@ -385,10 +385,17 @@ a:last-child {
   header nav {
     display: none;
   }
+  div.panels-divisor {
+    width: 0.3em;
+    height: 87vh;
+  }
 }
 
 /*  responsive layout  */
 @media (max-width: 1300px) {
+  .dot {
+    display: none;
+  }
 }
 
 @media (max-width: 1025px) {
@@ -398,131 +405,12 @@ a:last-child {
 }
 
 @media (max-width: 768px) {
-  main {
-    padding: 1.5em;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    max-height: 100%;
-  }
-
-  header {
-    gap: 1.5em;
-    margin-bottom: 1.5em;
-  }
-
-  header img {
-    width: 6em;
-  }
-
-  header h1 {
-    font-size: 1.9em;
-    margin-bottom: 0.2em;
-  }
-
-  header h2 {
-    font-weight: 400;
-    font-size: 0.65em;
-  }
-
-  header nav {
-    flex-grow: 1;
-  }
-
-  header nav div {
-  }
-
-  header nav div {
-    height: 6em;
-    width: 6em;
-  }
-
-  header a {
-    font-size: 1em;
-  }
-
-  section {
-    margin-bottom: 1em;
-  }
-
-  section.full-panel {
-    flex-direction: column;
-    gap: 1.5em;
-    padding: 1.5em;
-    height: 100%;
-  }
-
-  .br {
-    display: none;
-  }
-
   .dot {
-    display: inline-block;
-  }
-
-  section {
-    margin-bottom: 1.5em;
-  }
-
-  section:last-child {
-    margin-bottom: 0em;
-  }
-  
-  div.panels-divisor {
     display: none;
   }
-
-  section#right-panel {
-    width: 100%;
-  }
-
-  h2 {
-    font-size: 1.2em;
-    margin-bottom: 0.7em;
-  }
-
-  h4 {
-    font-size: 1em;
-    margin-bottom: 0.4em;
-  }
-
-  h4 a {
-    font-weight: 500;
-    font-size: 1em;
-    margin-bottom: 1em;
-  }
-
-  h5 {
-    font-size: 0.9em;
-    line-height: 1.6em;
-    font-weight: 400;
-    margin-bottom: 0.5em;
-  }
-
-  p {
-    font-size: 0.9em;
-    line-height: 1.4em;
-    margin-bottom: 0.8em;
-  }
-
-  section p:last-child {
-    margin-bottom: 1em;
-  }
-
-  a {
-    font-size: 1em;
-    line-height: 1.3em;
-    font-weight: 400;
-    margin-bottom: 0.5em;
-  }
-
-  .footer h5 {
-    font-size: 0.75em;
-  }
-  
 }
 
-@media (max-width: 500px) {
+@media (max-width: 570px) {
 
   main {
     padding: 0.5em;
