@@ -369,27 +369,7 @@ a:last-child {
   line-height: 0;
 }
 
-@media print {
-  body {
-    width: 8.25in;
-    height: 11.75in;
-    padding: 0;
-    margin: 0;
-    display: block;
-  }
 
-  header {
-    margin-left: 1.5em;
-  }
-
-  header nav {
-    display: none;
-  }
-  div.panels-divisor {
-    width: 0.3em;
-    height: 87vh;
-  }
-}
 
 /*  responsive layout  */
 @media (max-width: 1300px) {
@@ -658,5 +638,27 @@ a:last-child {
 
   .footer h5 {
     font-size: 0.75em;
+  }
+}
+
+@media print {
+  body {
+    width: 8.25in;
+    height: 11.75in;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+
+  header {
+    margin-left: 1.5em;
+  }
+
+  header nav {
+    display: none;
+  }
+  div.panels-divisor {
+    width: 0.3em;
+    height: 87vh;
   }
 }
