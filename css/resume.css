@@ -203,7 +203,7 @@ header nav div {
 
 header nav div:hover,
 header nav div:active {
-  border: 3px #f5f3f4 dotted;;
+  border: 1px #f5f3f4 dotted;
 }
 
 header a {
