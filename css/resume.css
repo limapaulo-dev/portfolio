@@ -186,7 +186,7 @@ header nav {
 header nav div {
   height: 8em;
   width: 8em;
-  border: 3px #2d3133 dotted;
+  border: 3px #494949 dotted;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -201,7 +201,7 @@ header nav div:active {
 }
 
 header a {
-  color: #2d3133;
+  color: #494949;
   font-size: 1em;
   transition: 1s ease;
 }
