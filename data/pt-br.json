@@ -1,0 +1,44 @@
+﻿{
+    "index": [
+        {
+            "section": "Andorra",
+            "h1": "AD",
+            "h2": "+376",
+            "p": "https://flagicons.lipis.dev/flags/4x3/ad.svg"
+        },
+        {
+            "section": "Andorra",
+            "h1": "AD",
+            "h2": "+376",
+            "p": "https://flagicons.lipis.dev/flags/4x3/ad.svg"
+        }
+    ],
+    "whatsappdirect": [
+        {
+            "section": "Andorra",
+            "h1": "AD",
+            "h2": "+376",
+            "p": "https://flagicons.lipis.dev/flags/4x3/ad.svg"
+        },
+        {
+            "section": "Andorra",
+            "h1": "AD",
+            "h2": "+376",
+            "p": "https://flagicons.lipis.dev/flags/4x3/ad.svg"
+        }
+    ],
+    "resume": [
+        {
+            "section": "nav",
+            "a.return": "voltar",
+            "a.download": "download",
+            "a.print": "imprimir"
+        },
+        {
+            "section": "summary",
+            "h2": "AD",
+            "h2": "+376",
+            "p": "https://flagicons.lipis.dev/flags/4x3/ad.svg"
+        }
+    ]
+}
