@@ -1,11 +1,9 @@
-Hi! I´m Paulo Lima,
+Hi! I´m Paulo Lima,<br>
 a Front-End web developer!
 
-This repo is the shelter of all my portifolio projects.
+This repo is the shelter of all my portifolio projects. <br>
+I'm passionate about user experience and design.
 
-I'm passionate with user experience and interface,
-or as the cool kids call it UX/UI.
-
-Let´s create awesome designs!
-contact@limapaulo.com
+Let´s create awesome designs!<br>
+contact@limapaulo.com<br>
 github.com/limapaulo-dev
