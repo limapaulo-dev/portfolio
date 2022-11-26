@@ -9,17 +9,18 @@ function elementInView(element) {
   return isVisible;
 }
 
-window.onscroll = () => {
-  let bodyWidth = document.querySelector('body').clientWidth;
+// window.onscroll = () => {
+//   let bodyWidth = document.querySelector('body').clientWidth;
 
-  if (bodyWidth <= 485) {
-    document.querySelector('.nav-links').style.display = 'none';
-    document.querySelector('.hamburger-menu-open').style.color = '#f5f3f4';
-  }
-};
+//   if (bodyWidth <= 485) {
+//     document.querySelector('.nav-links').style.display = 'none';
+//     document.querySelector('.hamburger-menu-open').style.color = '#f5f3f4';
+//   }
+// };
 
 const hamburgIconSwap = () => {
   const navLinksDisplay = document.querySelector('.nav-links').style.display;
+  
   if (navLinksDisplay === '' || navLinksDisplay === 'none') {
     document.querySelector('.nav-links').style.display = 'flex';
     document.querySelector('.hamburger-menu-open').style.color = '#f5f3f4';
