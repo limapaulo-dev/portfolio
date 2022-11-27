@@ -329,45 +329,8 @@ section#about {
   overflow: hidden;
 }
 
-.syntax-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  top: 170px;
-  position: relative;
-  text-align: center;
-  font-weight: 800;
-  font-size: 1em;
-}
-
-.syntax-info a{
-  margin-left: 1em;
-  padding: 0.2em;
-  display: inline-block;
-  text-decoration: none;
-  
-  font-weight: 400;
-  color: #00adff;
-  border-radius: 5px;
-  transition: 1s ease;
-}
-
-.syntax-info a span{
-  font-family: 'Merriweather', serif;
-  border: #00adff solid 2px;
-  border-radius: 100%;
-  padding: 0 6px;
-}
-
-.syntax-info a:hover{
-  background-color: #161a1d;
-  transform: scale(1.05);
-}
-
 .skills-galaxy {
-  position: relative;
-  box-sizing: border-box;
+  height: 100%;
 }
 
 .sun {
@@ -377,105 +340,15 @@ section#about {
   min-width: 1em;
   border-radius: 100%;
   overflow: hidden;
-  position: absolute;
+
+  position: relative;
   top: 48%;
   left: 48%;
 
-  box-shadow: 0px 0px 5px #131416, 0 0 5px #00adff, 0 0 5px #131416;
+  background-color: #00adff;
+
   animation: sun-glowing 4s linear infinite;
   transition: transform 1s;
-}
-
-.sun-moving {
-  width: 0.2em;
-  min-width: 0.2em;
-  height: 0.2em;
-  min-width: 0.2em;
-  background-color: #131416;
-  border-radius: 100%;
-  position: absolute;
-  top: 2px;
-  animation: sun-moving 5s linear infinite;
-  transition: transform 1s;
-}
-
-.orbit {
-  border: 4px #f72585 dotted;
-  border-radius: 100%;
-  width: 15em;
-  min-width: 15em;
-  height: 15em;
-  top: -100px;
-  left: 20%;
-  position: absolute;
-  z-index: 1;
-
-  /* transform: rotateX(80deg) scaleX(300%) scaleY(300%); */
-  /* animation: orbit-rotation 2s infinite linear; */
-
-  animation: orbit-moving 20s linear infinite;
-}
-
-.fake-orbit {
-  border-radius: 100%;
-  width: 40em;
-  min-width: 40em;
-  height: 3em;
-  top: 44%;
-  left: -30%;
-  position: absolute;
-  /* 
-  transform: rotateX(80deg) scaleX(300%) scaleY(300%); */
-  /* animation: orbit-rotation 2s infinite linear; */
-}
-
-.fake-orbit .syntax-background {
-  background-color: #00adff;
-  border-radius: 10px;
-  width: 3em;
-  min-width: 3em;
-  height: 3em;
-  position: absolute;
-  z-index: 2;
-
-  animation: syntax-moving 15s infinite linear;
-  transition: 2s linear;
-}
-
-.fake-orbit p {
-  display: none;
-  font-size: 0.8em;
-  font-weight: 800;
-  margin-top: 0.1em;
-}
-
-.syntax-background:hover {
-  cursor: pointer;
-}
-
-.syntax-background:hover > .syntax p {
-  display: inline-block;
-}
-
-.fake-orbit .syntax-background:nth-of-type(2) {
-  animation-delay: 1s;
-}
-
-.fake-orbit .syntax-background:nth-of-type(3) {
-  animation-delay: 2s;
-}
-
-.fake-orbit .syntax-background:nth-of-type(4) {
-  animation-delay: 3s;
-}
-
-.fake-orbit .syntax {
-  width: 2em;
-  min-width: 2em;
-  height: 2em;
-  position: relative;
-  top: 8%;
-  left: 16%;
 }
 
 @keyframes sun-glowing {
@@ -488,6 +361,19 @@ section#about {
   }
 }
 
+.sun-fake-moving {
+  width: 0.2em;
+  min-width: 0.2em;
+  height: 0.2em;
+  min-width: 0.2em;
+  background-color: #18719b;
+  border-radius: 100%;
+  position: absolute;
+  top: 5px;
+  animation: sun-moving 5s linear infinite;
+  transition: transform 1s;
+}
+
 @keyframes sun-moving {
   0% {
     transform: translateX(600%);
@@ -497,47 +383,21 @@ section#about {
   }
 }
 
-@keyframes syntax-moving {
-  0% {
-    transform: translateX(1250%) translateY(100%) scale(0.5);
-  }
-  12.5% {
-    transform: translateX(937.5%) translateY(150%) scale(0.75);
-  }
-  25% {
-    transform: translateX(625%) translateY(200%) scale(1);
-  }
-  37.5% {
-    transform: translateX(312.5%) translateY(150%) scale(0.75);
-  }
-  50% {
-    transform: translateX(0%) translateY(100%) scale(0.5);
-  }
-  51% {
-    transform: translateX(0%) translateY(-140%) scale(0.5);
-  }
-  60% {
-    z-index: 0;
-  }
-  62.5% {
-    transform: translateX(312.5%) translateY(-180%) scale(0.4);
-    z-index: 0;
-  }
-  75% {
-    transform: translateX(625%) translateY(-205%) scale(0.2);
-    z-index: 0;
-  }
-  87.5% {
-    transform: translateX(937.5%) translateY(-180%) scale(0.4);
-    z-index: 0;
-  }
-  100% {
-    transform: translateX(1250%) translateY(-120%) scale(0.5);
-    z-index: 0;
-  }
+.orbit {
+  border: 4px #f72585 dotted;
+  border-radius: 100%;
+  width: 15em;
+  min-width: 15em;
+  height: 15em;
+
+  position: relative;
+  top: 13%;
+  left: 20%;
+
+  animation: orbit-movement 40s linear infinite;
 }
 
-@keyframes orbit-moving {
+@keyframes orbit-movement {
   0% {
     transform: rotateX(60deg) scaleX(250%) scaleY(150%) rotate(0deg);
   }
@@ -545,8 +405,88 @@ section#about {
     transform: rotateX(58deg) scaleX(250%) scaleY(150%) rotate(180deg);
   }
   100% {
-    transform: rotateX(60deg) scaleX(250%) scaleY(150%) rotate(359deg);
+    transform: rotateX(60deg) scaleX(250%) scaleY(150%) rotate(360deg);
   }
+}
+
+.syntax-background {
+  background-color: #00adff;
+  border-radius: 10px;
+  width: 3em;
+  min-width: 3em;
+  height: 3em;
+  text-align: center;
+  animation: syntax-orbit 40s linear infinite;
+  position: relative;
+}
+
+.syntax img {
+  margin: 0.1em 0.4em;
+}
+.syntax p {
+  font-size: 0.8em;
+  font-weight: 800;
+  margin: 0;
+}
+
+@keyframes syntax-orbit {
+  0% {
+    transform: rotate(0deg) rotateY(180deg) scaleX(0.2) scaleY(0.5) translateY(0);
+  }
+  25% {
+    transform: rotate(-90deg) rotateY(180deg) scaleX(0.2) scaleY(0.5) translateY(0);
+  }
+  50% {
+    transform: rotate(-180deg) rotateY(0deg) scaleX(0.4) scaleY(1) translateY(-15px);
+  }
+  75% {
+    transform: rotate(-270deg) rotateY(0deg) scaleX(0.4) scaleY(1) translateY(-15px);
+  }
+  100% {
+    transform: rotate(-360deg) rotateY(0deg) scaleX(0.2) scaleY(0.5) translateY(-15px);
+  }
+}
+
+.syntax-background:hover {
+  cursor: pointer;
+}
+
+.syntax-background:hover > .syntax p {
+  display: inline-block;
+}
+
+.syntax-info {
+  margin: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+.syntax-info a {
+  margin-left: 1em;
+  padding: 0.2em;
+  display: inline-block;
+  text-decoration: none;
+
+  font-weight: 400;
+  color: #00adff;
+  border-radius: 5px;
+  transition: 1s ease;
+}
+
+.syntax-info a span {
+  font-family: 'Merriweather', serif;
+  border: #00adff solid 2px;
+  border-radius: 100%;
+  padding: 0 6px;
+}
+
+.syntax-info a:hover {
+  background-color: #161a1d;
+  transform: scale(1.05);
 }
 
 .skills-range {
@@ -847,36 +787,48 @@ footer a:active {
     height: 20em;
   }
 
+  .sun {
+    position: relative;
+    top: 44%;
+    left: 48%;
+  }
+
+  .orbit {
+    border: 2px #f72585 dotted;
+    width: 12em;
+    min-width: 12em;
+    height: 12em;
+    top: 8%;
+    left: 20%;
+  }
+
+  @keyframes syntax-orbit {
+    0% {
+      transform: rotate(0deg) rotateY(180deg) scaleX(0.18) scaleY(0.45) translateY(-25px);
+    }
+    25% {
+      transform: rotate(-90deg) rotateY(180deg) scaleX(0.18) scaleY(0.45) translateY(-25px);
+    }
+    50% {
+      transform: rotate(-180deg) rotateY(0deg) scaleX(0.36) scaleY(0.9) translateY(-5px);
+    }
+    75% {
+      transform: rotate(-270deg) rotateY(0deg) scaleX(0.36) scaleY(0.9) translateY(-5px);
+    }
+    100% {
+      transform: rotate(-360deg) rotateY(0deg) scaleX(0.18) scaleY(0.45) translateY(-5px);
+    }
+  }
+
   .syntax-info {
-    top: 140px;
     font-weight: 600;
     font-size: 0.8em;
   }
 
-  .syntax-info a span{
+  .syntax-info a span {
+    font-size: 0.7em;
     border: #00adff solid 1.5px;
-    padding: 0 5px;
-  }
-
-  .sun { 
-    top: -20px;
-  }
-
-  .orbit {
-    width: 10em;
-    min-width: 10em;
-    height: 10em;
-    top: -95px;
-    left: 25%;
-  }
-
-  .fake-orbit {
-    border-radius: 100%;
-    width: 10em;
-    min-width: 10em;
-    height: 3em;
-    top: -75px;
-    left: -45%;
+    padding: 0 3px;
   }
 
   .skills-range {
@@ -979,14 +931,65 @@ footer a:active {
   .portfolio-projects p {
     font-size: 1em;
   }
-
-  .pic-summary img {
-    width: 15em;
-  }
 }
 
 @media (max-width: 360px) {
   h1 {
     font-size: 1.5em;
+  }
+  .pic-summary img {
+    width: 15em;
+  }
+
+  .skills-panel {
+    width: 15em;
+    min-width: 15em;
+    height: 15em;
+  }
+
+  .sun {
+    width: 0.8em;
+    min-width: 0.8em;
+    height: 0.8em;
+    min-width: 0.8em;
+    top: 42%;
+    left: 48%;
+  }
+
+  .orbit {
+    width: 10em;
+    min-width: 10em;
+    height: 10em;
+    top: 2%;
+    left: 18%;
+  }
+
+  @keyframes syntax-orbit {
+    0% {
+      transform: rotate(0deg) rotateY(180deg) scaleX(0.15) scaleY(0.375) translateY(-35px);
+    }
+    25% {
+      transform: rotate(-90deg) rotateY(180deg) scaleX(0.15) scaleY(0.375) translateY(-35px);
+    }
+    50% {
+      transform: rotate(-180deg) rotateY(0deg) scaleX(0.3) scaleY(0.75) translateY(0px);
+    }
+    75% {
+      transform: rotate(-270deg) rotateY(0deg) scaleX(0.3) scaleY(0.75) translateY(0px);
+    }
+    100% {
+      transform: rotate(-360deg) rotateY(0deg) scaleX(0.15) scaleY(0.375) translateY(0px);
+    }
+  }
+
+  .syntax-info {
+    font-weight: 600;
+    font-size: 0.6em;
+  }
+
+  .syntax-info a span {
+    font-size: 0.7em;
+    border: #00adff solid 1.5px;
+    padding: 0 2px;
   }
 }
