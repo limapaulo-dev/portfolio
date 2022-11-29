@@ -315,11 +315,53 @@
     top: 8%;
     left: 20%;
   }
-
-  .syntax-cosmos {
-    left: 160px;
-    top: 160px;
+  .syntax-block img {
+    height: 2em;
+    width: 2em;
   }
+  
+  .syntax-block p {
+     min-width: 3.5em;
+  
+    line-height: 0.8em;
+    font-size: 0.6em;
+    font-weight: 600;
+  
+    bottom: -105%;
+  }
+  
+  @keyframes cosmos-fake-orbit {
+    0%,
+    100% {
+      transform: translate(0px, 5px) scale(0.7) rotateY(-45deg) rotateX(15deg) rotateZ(-15deg);
+    }
+    12.5% {
+      transform: translate(-235px, 20px) scale(0.8) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+    }
+    25% {
+      transform: translate(-470px, -5px) scale(0.7) rotateY(45deg) rotateX(15deg) rotateZ(15deg);
+    }
+    27.5% {
+      transform: translate(-550px, -100px) scale(0.5) rotateY(90deg) rotateX(0deg) rotateZ(0deg);
+    }
+    50% {
+      transform: translate(-470px, -125px) scale(0.5) rotateY(135deg) rotateX(-15deg) rotateZ(15deg);
+      z-index: 1;
+    }
+    62.5% {
+      transform: translate(-235px, -145px) scale(0.35) rotateY(180deg) rotateX(0deg) rotateZ(0deg);
+      z-index: 1;
+    }
+    75% {
+      transform: translate(0px, -128px) scale(0.5) rotateY(135deg) rotateX(015deg) rotateZ(-15deg);
+      z-index: 1;
+    }
+    87.5% {
+      transform: translate(200px, -85px) scale(0.6) rotateY(225deg) rotateX(15deg) rotateZ(-15deg);
+      z-index: 1;
+    }
+  }
+  
 
   @keyframes cosmos-orbit {
     0% {
@@ -379,9 +421,51 @@
     left: 18%;
   }
 
-  .syntax-cosmos {
-    left: 130px;
-    top: 130px;
+  .syntax-block img {
+    height: 2em;
+    width: 2em;
+  }
+  
+  .syntax-block p {
+     min-width: 3.5em;
+  
+    line-height: 0.8em;
+    font-size: 0.6em;
+    font-weight: 600;
+  
+    bottom: -105%;
+  }
+  
+  @keyframes cosmos-fake-orbit {
+    0%,
+    100% {
+      transform: translate(0px, 5px) scale(0.7) rotateY(-45deg) rotateX(15deg) rotateZ(-15deg);
+    }
+    12.5% {
+      transform: translate(-235px, 20px) scale(0.8) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+    }
+    25% {
+      transform: translate(-470px, -5px) scale(0.7) rotateY(45deg) rotateX(15deg) rotateZ(15deg);
+    }
+    27.5% {
+      transform: translate(-550px, -100px) scale(0.5) rotateY(90deg) rotateX(0deg) rotateZ(0deg);
+    }
+    50% {
+      transform: translate(-470px, -125px) scale(0.5) rotateY(135deg) rotateX(-15deg) rotateZ(15deg);
+      z-index: 1;
+    }
+    62.5% {
+      transform: translate(-235px, -145px) scale(0.35) rotateY(180deg) rotateX(0deg) rotateZ(0deg);
+      z-index: 1;
+    }
+    75% {
+      transform: translate(0px, -128px) scale(0.5) rotateY(135deg) rotateX(015deg) rotateZ(-15deg);
+      z-index: 1;
+    }
+    87.5% {
+      transform: translate(200px, -85px) scale(0.6) rotateY(225deg) rotateX(15deg) rotateZ(-15deg);
+      z-index: 1;
+    }
   }
 
   @keyframes cosmos-orbit {
