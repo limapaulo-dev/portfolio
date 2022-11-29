@@ -1,0 +1,415 @@
+.skills-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 25em;
+  min-width: 25em;
+  height: 25em;
+  border: 3px #f72585 solid;
+  background-color: #f72585;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.syntax-galaxy {
+  height: 100%;
+  position: relative;
+  background-color: #131416;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.sun {
+  width: 1em;
+  min-width: 1em;
+  height: 1em;
+  min-width: 1em;
+  border-radius: 100%;
+  overflow: hidden;
+
+  position: relative;
+  top: 46%;
+  left: 48%;
+
+  background-color: #00adff;
+
+  animation: sun-glowing 4s linear infinite;
+  transition: transform 1s;
+}
+
+@keyframes sun-glowing {
+  0%,
+  100% {
+    box-shadow: 0px 0px 5px #131416, 0 0 5px #00adff, 0 0 5px #131416;
+  }
+  50% {
+    box-shadow: 0px 0px 5px #131416, 0 0 50px #00adff, 0 0 5px #131416;
+  }
+}
+
+.sun-fake-moving {
+  width: 0.2em;
+  min-width: 0.2em;
+  height: 0.2em;
+  min-width: 0.2em;
+  background-color: #18719b;
+  border-radius: 100%;
+  position: absolute;
+  top: 5px;
+  animation: sun-moving 5s linear infinite;
+  transition: transform 1s;
+}
+
+@keyframes sun-moving {
+  0% {
+    transform: translateX(600%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.syntax-orbit {
+  box-sizing: border-box;
+  border: 3.3px #f72585 dotted;
+  border-radius: 100%;
+  width: 15em;
+  min-width: 15em;
+  height: 15em;
+  margin: 0;
+
+  position: relative;
+  top: 13%;
+  left: 20%;
+  /* animation: orbit-movement 40s linear infinite; */
+  z-index: 2;
+
+  animation-name: orbit-movement; 
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+@keyframes orbit-movement {
+  0% {
+    transform: rotateX(60deg) scaleX(250%) scaleY(150%) rotate(0deg);
+  }
+  50% {
+    transform: rotateX(58deg) scaleX(250%) scaleY(150%) rotate(180deg);
+  }
+  100% {
+    transform: rotateX(60deg) scaleX(250%) scaleY(150%) rotate(360deg);
+  }
+}
+
+.syntax-cosmos {
+
+  position: absolute;
+
+  top: 60%;
+  left: 100%;
+  z-index: 3;
+  /* transform: rotateY(0) rotateX(0) scaleX(0) scaleY(0); */
+  transition: 1s ease;
+  animation: cosmos-fake-orbit 40s linear infinite;
+}
+
+@keyframes cosmos-fake-orbit {
+  0%,
+  100% {
+    transform: translate(0px, 5px) scale(0.9) rotateY(-45deg) rotateX(15deg) rotateZ(-15deg);
+  }
+  12.5% {
+    transform: translate(-235px, 20px) scale(1) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  25% {
+    transform: translate(-470px, -5px) scale(0.9) rotateY(45deg) rotateX(15deg) rotateZ(15deg);
+  }
+  27.5% {
+    transform: translate(-550px, -100px) scale(0.6) rotateY(90deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    transform: translate(-470px, -125px) scale(0.6) rotateY(135deg) rotateX(-15deg) rotateZ(15deg);
+    z-index: 1;
+  }
+  62.5% {
+    transform: translate(-235px, -145px) scale(0.45) rotateY(180deg) rotateX(0deg) rotateZ(0deg);
+    z-index: 1;
+  }
+  75% {
+    transform: translate(0px, -128px) scale(0.6) rotateY(135deg) rotateX(015deg) rotateZ(-15deg);
+    z-index: 1;
+  }
+  87.5% {
+    transform: translate(200px, -85px) scale(0.7) rotateY(225deg) rotateX(15deg) rotateZ(-15deg);
+    z-index: 1;
+  }
+}
+
+.syntax-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: auto;
+  min-width: 3.5em;
+  height: auto;
+  min-height: 3.5em; */
+  position: absolute;
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+
+.syntax-block img {
+  position: relative;
+  padding: 0.5em;
+  background-color: #00adff;
+  border-radius: 10px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #131416;
+}
+
+.syntax-block p {
+  display: none;
+  color: #131416;
+  position: absolute;
+
+  background-color: #00adff;
+  border-radius: 10px;
+
+  padding: 0.5em 0.7em;
+  min-width: 3em;
+
+  line-height: 1em;
+  font-size: 0.8em;
+  font-weight: 800;
+
+  bottom: -125%;
+}
+
+.syntax-cosmos:hover > {
+  cursor: pointer;
+}
+
+.syntax-cosmos:hover > .syntax-block img {
+  opacity: 0.7;
+  box-shadow: 0 0 10px #00adff;
+}
+
+.syntax-cosmos:hover > .syntax-block p {
+  display: block;
+  opacity: 0.7;
+  box-shadow: 0 0 10px #00adff;
+}
+
+
+@keyframes cosmos-orbit {
+  0% {
+    transform: rotate(0deg) rotateY(-45deg) scaleX(0.4) scaleY(1) translateY(-10px) translateZ(15px);
+  }
+  25% {
+    transform: rotate(-90deg) rotateY(45deg) scaleX(0.4) scaleY(1) translateY(-10px) translateZ(15px);
+  }
+  50% {
+    transform: rotate(-180deg) rotateY(135deg) scaleX(0.2) scaleY(0.5) translateY(15px) translateZ(15px);
+  }
+  75% {
+    transform: rotate(-270deg) rotateY(225deg) scaleX(0.2) scaleY(0.5) translateY(15px) translateZ(15px);
+  }
+  100% {
+    transform: rotate(-360deg) rotateY(315deg) scaleX(0.4) scaleY(1) translateY(-10px) translateZ(15px);
+  }
+}
+
+.syntax-info {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 1em;
+  background-color: #f72585;
+  overflow: hidden;
+  padding: 0.2em;
+  gap: 5px;
+  line-height: 0.8em;
+  height: 1em;
+}
+
+.syntax-info a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #131416;
+  transition: transform 2s ease;
+  animation: info-pulse 4s ease-in infinite;
+}
+
+.syntax-info a.info{
+  font-family: 'Merriweather', serif;
+  border: 2px solid #131416;
+  border-radius: 100%;
+  padding: 0 3.5px;
+  font-size: 0.6em;
+}
+
+@keyframes info-pulse {
+  0%,
+  100% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes info-up {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  51% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  52% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.syntax-info a span.arrow {
+  display: inline-block;
+  transition: transform 2s ease;
+}
+
+/*  responsive layout  */
+
+@media (max-width: 1025px) {
+  .skills-panel {
+    width: 20em;
+    min-width: 20em;
+    height: 20em;
+  }
+
+  .sun {
+    position: relative;
+    top: 44%;
+    left: 48%;
+  }
+
+  .syntax-orbit {
+    border: 3.2px #f72585 dotted;
+    width: 12em;
+    min-width: 12em;
+    height: 12em;
+    top: 8%;
+    left: 20%;
+  }
+
+  .syntax-cosmos {
+    left: 160px;
+    top: 160px;
+  }
+
+  @keyframes cosmos-orbit {
+    0% {
+      transform: rotate(0deg) rotateY(-45deg) scaleX(0.32) scaleY(0.8) translateY(-12px) translateZ(15px);
+    }
+    25% {
+      transform: rotate(-90deg) rotateY(45deg) scaleX(0.32) scaleY(0.8) translateY(-12px) translateZ(15px);
+    }
+    50% {
+      transform: rotate(-180deg) rotateY(135deg) scaleX(0.16) scaleY(0.4) translateY(25px) translateZ(15px);
+    }
+    75% {
+      transform: rotate(-270deg) rotateY(225deg) scaleX(0.16) scaleY(0.4) translateY(25px) translateZ(15px);
+    }
+    100% {
+      transform: rotate(-360deg) rotateY(315deg) scaleX(0.32) scaleY(0.8) translateY(-12px) translateZ(15px);
+    }
+  }
+
+  .syntax-info {
+    font-weight: 600;
+    font-size: 0.9em;
+  }
+
+  .syntax-info a span.info {
+    font-size: 0.7em;
+    border: #00adff solid 1.5px;
+    padding: 0 3px;
+  }
+
+  .skills-range {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .skills-panel {
+    width: 15em;
+    min-width: 15em;
+    height: 15em;
+  }
+
+  .sun {
+    width: 0.8em;
+    min-width: 0.8em;
+    height: 0.8em;
+    min-width: 0.8em;
+    top: 42%;
+    left: 48%;
+  }
+
+  .syntax-orbit {
+    width: 10em;
+    min-width: 10em;
+    height: 10em;
+    top: 2%;
+    left: 18%;
+  }
+
+  .syntax-cosmos {
+    left: 130px;
+    top: 130px;
+  }
+
+  @keyframes cosmos-orbit {
+    0% {
+      transform: rotate(0deg) rotateY(-45deg) scaleX(0.28) scaleY(0.7) translateY(-12px) translateZ(15px);
+    }
+    25% {
+      transform: rotate(-90deg) rotateY(45deg) scaleX(0.28) scaleY(0.7) translateY(-12px) translateZ(15px);
+    }
+    50% {
+      transform: rotate(-180deg) rotateY(135deg) scaleX(0.14) scaleY(0.35) translateY(25px) translateZ(15px);
+    }
+    75% {
+      transform: rotate(-270deg) rotateY(225deg) scaleX(0.14) scaleY(0.35) translateY(25px) translateZ(15px);
+    }
+    100% {
+      transform: rotate(-360deg) rotateY(315deg) scaleX(0.28) scaleY(0.7) translateY(-12px) translateZ(15px);
+    }
+  }
+
+  .syntax-info {
+    font-weight: 600;
+    font-size: 0.7em;
+  }
+
+  .syntax-info a span.info {
+    font-size: 0.7em;
+    border: #00adff solid 1.5px;
+    padding: 0 2px;
+  }
+}

@@ -6,7 +6,7 @@
    fill="none"
    version="1.1"
    id="svg53"
-   sodipodi:docname="qmlpluginIcon.svg"
+   sodipodi:docname="QML.svg"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -22,18 +22,19 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="16.1"
-     inkscape:cx="5.2173913"
+     inkscape:cx="-1.4906832"
      inkscape:cy="17.639752"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g31" />
+     inkscape:current-layer="svg53" />
   <g
      clip-path="url(#clip0)"
-     id="g31"
-     transform="translate(-8.0745344,-2.3788819)">
+     id="svgIcon"
+     transform="translate(-8.0745344,-2.3788819)"
+     style="fill:currentColor">
     <mask
        id="mask0"
        mask-type="alpha"
@@ -57,7 +58,7 @@
        width="26"
        height="13"
        rx="5"
-       id="svgIcon"
+       id="path856"
        clip-path="url(#clipPath1469)"
        inkscape:path-effect="#path-effect1473"
        d="m 13.074534,2.3788819 h 16 c 2.77,0 5,2.23 5,5 v 3.0000001 c 0,2.77 -2.23,5 -5,5 h -16 c -2.77,0 -4.9999996,-2.23 -4.9999996,-5 V 7.3788819 c 0,-2.77 2.2299996,-5 4.9999996,-5 z"

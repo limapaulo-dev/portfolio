@@ -20,7 +20,7 @@ function elementInView(element) {
 
 const hamburgIconSwap = () => {
   const navLinksDisplay = document.querySelector('.nav-links').style.display;
-  
+
   if (navLinksDisplay === '' || navLinksDisplay === 'none') {
     document.querySelector('.nav-links').style.display = 'flex';
     document.querySelector('.hamburger-menu-open').style.color = '#f5f3f4';
@@ -38,6 +38,91 @@ window.onresize = () => {
   } else {
     document.querySelector('.nav-links').style.display = 'none';
   }
+};
+
+const sortStrArr = (a, b) => {
+  const nameA = a.name.toUpperCase();
+  const nameB = b.name.toUpperCase();
+
+  if (nameA < nameB) {
+    return -1;
+  } else if (nameA > nameB) {
+    return 1;
+  } else {
+    return 0;
+  }
+};
+
+const syntaxOrbit = document.querySelector('.syntax-orbit');
+const syntaxOrbitStyles = window.getComputedStyle(syntaxOrbit);
+const animlength = parseInt(syntaxOrbitStyles.getPropertyValue('animation-duration'));
+
+const createSyntaxCosmos = (syntax, index, array) => {
+  const arraylength = array.length;
+
+  const cosmosDiv = document.createElement('Div');
+  cosmosDiv.classList.add('syntax-cosmos');
+  cosmosDiv.setAttribute('value', syntax.name);
+  cosmosDiv.setAttribute('onclick', `showSyntaxInfo("${syntax.name}")`);
+  cosmosDiv.style.animationDelay = `${index * (animlength / arraylength)}s`;
+
+  const syntaxDiv = document.createElement('Div');
+  syntaxDiv.classList.add('syntax-block');
+
+  const newImg = document.createElement('img');
+  newImg.setAttribute('src', syntax.iconSrc);
+  newImg.setAttribute('alt', syntax.name);
+
+  const newP = document.createElement('p');
+  newP.classList.add('primary');
+  newP.innerHTML = syntax.name;
+
+  syntaxDiv.appendChild(newImg);
+  syntaxDiv.appendChild(newP);
+  cosmosDiv.appendChild(syntaxDiv);
+
+  document.querySelector('.fake-orbit').appendChild(cosmosDiv);
+};
+
+const syntaxDataFetch = async () => {
+  const syntaxDataRaw = await fetch('/data/syntaxData.json');
+  const syntaxDataObj = await syntaxDataRaw.json();
+  const syntaxData = syntaxDataObj['syntaxData'];
+  syntaxData.map(createSyntaxCosmos);
+};
+
+window.onload = syntaxDataFetch;
+
+const syntaxFilter = (obj, syntax) => {
+  obj.name == syntax;
+};
+
+const clearInfo = () => {
+  document.querySelector('.syntax-info').innerHTML = '';
+  document.querySelector('.syntax-info').innerHTML = '<a><span class="arrow">&#9650;</span>Click the Syntax<span class="arrow">&#9650;</span></a>';
+};
+
+const showSyntaxInfo = async (syntaxName) => {
+  const syntaxDataRaw = await fetch('/data/syntaxData.json');
+  const syntaxDataObj = await syntaxDataRaw.json();
+  const syntaxData = syntaxDataObj['syntaxData'];
+  const filteredSyntaxArray = syntaxData.filter((syntaxObj) => syntaxObj.name === syntaxName);
+
+  document.querySelector('.syntax-info').innerHTML = '';
+
+  const newA = document.createElement('a');
+  newA.innerHTML = filteredSyntaxArray[0].name;
+  newA.setAttribute('href', filteredSyntaxArray[0].info);
+  newA.setAttribute('target', '_blank');
+
+  const newInfoA = document.createElement('a');
+  newInfoA.classList.add('info');
+  newInfoA.innerHTML = 'i';
+  newInfoA.setAttribute('href', filteredSyntaxArray[0].info);
+  newInfoA.setAttribute('target', '_blank');
+
+  document.querySelector('.syntax-info').appendChild(newA);
+  document.querySelector('.syntax-info').appendChild(newInfoA);
 };
 
 // const navIcons = [

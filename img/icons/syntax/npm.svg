@@ -21,7 +21,7 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="1.2578125"
-     inkscape:cx="201.93789"
+     inkscape:cx="116.07453"
      inkscape:cy="256"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
@@ -32,5 +32,6 @@
   <!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
   <path
      d="M288 288h-32v-64h32v64zm288-128v192H288v32H160v-32H0V160h576zm-416 32H32v128h64v-96h32v96h32V192zm160 0H192v160h64v-32h64V192zm224 0H352v128h64v-96h32v96h32v-96h32v96h32V192z"
-     id="svgIcon" />
+     id="svgIcon"
+     style="fill:currentColor" />
 </svg>

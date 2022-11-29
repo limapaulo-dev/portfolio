@@ -1,0 +1,64 @@
+﻿{
+  "syntaxData": [
+    {
+      "name": "HTML",
+      "iconSrc": "img/icons/syntax/HTML.svg",
+      "info": "https://en.wikipedia.org/wiki/HTML"
+    },
+    {
+      "name": "CSS",
+      "iconSrc": "img/icons/syntax/CSS.svg",
+      "info": "https://en.wikipedia.org/wiki/CSS"
+    },
+    {
+      "name": "Bootstrap",
+      "iconSrc": "img/icons/syntax/bootstrap.svg",
+      "info": "https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+    },
+    {
+      "name": "Python",
+      "iconSrc": "img/icons/syntax/Python.svg",
+      "info": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+    },
+    {
+      "name": "JavaScript",
+      "iconSrc": "img/icons/syntax/JavaScript.svg",
+      "info": "https://en.wikipedia.org/wiki/JavaScript"
+    },
+    {
+      "name": "JSON",
+      "iconSrc": "img/icons/syntax/JSON.svg",
+      "info": "https://en.wikipedia.org/wiki/JSON"
+    },
+    {
+      "name": "Node.js",
+      "iconSrc": "img/icons/syntax/Node.svg",
+      "info": "https://en.wikipedia.org/wiki/Node"
+    },
+    {
+      "name": "npm",
+      "iconSrc": "img/icons/syntax/npm.svg",
+      "info": "https://en.wikipedia.org/wiki/Npm_(software)"
+    },
+    {
+      "name": "Express",
+      "iconSrc": "img/icons/syntax/Express.svg",
+      "info": "https://en.wikipedia.org/wiki/Express.js"
+    },
+    {
+      "name": "Postman",
+      "iconSrc": "img/icons/syntax/Postman.svg",
+      "info": "https://en.wikipedia.org/wiki/Postman_(software)"
+    },
+    {
+      "name": "MongoDB",
+      "iconSrc": "img/icons/syntax/MongoDB.svg",
+      "info": "https://en.wikipedia.org/wiki/MongoDB"
+    },
+    {
+      "name": "Inkscape",
+      "iconSrc": "img/icons/syntax/Inkscape.svg",
+      "info": "https://en.wikipedia.org/wiki/Inkscape"
+    }
+  ]
+}

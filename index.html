@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/syntax-galaxy.css" />
   </head>
   <body>
     <section id="header">
@@ -102,22 +103,15 @@
       </div> -->
 
       <div class="skills-panel">
-        <div class="skills-galaxy">
-          <div class="sun">
+        <div class="syntax-galaxy" onclick="clearInfo()">
+          <div class="sun" >
             <div class="sun-fake-moving"></div>
           </div>
-          <div class="orbit">
-            <div class="syntax-background">
-              <div class="syntax">
-                <img src="/img/icons/syntax/HTML.svg" alt="" />
-                <p class="primary">HTML</p>
-              </div>
-            </div>
-          </div>
-
+          <div class="syntax-orbit"></div>
+          <div class="fake-orbit"></div>
         </div>
-        <div class="syntax-info primary">
-          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML HyperText Markup Language <span>i</span></a>
+        <div class="syntax-info" onclick="clearInfo()">
+          <a><span class="arrow">&#9650;</span> Click the Syntax<span class="arrow">&#9650;</span></a>
         </div>
       </div>
     </section>
@@ -135,14 +129,14 @@
           ><img src="/img/whatsappdirect/landscape-small.png" alt="" />
           <div>
             <h5>WhatsAppDirect</h5>
-            <p class="syntax">html css js bootstrap</p>
+            <p class="project-syntax">html css js bootstrap</p>
           </div>
         </a>
         <a href="https://github.com/limapaulo-dev/qml-pricing#readme" target="_blank">
           <img src="/img/vendas/landscape-small.png" alt="" />
           <div>
             <h5>QML Pricing</h5>
-            <p>qml phyton js</p>
+            <p class="project-syntax">qml phyton js</p>
           </div>
         </a>
       </div>
