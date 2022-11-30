@@ -327,15 +327,8 @@ section#about {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  background-image: url(/img/me.png);
-  background-size: cover;
   transition: 1s ease;
 }
-
-.pic-summary:hover .img-container{
-  background-image: url(/img/me-style.png);
-}
-
 
 .about-padding {
   padding: 0 3em 0 3em;
@@ -546,94 +539,7 @@ section#portfolio {
   margin: 0;
 }
 
-.project-modal {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 6;
-}
 
-.modal-bg {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0);
-  opacity: 0.6;
-  z-index: 7;
-}
-
-.modal-container {
-  box-sizing: border-box;
-  width: 50%;
-  height: 80%;
-  display: inline-block;
-  position: fixed;
-  z-index: 8;
-  left: 25%;
-  top: 10%;
-  background-color: #131416;
-  border-radius: 10px;
-  padding: 1em;
-}
-
-.modal-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.modal-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5em;
-  padding: 1em;
-  background-color: #101113;
-  border-bottom: #00adff solid 3px;
-}
-
-.modal-header img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
-
-.modal-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.modal-body p {
-  margin: 0;
-}
-
-.modal-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* The Close Button */
-.modal-close {
-  color: #aaa;
-  font-weight: bold;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 section#contact {
   flex-direction: column;

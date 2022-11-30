@@ -159,6 +159,7 @@
   position: absolute;
   transition: 0.5s ease;
   text-align: center;
+  cursor: pointer;
 }
 
 
@@ -190,7 +191,7 @@
 }
 
 .syntax-cosmos:hover > {
-  cursor: pointer;
+  
 }
 
 .syntax-cosmos:hover > .syntax-block img {

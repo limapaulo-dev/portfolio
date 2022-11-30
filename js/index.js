@@ -99,7 +99,7 @@ const syntaxFilter = (obj, syntax) => {
 
 const clearInfo = () => {
   document.querySelector('.syntax-info').innerHTML = '';
-  document.querySelector('.syntax-info').innerHTML = '<a><span class="arrow">&#9650;</span>Click the Syntax<span class="arrow">&#9650;</span></a>';
+  document.querySelector('.syntax-info').innerHTML = '<a><span class="arrow">&#9650;</span>Click the Cosmos<span class="arrow">&#9650;</span></a>';
 };
 
 const showSyntaxInfo = async (syntaxName) => {
