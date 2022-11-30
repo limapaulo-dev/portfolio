@@ -287,6 +287,7 @@ nav div a:active {
 
 section#about {
   flex-direction: row;
+  gap: 3em;
 }
 
 .about-text-pic {
@@ -302,14 +303,39 @@ section#about {
   width: 100%;
 }
 
-.pic-summary img {
+.pic-summary {
+  display: flex;
+  justify-content: center;
   border: 3px #00adff solid;
   border-radius: 10px;
   background-color: #00adff;
-  margin-top: 0.5em;
   width: 20em;
-  transition: 0.5s ease;
+  height: 20em;
+  transition: 1s ease;
+  box-sizing: border-box;
 }
+
+.pic-summary img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  transition: 1s ease;
+}
+
+.img-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-image: url(/img/me.png);
+  background-size: cover;
+  transition: 1s ease;
+}
+
+.pic-summary:hover .img-container{
+  background-image: url(/img/me-style.png);
+}
+
 
 .about-padding {
   padding: 0 3em 0 3em;
@@ -422,13 +448,10 @@ section#portfolio {
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  gap: 2.5em;
 }
 
-.portfolio-projects .modal {
-  display: none;
-}
-
-.portfolio-projects a {
+.portfolio-projects .project-thumbnail {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -443,6 +466,10 @@ section#portfolio {
   color: #f5f3f4;
   margin: 0;
   padding: 0;
+  cursor: pointer;
+  transition: 1s ease;
+  overflow: hidden;
+  position: relative;
 }
 
 .portfolio-projects p {
@@ -452,23 +479,160 @@ section#portfolio {
   color: #f72585;
   margin: 0;
   margin-bottom: 1em;
+  transition: 1s ease;
 }
 
-.portfolio-projects a:hover,
-.portfolio-projects a:active {
+.portfolio-projects .project-thumbnail:hover,
+.portfolio-projects .project-thumbnail:active {
   border: 3px #f72585 solid;
-  transition: 1s ease;
 }
 
-.portfolio-projects a:hover p,
-.portfolio-projects a:active p {
+.portfolio-projects .project-thumbnail:hover p,
+.portfolio-projects .project-thumbnail:active p {
   color: #00adff;
-  transition: 1s ease;
+}
+
+.portfolio-projects .img-border {
+  max-width: 15em;
+  height: 15em;
+  max-height: 15em;
+  /* display: flex;
+  justify-content: center; */
+  box-sizing: border-box;
+  border: #161a1d solid 0.7em;
+  overflow: hidden;
+  width: 100%;
+}
+
+.portfolio-projects .border-light {
+  background-color: #f5f3f4;
+  height: 20em;
+  width: 15em;
+  position: absolute;
+  opacity: 0.1;
+  top: -72.5%;
+  left: -30%;
+  transform: rotate(45deg);
+  z-index: 1;
 }
 
 .portfolio-projects img {
+  object-fit: cover;
   width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.portfolio-projects .qml img {
+  filter: contrast(120%);
+}
+
+.portfolio-projects .thumbnail-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.5em;
+  padding: 0.7em;
+  background-color: #131416;
+  z-index: 2;
+}
+
+.portfolio-projects .thumbnail-body h5 {
+  margin: 0;
+}
+
+.portfolio-projects .thumbnail-body p {
+  margin: 0;
+}
+
+.project-modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+}
+
+.modal-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.6;
+  z-index: 7;
+}
+
+.modal-container {
+  box-sizing: border-box;
+  width: 50%;
+  height: 80%;
+  display: inline-block;
+  position: fixed;
+  z-index: 8;
+  left: 25%;
+  top: 10%;
+  background-color: #131416;
   border-radius: 10px;
+  padding: 1em;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1em;
+  background-color: #101113;
+  border-bottom: #00adff solid 3px;
+}
+
+.modal-header img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-body p {
+  margin: 0;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* The Close Button */
+.modal-close {
+  color: #aaa;
+  font-weight: bold;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 section#contact {
@@ -494,28 +658,77 @@ section#contact {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  gap: 1em;
+}
+
+.contact-icons > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  padding: 1em;
+  background-color: #f72585;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  overflow: hidden;
 }
 
 .contact-icons > a > div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #f72585;
-  margin-top: 0.5em;
-  margin-right: 1em;
-  border-radius: 10px;
-  transition: 0.5s ease;
 }
 
-.contact-icons > a > div:active,
-.contact-icons > a > div:hover {
+.contact-icons > a:active,
+.contact-icons > a:hover {
   background-color: #00adff;
 }
 
 .contact-icons svg {
   width: 2em;
   height: 2em;
-  padding: 1em;
+  transition: 0.5s ease;
+}
+
+.contact-icons a:active svg,
+.contact-icons a:hover svg {
+  animation: icons-turn 1s ease-in-out;
+}
+
+@keyframes icons-turn {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+  30% {
+    opacity: 0;
+    transform: translateX(200%);
+    filter: blur(0.5px);
+  }
+  31% {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  32% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(60%) rotate(15deg);
+    filter: blur(0.5px);
+  }
+  75% {
+    opacity: 1;
+    transform: translateX(60%) rotate(6deg);
+    filter: blur(0.5px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
 }
 
 .contact-icons label {
@@ -526,9 +739,9 @@ section#contact {
   transition: 0.5s ease;
 }
 
-.contact-icons > a > div:hover svg ~ label {
+/* .contact-icons > a > div:hover svg ~ label {
   display: inline-block;
-}
+} */
 
 footer {
   display: flex;

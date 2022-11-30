@@ -45,9 +45,11 @@
           <p>I'm <span class="primary">passionate</span> about <span class="primary">creative</span> things, especially those related to <span class="primary">communication</span>, <span class="primary">user experience</span>, and <span class="primary">technology</span>. I have a degree in Business, and have recently earned another one in Internet Systems. I reside in Brazil, and have previously lived in the US. I'm always trying to innovate, find new ways to improve customer satisfaction, learn new technologies, and create awesome, responsive designs.</p>
           <p>I mainly work with <span class="secondary">HTML</span>, <span class="secondary">CSS</span> and <span class="secondary">JavaScript</span>, and have experience with <span class="secondary">Python</span> and <span class="secondary">QML</span>.</p>
         </div>
-        <div class="pic-summary"><img src="img/me.png" alt="" /></div>
+        <div class="pic-summary">
+          <!-- <img src="img/me.png" alt="" /> -->
+          <div class="img-container"></div>
+        </div>
       </div>
-      <div class="about-padding"></div>
 
       <!-- <div class="skills-range">
         <div class="HTML">
@@ -104,7 +106,7 @@
 
       <div class="skills-panel">
         <div class="syntax-galaxy" onclick="clearInfo()">
-          <div class="sun" >
+          <div class="sun">
             <div class="sun-fake-moving"></div>
           </div>
           <div class="syntax-orbit"></div>
@@ -122,23 +124,52 @@
         <p>On each one you will find the same building blocks: <span class="secondary">dynamic</span>, <span class="secondary">responsive</span>, <span class="secondary">intuitive</span> and <span class="secondary">pleasing</span> designs. All written with clean code, fast performance and modern syntax.</p>
       </div>
       <div class="portfolio-projects">
-        <div class="modal">
-          <div class="modal-content"></div>
-        </div>
-        <a href="/whatsappdirect.html" target="_blank"
-          ><img src="/img/whatsappdirect/landscape-small.png" alt="" />
-          <div>
+        <div class="project-thumbnail" onclick="showModal()">
+          <div class="img-border">
+            <div class="border-light"></div>
+            <img src="/img/whatsappdirect/landscape.png" alt="" />
+          </div>
+          <div class="thumbnail-body">
             <h5>WhatsAppDirect</h5>
             <p class="project-syntax">html css js bootstrap</p>
           </div>
-        </a>
-        <a href="https://github.com/limapaulo-dev/qml-pricing#readme" target="_blank">
-          <img src="/img/vendas/landscape-small.png" alt="" />
-          <div>
+        </div>
+        <div class="project-thumbnail qml" onclick="showModal()">
+          <div class="img-border">
+            <div class="border-light"></div>
+            <img src="/img/qml-pricing/landscape.jpg" alt="" />
+          </div>
+          <div class="thumbnail-body">
             <h5>QML Pricing</h5>
             <p class="project-syntax">qml phyton js</p>
           </div>
-        </a>
+        </div>
+      </div>
+      <!-- Trigger/Open The Modal -->
+      <!-- The Modal -->
+      <div class="project-modal">
+        <div class="modal-bg" onclick="closeModal()"></div>
+        <div class="modal-container">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="img/whatsappdirect/responsive-devices.png" alt="" />
+            </div>
+            <div class="modal-body">
+              <div class="modal-text">
+                <div class="modal-title">
+                  <h3>WhatsAppDirect</h3>
+                  <h4>HTML CSS JavaScript Bootstrap JSON</h4>
+                </div>
+                <div class="line"></div>
+                <p>WhatsAppDirect is a web application that deploys WhatsApp messages to phone number that are even outside the sender contacts list. Or it can also generate 'Click to Chat' sharable links.</p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a class="project-page" href="" target="_blank">@</a>
+              <span class="modal-close" onclick="closeModal()">&times;</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="contact">

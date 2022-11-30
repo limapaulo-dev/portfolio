@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   viewBox="0 0 576 512"
+   viewBox="0 0 562 447.89999"
    version="1.1"
    id="icon"
    sodipodi:docname="Bootstrap.svg"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   width="562"
+   height="447.89999"
+   fill="currentColor"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -21,17 +24,17 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="1.2578125"
-     inkscape:cx="30.21118"
-     inkscape:cy="256"
-     inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     inkscape:window-x="-9"
+     inkscape:cx="23.055901"
+     inkscape:cy="224.19876"
+     inkscape:window-width="2400"
+     inkscape:window-height="1271"
+     inkscape:window-x="2391"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="icon" />
   <!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
   <path
-     d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z"
+     d="m 326.5,169.4 c 0,-22.1 -15.6,-34.3 -43,-34.3 h -50.4 v 71.2 h 42.5 c 32.8,-0.1 50.9,-13.3 50.9,-36.9 z M 510,156.6 C 500.5,125.7 499.1,87.8 500.2,58.5 501.3,28 477.5,0 445.5,0 H 116.7 C 84.6,0 60.9,28.1 62,58.5 c 1,29.3 -0.3,67.2 -9.8,98.1 -9.6,31 -25.7,50.6 -52.2,53.1 v 28.5 c 26.4,2.5 42.6,22.1 52.2,53.1 9.5,30.9 10.9,68.8 9.8,98.1 -1.1,30.5 22.7,58.5 54.7,58.5 h 328.7 c 32.1,0 55.8,-28.1 54.7,-58.5 -1,-29.3 0.3,-67.2 9.8,-98.1 9.6,-31 25.7,-50.6 52.1,-53.1 v -28.5 c -26.3,-2.5 -42.5,-22.1 -52,-53.1 z M 293.2,343.1 H 195.3 V 104.8 h 97.4 c 43.3,0 71.7,23.4 71.7,59.4 0,25.3 -19.1,47.9 -43.5,51.8 v 1.3 c 33.2,3.6 55.5,26.6 55.5,58.3 0,42.1 -31.3,67.5 -83.2,67.5 z m -10,-108.7 h -50.1 v 78.4 h 52.3 c 34.2,0 52.3,-13.7 52.3,-39.5 0,-25.7 -18.6,-38.9 -54.5,-38.9 z"
      id="svgIcon"
      style="fill:currentColor" />
 </svg>

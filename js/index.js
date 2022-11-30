@@ -125,6 +125,29 @@ const showSyntaxInfo = async (syntaxName) => {
   document.querySelector('.syntax-info').appendChild(newInfoA);
 };
 
+// Get the modal
+const modal = document.querySelector('.project-modal');
+
+// Get the <span> element that closes the modal
+const modalCloseBtn = document.getElementsByClassName('.modal-close');
+
+// When the user clicks on the button, open the modal
+
+const showModal = () => {
+  modal.style.display = 'block';
+};
+
+const closeModal = () => {
+  modal.style.display = 'none';
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = (event) => {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};
+
 // const navIcons = [
 //   {
 //     iconName: 'contemplative',

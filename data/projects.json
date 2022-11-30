@@ -1,8 +1,9 @@
 ﻿{
     "projects": [
         {
-            "name": "Bootstrap",
-            "code": "img/icons/bootstrap.svg",
+            "name": "WhatsAppDirect",
+            "code": "img/whatsappdirect/landscape-small.png",
+            "syntaxes": "html css js bootstrap",
             "abstract" : "https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
         },
         {
