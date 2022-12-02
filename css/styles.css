@@ -218,6 +218,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 5;
+  overflow: hidden;
 }
 
 nav div {
@@ -254,11 +255,53 @@ nav div {
   cursor: pointer;
 }
 
-.hamburger-menu-open:hover,
-.hamburger-menu-close:hover,
-.hamburger-menu-open:active,
-.hamburger-menu-close:active {
-  color: #f72585;
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  transition: 0.5s ease;
+  margin: 0;
+  margin-right: 1em;
+  cursor: pointer;
+  position: relative;
+}
+
+.hamburger-icon {
+  position: absolute;
+  margin: 0;
+  width: 60%;
+  border-radius: 10px;
+  height: 2px;
+  min-height: 2px;
+  background-color: #f5f3f4;
+  animation: fade-in 1s ease-in-out;
+  transition: 0.5s ease;
+}
+
+.hamburger-menu:hover .hamburger-icon,
+.hamburger-menu:active .hamburger-icon {
+  background-color: #f72585;
+}
+
+.line-1 {
+  transform: translateY(-10px);
+}
+.line-3 {
+  transform: translateY(10px);
+}
+
+.close-line-1 {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.close-line-2 {
+  opacity: 0;
+}
+
+.close-line-3 {
+  transform: translateY(0) rotate(45deg);
 }
 
 nav div > * {
@@ -283,6 +326,28 @@ nav div a:nth-child(5):active {
 nav div a:hover,
 nav div a:active {
   color: #f72585;
+}
+
+@keyframes nav-links-move {
+  0% {
+    bottom: 200%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.nav-links{
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 section#about {
@@ -499,14 +564,39 @@ section#portfolio {
 
 .portfolio-projects .border-light {
   background-color: #f5f3f4;
-  height: 20em;
+  height: 30em;
   width: 15em;
   position: absolute;
   opacity: 0.1;
-  top: -72.5%;
-  left: -30%;
+  top: -65%;
+  left: -81%;
   transform: rotate(45deg);
   z-index: 1;
+  transition: 1s linear;
+}
+
+.portfolio-projects .project-thumbnail:hover .border-light {
+  animation: light-turn 2s ease-in-out;
+}
+
+@keyframes light-turn {
+  0%,
+  100% {
+    opacity: 0.1;
+    transform: translateX(0) rotate(45deg);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-200%) rotate(45deg);
+  }
+  51% {
+    opacity: 0;
+    transform: translateX(200%) rotate(45deg);
+  }
+  52% {
+    opacity: 0.1;
+    transform: translateX(200%) rotate(45deg);
+  }
 }
 
 .portfolio-projects img {
@@ -538,8 +628,6 @@ section#portfolio {
 .portfolio-projects .thumbnail-body p {
   margin: 0;
 }
-
-
 
 section#contact {
   flex-direction: column;
@@ -645,16 +733,12 @@ section#contact {
   transition: 0.5s ease;
 }
 
-/* .contact-icons > a > div:hover svg ~ label {
-  display: inline-block;
-} */
-
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #131416;
-  height: 3em;
+  height: 2.5em;
 }
 
 footer a {
@@ -667,34 +751,6 @@ footer a {
 footer a:hover,
 footer a:active {
   color: #f72585;
-}
-
-/* Animation, Transition and other effects */
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes slide-down {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(100%);
-  }
 }
 
 /*  responsive layout  */

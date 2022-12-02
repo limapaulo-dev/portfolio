@@ -25,10 +25,15 @@
       <div class="nav-icon" onclick="navIconSwap()">
         <img src="img/warhol-vector.svg" alt="paulo lima" />
       </div>
-      <div class="hamburger-menu" onclick="hamburgIconSwap()">
+      <!-- <div class="hamburger-menu" onclick="hamburgIconSwap()">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="hamburger-menu-open" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
         </svg>
+      </div> -->
+      <div class="hamburger-menu" onclick="hamburgIconSwap()">
+        <div class="hamburger-icon line-1"></div>
+        <div class="hamburger-icon line-2"></div>
+        <div class="hamburger-icon line-3"></div>
       </div>
       <div class="nav-links">
         <a href="#header">home</a>
@@ -105,14 +110,14 @@
       </div> -->
 
       <div class="skills-panel">
-        <div class="syntax-galaxy" onclick="clearInfo()">
+        <div class="syntax-galaxy">
           <div class="sun">
             <div class="sun-fake-moving"></div>
           </div>
           <div class="syntax-orbit"></div>
           <div class="fake-orbit"></div>
         </div>
-        <div class="syntax-info" onclick="clearInfo()">
+        <div class="syntax-info">
           <a><span class="arrow">&#9650;</span> Click the Cosmos<span class="arrow">&#9650;</span></a>
         </div>
       </div>
@@ -145,28 +150,32 @@
           </div>
         </div>
       </div>
-      <!-- Trigger/Open The Modal -->
-      <!-- The Modal -->
       <div class="project-modal">
         <div class="modal-bg" onclick="closeModal()"></div>
         <div class="modal-container">
           <div class="modal-content">
             <div class="modal-header">
-              <img src="img/whatsappdirect/responsive-devices.png" alt="" />
+              <img class="modal-img" src="img/whatsappdirect/responsive-devices.png" alt="" />
             </div>
+            <div class="break-line"></div>
             <div class="modal-body">
-              <div class="modal-text">
-                <div class="modal-title">
-                  <h3>WhatsAppDirect</h3>
-                  <h4>HTML CSS JavaScript Bootstrap JSON</h4>
-                </div>
-                <div class="line"></div>
-                <p>WhatsAppDirect is a web application that deploys WhatsApp messages to phone number that are even outside the sender contacts list. Or it can also generate 'Click to Chat' sharable links.</p>
+              <div class="modal-title">
+                <h3>WhatsAppDirect</h3>
+                <h4 class="secondary">HTML CSS JavaScript Bootstrap JSON</h4>
               </div>
+              <p>WhatsAppDirect is a responsive web application. It's purpose is to deploys WhatsApp messages to phone number, even those outside the sender contacts list. Also, it can generate 'Click to Chat' sharable links. This project was created using <a href="https://faq.whatsapp.com/5913398998672934" target="_blank">WhatsApp Api</a>.</p>
             </div>
             <div class="modal-footer">
-              <a class="project-page" href="" target="_blank">@</a>
-              <span class="modal-close" onclick="closeModal()">&times;</span>
+              <a class="project-page" href="https://limapaulo.com/whatsappdirect" target="_blank"
+                ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" /></svg
+                >Visit Project</a
+              >
+              <div class="modal-close" onclick="closeModal()">
+                <div class="close-line"></div>
+                <div class="close-line"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -176,9 +185,9 @@
       <div class="contact-text-wall">
         <h2><span class="secondary sign">></span> contact</h2>
         <p>
-          This page was created with a lot of <span class="primary">care</span> and <span class="primary">love</span> for programing <span class="primary">front-end</span>. Hopefully you had a great experience navigation it. You can also check my <span class="secondary"><a class="resume-link" href="/resume.html" target="_blank">resume</a></span> if you haven't already, it was created with the same syntax of the entire page, that was all written in <span class="secondary">HTML</span>, <span class="secondary">CSS</span> and <span class="secondary">JavaScript</span>.
+          This page was created with a lot of <span class="primary">care</span> and <span class="primary">love</span> for <span class="primary">front-end</span>programing. Hopefully you had a great experience navigation it. You can also check my <span class="secondary"><a class="resume-link" href="/resume.html" target="_blank">resume</a></span> if you haven't already, it was created with the same syntax of the entire page, all of it written in <span class="secondary">HTML</span>, <span class="secondary">CSS</span> and <span class="secondary">JavaScript</span>.
         </p>
-        <p>Here is how to reach out to me, if you want to work together or just get in touch:</p>
+        <p>If you want to work together or just get in touch, here is how to reach out to me:</p>
         <div class="contact-form"></div>
         <div class="contact-icons">
           <a href="mailto:contact@limapaulo.com">
@@ -204,6 +213,7 @@
       <div><a href="http://limapaulo.com">limapaulo.com © 2022</a></div>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="js/functions.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

@@ -1,5 +1,3 @@
-const headerSection = document.getElementById('header');
-
 function elementInView(element) {
   var elementBounding = element.getBoundingClientRect();
   var elementTop = elementBounding.top;
@@ -9,65 +7,81 @@ function elementInView(element) {
   return isVisible;
 }
 
-// window.onscroll = () => {
-//   let bodyWidth = document.querySelector('body').clientWidth;
+const hamburgIconAnimate = (state) => {
+  const line1 = document.querySelector('.hamburger-icon.line-1');
+  const line2 = document.querySelector('.hamburger-icon.line-2');
+  const line3 = document.querySelector('.hamburger-icon.line-3');
 
-//   if (bodyWidth <= 485) {
-//     document.querySelector('.nav-links').style.display = 'none';
-//     document.querySelector('.hamburger-menu-open').style.color = '#f5f3f4';
-//   }
-// };
+  if (state === "none") {
+    line1.classList.add('close-line-1');
+    line2.classList.add('close-line-2');
+    line3.classList.add('close-line-3');
+  } else if (state === '' || state === "flex"){
+    line1.classList.remove('close-line-1');
+    line2.classList.remove('close-line-2');
+    line3.classList.remove('close-line-3');
+  }
+};
 
 const hamburgIconSwap = () => {
-  const navLinksDisplay = document.querySelector('.nav-links').style.display;
+
+  const navLinks = document.querySelector('.nav-links');
+  let navLinksDisplay = navLinks.style.display;
 
   if (navLinksDisplay === '' || navLinksDisplay === 'none') {
-    document.querySelector('.nav-links').style.display = 'flex';
-    document.querySelector('.hamburger-menu-open').style.color = '#f5f3f4';
+    hamburgIconAnimate(navLinksDisplay);
+    navLinks.style.display = 'flex';
   } else {
-    document.querySelector('.nav-links').style.display = 'none';
-    document.querySelector('.hamburger-menu-open').style.color = '#f5f3f4';
+    hamburgIconAnimate(navLinksDisplay);
+    navLinks.style.display = 'none';
   }
 };
 
-window.onresize = () => {
+const positionCosmos = (syntax, index, array) => {
+  const syntaxOrbit = document.querySelector('.syntax-orbit');
+  const syntaxOrbitStyles = window.getComputedStyle(syntaxOrbit);
+  let orbitRadius = parseInt(syntaxOrbitStyles.getPropertyValue('width'));
+
   const bodyWidht = document.querySelector('body').clientWidth;
+  const elementRadius = (360 / array.length) * index;
 
-  if (bodyWidht >= 485) {
-    document.querySelector('.nav-links').style.display = 'flex';
-  } else {
-    document.querySelector('.nav-links').style.display = 'none';
+  let cosmostWidthEm = 2.5;
+
+  if (bodyWidht <= 1025) {
+    cosmostWidthEm = 2;
+  } else if (bodyWidht <= 360) {
+    cosmostWidthEm = 1.5;
   }
+
+  const cosmostWidth = (orbitRadius * cosmostWidthEm) / 15;
+  const posY = (Math.sin(radians(elementRadius)) * orbitRadius) / 2 + (cosmostWidth * 3) / 4 + orbitRadius * 0.24;
+  const posX = (Math.cos(radians(elementRadius)) * orbitRadius) / 2 + (cosmostWidth * 3) / 4 + orbitRadius * 0.24;
+
+  syntax.style.left = `${posX}px`;
+  syntax.style.top = `${posY}px`;
 };
-
-const sortStrArr = (a, b) => {
-  const nameA = a.name.toUpperCase();
-  const nameB = b.name.toUpperCase();
-
-  if (nameA < nameB) {
-    return -1;
-  } else if (nameA > nameB) {
-    return 1;
-  } else {
-    return 0;
-  }
-};
-
-const syntaxOrbit = document.querySelector('.syntax-orbit');
-const syntaxOrbitStyles = window.getComputedStyle(syntaxOrbit);
-const animlength = parseInt(syntaxOrbitStyles.getPropertyValue('animation-duration'));
 
 const createSyntaxCosmos = (syntax, index, array) => {
-  const arraylength = array.length;
+  const syntaxOrbit = document.querySelector('.syntax-orbit');
+  const syntaxOrbitStyles = window.getComputedStyle(syntaxOrbit);
+  
+  let animlength = parseInt(syntaxOrbitStyles.getPropertyValue('animation-duration'));
+  const animDelay = index * (animlength / array.length);
 
   const cosmosDiv = document.createElement('Div');
+
   cosmosDiv.classList.add('syntax-cosmos');
   cosmosDiv.setAttribute('value', syntax.name);
   cosmosDiv.setAttribute('onclick', `showSyntaxInfo("${syntax.name}")`);
-  cosmosDiv.style.animationDelay = `${index * (animlength / arraylength)}s`;
 
-  const syntaxDiv = document.createElement('Div');
-  syntaxDiv.classList.add('syntax-block');
+  cosmosDiv.style.animation = `cosmos-orbit-Z 40s linear infinite ${-animDelay}s`;
+
+  const syntaxBlock = document.createElement('Div');
+  syntaxBlock.classList.add('syntax-block');
+
+  const syntaxContent = document.createElement('Div');
+  syntaxContent.classList.add('syntax-content');
+  syntaxContent.style.animation = `cosmos-orbit-around 40s linear infinite ${-animDelay}s`;
 
   const newImg = document.createElement('img');
   newImg.setAttribute('src', syntax.iconSrc);
@@ -77,11 +91,12 @@ const createSyntaxCosmos = (syntax, index, array) => {
   newP.classList.add('primary');
   newP.innerHTML = syntax.name;
 
-  syntaxDiv.appendChild(newImg);
-  syntaxDiv.appendChild(newP);
-  cosmosDiv.appendChild(syntaxDiv);
+  syntaxContent.appendChild(newImg);
+  syntaxContent.appendChild(newP);
+  syntaxBlock.appendChild(syntaxContent);
+  cosmosDiv.appendChild(syntaxBlock);
 
-  document.querySelector('.fake-orbit').appendChild(cosmosDiv);
+  document.querySelector('.syntax-orbit').appendChild(cosmosDiv);
 };
 
 const syntaxDataFetch = async () => {
@@ -89,12 +104,8 @@ const syntaxDataFetch = async () => {
   const syntaxDataObj = await syntaxDataRaw.json();
   const syntaxData = syntaxDataObj['syntaxData'];
   syntaxData.map(createSyntaxCosmos);
-};
-
-window.onload = syntaxDataFetch;
-
-const syntaxFilter = (obj, syntax) => {
-  obj.name == syntax;
+  const syntaxCosmos = Array.from(document.querySelectorAll('.syntax-cosmos'));
+  syntaxCosmos.map(positionCosmos);
 };
 
 const clearInfo = () => {
@@ -103,35 +114,42 @@ const clearInfo = () => {
 };
 
 const showSyntaxInfo = async (syntaxName) => {
+  document.querySelector('.syntax-info').classList.add('info-swap');
+
   const syntaxDataRaw = await fetch('/data/syntaxData.json');
   const syntaxDataObj = await syntaxDataRaw.json();
   const syntaxData = syntaxDataObj['syntaxData'];
   const filteredSyntaxArray = syntaxData.filter((syntaxObj) => syntaxObj.name === syntaxName);
 
-  document.querySelector('.syntax-info').innerHTML = '';
+  setTimeout(() => {
+    document.querySelector('.syntax-info').innerHTML = '';
 
-  const newA = document.createElement('a');
-  newA.innerHTML = filteredSyntaxArray[0].name;
-  newA.setAttribute('href', filteredSyntaxArray[0].info);
-  newA.setAttribute('target', '_blank');
+    const newA = document.createElement('a');
+    newA.innerHTML = filteredSyntaxArray[0].name;
+    newA.setAttribute('href', filteredSyntaxArray[0].info);
+    newA.setAttribute('target', '_blank');
 
-  const newInfoA = document.createElement('a');
-  newInfoA.classList.add('info');
-  newInfoA.innerHTML = 'i';
-  newInfoA.setAttribute('href', filteredSyntaxArray[0].info);
-  newInfoA.setAttribute('target', '_blank');
+    const newInfoA = document.createElement('a');
+    newInfoA.classList.add('info');
+    newInfoA.innerHTML = 'i';
+    newInfoA.setAttribute('href', filteredSyntaxArray[0].info);
+    newInfoA.setAttribute('target', '_blank');
 
-  document.querySelector('.syntax-info').appendChild(newA);
-  document.querySelector('.syntax-info').appendChild(newInfoA);
+    document.querySelector('.syntax-info').appendChild(newA);
+    document.querySelector('.syntax-info').appendChild(newInfoA);
+  }, '1000');
+
+  setTimeout(() => {
+    document.querySelector('.syntax-info').classList.remove('info-swap');
+  }, '2000');
 };
 
-// Get the modal
+const syntaxFilter = (obj, syntax) => {
+  obj.name == syntax;
+};
+
 const modal = document.querySelector('.project-modal');
-
-// Get the <span> element that closes the modal
 const modalCloseBtn = document.getElementsByClassName('.modal-close');
-
-// When the user clicks on the button, open the modal
 
 const showModal = () => {
   modal.style.display = 'block';
@@ -141,7 +159,23 @@ const closeModal = () => {
   modal.style.display = 'none';
 };
 
-// When the user clicks anywhere outside of the modal, close it
+window.onload = syntaxDataFetch;
+
+window.onresize = () => {
+  const bodyWidht = document.querySelector('body').clientWidth;
+
+  const syntaxCosmos = Array.from(document.querySelectorAll('.syntax-cosmos'));
+  syntaxCosmos.map(positionCosmos);
+
+  if (bodyWidht >= 485) {
+    document.querySelector('.nav-links').style.display = 'flex';
+    // hamburgIconAnimate('flex');
+  } else {
+    hamburgIconAnimate('flex');
+    document.querySelector('.nav-links').style.display = 'none';
+  }
+};
+
 window.onclick = (event) => {
   if (event.target == modal) {
     modal.style.display = 'none';
