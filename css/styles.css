@@ -240,6 +240,13 @@ nav div {
   border: 2px #00adff solid;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-right: 2em;
+}
+
 .hamburger-menu {
   display: none;
 }
@@ -305,7 +312,6 @@ nav div {
 }
 
 nav div > * {
-  margin-right: 1em;
   text-decoration: none;
   color: #f5f3f4;
   font-size: 1.5em;
@@ -337,7 +343,7 @@ nav div a:active {
   }
 }
 
-.nav-links{
+.nav-links {
   animation: fade-in 1s ease-in-out;
 }
 
@@ -371,28 +377,21 @@ section#about {
 .pic-summary {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   border: 3px #00adff solid;
   border-radius: 10px;
   background-color: #00adff;
   width: 20em;
   height: 20em;
   transition: 1s ease;
-  box-sizing: border-box;
 }
 
 .pic-summary img {
-  position: relative;
-  height: 100%;
-  width: 100%;
+  box-sizing: border-box;
+  object-fit: cover;
   border-radius: 10px;
   transition: 1s ease;
-}
-
-.img-container {
-  height: 100%;
   width: 100%;
-  border-radius: 10px;
-  transition: 1s ease;
 }
 
 .about-padding {
@@ -743,7 +742,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #f5f3f4;
+  color: #f5f3f434;
   font-weight: 300;
   transition: 0.5s ease;
 }
@@ -777,8 +776,7 @@ footer a:active {
     flex-direction: column;
   }
 
-  .pic-summary img {
-    margin-bottom: 3em;
+  .pic-summary {
     width: 20em;
   }
 }
@@ -786,6 +784,11 @@ footer a:active {
 @media (max-width: 768px) {
   .nav-icon img {
     width: 2em;
+    margin-left: 1.5em;
+  }
+
+  .nav-links {
+    margin-right: 1.5em;
   }
 
   nav a {
@@ -834,7 +837,10 @@ footer a:active {
     display: none;
     background-color: #101113;
     flex-direction: column;
+    align-items: flex-end;
     width: 100%;
+    margin-right: 0em;
+    gap: 0em;
   }
 
   .hamburger-menu {
@@ -884,7 +890,8 @@ footer a:active {
   h1 {
     font-size: 1.5em;
   }
-  .pic-summary img {
+  .pic-summary {
+    height: 15em;
     width: 15em;
   }
 }

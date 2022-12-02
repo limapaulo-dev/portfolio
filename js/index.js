@@ -12,11 +12,11 @@ const hamburgIconAnimate = (state) => {
   const line2 = document.querySelector('.hamburger-icon.line-2');
   const line3 = document.querySelector('.hamburger-icon.line-3');
 
-  if (state === "none") {
+  if (state === '' || state === 'none') {
     line1.classList.add('close-line-1');
     line2.classList.add('close-line-2');
     line3.classList.add('close-line-3');
-  } else if (state === '' || state === "flex"){
+  } else if (state === 'flex') {
     line1.classList.remove('close-line-1');
     line2.classList.remove('close-line-2');
     line3.classList.remove('close-line-3');
@@ -24,16 +24,14 @@ const hamburgIconAnimate = (state) => {
 };
 
 const hamburgIconSwap = () => {
-
-  const navLinks = document.querySelector('.nav-links');
-  let navLinksDisplay = navLinks.style.display;
+  const navLinksDisplay = document.querySelector('.nav-links').style.display;
 
   if (navLinksDisplay === '' || navLinksDisplay === 'none') {
     hamburgIconAnimate(navLinksDisplay);
-    navLinks.style.display = 'flex';
+    document.querySelector('.nav-links').style.display = 'flex';
   } else {
     hamburgIconAnimate(navLinksDisplay);
-    navLinks.style.display = 'none';
+    document.querySelector('.nav-links').style.display = 'none';
   }
 };
 
@@ -64,7 +62,7 @@ const positionCosmos = (syntax, index, array) => {
 const createSyntaxCosmos = (syntax, index, array) => {
   const syntaxOrbit = document.querySelector('.syntax-orbit');
   const syntaxOrbitStyles = window.getComputedStyle(syntaxOrbit);
-  
+
   let animlength = parseInt(syntaxOrbitStyles.getPropertyValue('animation-duration'));
   const animDelay = index * (animlength / array.length);
 
@@ -175,6 +173,16 @@ window.onresize = () => {
     document.querySelector('.nav-links').style.display = 'none';
   }
 };
+
+// window.onscroll = () => {
+
+//   const bodyWidht = document.querySelector('body').clientWidth;
+
+//   if (bodyWidht < 485 && document.querySelector('.nav-links').style.display == 'flex') {
+//     document.querySelector('.nav-links').style.display = 'none';
+//     hamburgIconAnimate('flex');
+//   }
+// };
 
 window.onclick = (event) => {
   if (event.target == modal) {
