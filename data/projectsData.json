@@ -1,0 +1,34 @@
+﻿{
+  "projects data": [
+    {
+      "name": "WhatsAppDirect",
+      "thumbnail": "img/whatsappdirect/landscape.png",
+      "thumbnailSyntaxes": "HTML CSS JS Bootstrap",
+      "syntaxes": "HTML CSS JavaScript JSON Bootstrap",
+      "abstract": "WhatsAppDirect is a web application created to speed up the process of sending WhatsApp messages to numbers outside the sender contacts list. It can also be used to generate 'Click to Chat' sharable links.",
+      "API": [
+        {
+          "name": "WhatsApp Click to Chat",
+          "src": "https://faq.whatsapp.com/5913398998672934"
+        }
+      ]
+    },
+    {
+      "name": "QML Pricing",
+      "thumbnail": "img/qml-pricing/landscape.png",
+      "thumbnailSyntaxes": "HTML CSS JS Bootstrap",
+      "syntaxes": "QML Phyton Javascript",
+      "abstract": "QML Pricing is a windows application with the objective to automate the calculation of health care insurances for B2B and B2C customers. It manage to deliver accurate prices for a vast options of products and customers profiles. Results can be easily send to custumers by Whatsapp or Email.",
+      "API": [
+        {
+          "name": "WhatsApp Click to Chat",
+          "src": "https://faq.whatsapp.com/5913398998672934"
+        },
+        {
+          "name": "FramelessHelper",
+          "src": "https://github.com/qtdevs/FramelessHelper"
+        }
+      ]
+    }
+  ]
+}

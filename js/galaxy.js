@@ -41,14 +41,14 @@ const positionSyntaxCosmos = (cosmos, index, array) => {
   const syntaxOrbitStyles = window.getComputedStyle(syntaxOrbit);
   let orbitRadius = parseInt(syntaxOrbitStyles.getPropertyValue('width'));
 
-  const bodyWidht = document.querySelector('body').clientWidth;
+  const bodyWidth = document.querySelector('body').clientWidth;
   const elementRadius = (360 / array.length) * index;
 
   let cosmostWidthEm = 2.5;
 
-  if (bodyWidht <= 1025) {
+  if (bodyWidth <= 1025) {
     cosmostWidthEm = 2;
-  } else if (bodyWidht <= 360) {
+  } else if (bodyWidth <= 360) {
     cosmostWidthEm = 1.5;
   }
 
@@ -79,12 +79,12 @@ const setGalaxy = () => {
     syntaxCosmos.map(animateSyntaxCosmos);
     animateOrbit();
   }, 500);
-}
+};
 
 const syntaxDataFetch = async () => {
   const syntaxDataRaw = await fetch('/data/syntaxData.json');
   const syntaxDataObj = await syntaxDataRaw.json();
-  const syntaxData = syntaxDataObj['syntaxData'];
+  const syntaxData = syntaxDataObj['syntax data'];
   syntaxData.map(createSyntaxCosmos);
   setGalaxy();
 };
@@ -99,7 +99,7 @@ const showSyntaxInfo = async (syntaxName) => {
 
   const syntaxDataRaw = await fetch('/data/syntaxData.json');
   const syntaxDataObj = await syntaxDataRaw.json();
-  const syntaxData = syntaxDataObj['syntaxData'];
+  const syntaxData = syntaxDataObj['syntax data'];
   const filteredSyntaxArray = syntaxData.filter((syntaxObj) => syntaxObj.name === syntaxName);
 
   setTimeout(() => {

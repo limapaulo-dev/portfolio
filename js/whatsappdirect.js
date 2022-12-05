@@ -42,7 +42,7 @@ const countriesDataFetch = () => {
   fetch('/data/countriesData.json')
     .then((res) => res.json())
     .then((data) => {
-      const countriesData = data['Countries Data'];
+      const countriesData = data['countries data'];
       countriesData.sort(sortStrArr);
       countriesData.map(createCountryLi);
     });
@@ -51,7 +51,7 @@ const countriesDataFetch = () => {
 const countriesDataFetchAsync = async () => {
   const countriesDataRaw = await fetch('/data/countriesData.json');
   const countriesDataObj = await countriesDataRaw.json();
-  countriesData = countriesDataObj['Countries Data'];
+  countriesData = countriesDataObj['countries data'];
   countriesData.sort(sortStrArr);
   countriesData.map(createCountryLi);
 };

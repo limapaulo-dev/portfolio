@@ -27,8 +27,8 @@
 .modal-container {
   box-sizing: border-box;
 
-  top: 8%;
-  left: 24%;
+  top: 6%;
+  left: 25%;
 
   max-width: 800px;
   position: fixed;
@@ -323,14 +323,14 @@
   }
   
   .modal-content h4 {
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 500;
   }
   
   .modal-content p {
     font-size: 0.8em;
     line-height: 1.7em;
-    font-weight: 300;
+    font-weight: 400;
   }
   
   .modal-content a {
@@ -338,7 +338,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .modal-container {
     top: 10%;
     height: 80%;

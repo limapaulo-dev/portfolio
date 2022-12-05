@@ -46,14 +46,22 @@ const closeModal = () => {
   modal.style.display = 'none';
 };
 
-window.onload = syntaxDataFetch;
+window.onload = () => {
+  syntaxDataFetch();
+  projectsDataFetch();
+};
+
+// if (document.querySelector('body').clientWidth < 485 && document.querySelector('.nav-links').style.display == 'flex') {
+//   window.onscroll = () => {
+//     console.log('is true');
+//   };
+// }
 
 window.onresize = () => {
-  const bodyWidht = document.querySelector('body').clientWidth;
-
+  const bodyWidth = document.querySelector('body').clientWidth;
   setGalaxy();
 
-  if (bodyWidht >= 485) {
+  if (bodyWidth >= 485) {
     document.querySelector('.nav-links').style.display = 'flex';
     // hamburgIconAnimate('flex');
   } else {

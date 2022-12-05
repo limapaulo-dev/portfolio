@@ -44,8 +44,8 @@ button:hover,
 
 .whats-icon {
   display: inline-block;
-  -webkit-mask: url(../img/whatsapp-bubble-outline.svg) no-repeat;
-  mask: url(../img/whatsapp-bubble-outline.svg) no-repeat;
+  -webkit-mask: url(../img/icons/whatsapp-bubble-outline.svg) no-repeat;
+  mask: url(../img/icons/whatsapp-bubble-outline.svg) no-repeat;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: white;
