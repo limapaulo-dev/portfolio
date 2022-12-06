@@ -36,7 +36,6 @@ const hamburgIconSwap = () => {
 };
 
 const modal = document.querySelector('.project-modal');
-const modalCloseBtn = document.getElementsByClassName('.modal-close');
 
 const showModal = () => {
   modal.style.display = 'block';

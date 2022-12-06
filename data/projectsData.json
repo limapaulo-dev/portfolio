@@ -2,10 +2,13 @@
   "projects data": [
     {
       "name": "WhatsAppDirect",
+      "value": "WhatsAppDirect",
       "thumbnail": "img/whatsappdirect/landscape.png",
       "thumbnailSyntaxes": "HTML CSS JS Bootstrap",
       "syntaxes": "HTML CSS JavaScript JSON Bootstrap",
       "abstract": "WhatsAppDirect is a web application created to speed up the process of sending WhatsApp messages to numbers outside the sender contacts list. It can also be used to generate 'Click to Chat' sharable links.",
+      "img": ["img/whatsappdirect/responsive-devices.png"],
+      "link": "https://limapaulo.com/whatsappdirect",
       "API": [
         {
           "name": "WhatsApp Click to Chat",
@@ -15,10 +18,13 @@
     },
     {
       "name": "QML Pricing",
-      "thumbnail": "img/qml-pricing/landscape.png",
+      "value": "QMLPricing",
+      "thumbnail": "img/qml-pricing/landscape.jpg",
       "thumbnailSyntaxes": "HTML CSS JS Bootstrap",
       "syntaxes": "QML Phyton Javascript",
       "abstract": "QML Pricing is a windows application with the objective to automate the calculation of health care insurances for B2B and B2C customers. It manage to deliver accurate prices for a vast options of products and customers profiles. Results can be easily send to custumers by Whatsapp or Email.",
+      "img": ["img/qml-pricing/landscape.jpg"],
+      "link": "https://github.com/limapaulo-dev/qml-pricing",
       "API": [
         {
           "name": "WhatsApp Click to Chat",

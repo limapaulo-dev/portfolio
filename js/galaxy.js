@@ -79,7 +79,7 @@ const setGalaxy = () => {
     syntaxCosmos.map(animateSyntaxCosmos);
     animateOrbit();
   }, 500);
-};
+}
 
 const syntaxDataFetch = async () => {
   const syntaxDataRaw = await fetch('/data/syntaxData.json');
@@ -99,7 +99,7 @@ const showSyntaxInfo = async (syntaxName) => {
 
   const syntaxDataRaw = await fetch('/data/syntaxData.json');
   const syntaxDataObj = await syntaxDataRaw.json();
-  const syntaxData = syntaxDataObj['syntax data'];
+  const syntaxData = syntaxDataObj['syntaxData'];
   const filteredSyntaxArray = syntaxData.filter((syntaxObj) => syntaxObj.name === syntaxName);
 
   setTimeout(() => {
@@ -123,8 +123,4 @@ const showSyntaxInfo = async (syntaxName) => {
   setTimeout(() => {
     document.querySelector('.syntax-info').classList.remove('info-swap');
   }, '2000');
-};
-
-const syntaxFilter = (obj, syntax) => {
-  obj.name == syntax;
 };
