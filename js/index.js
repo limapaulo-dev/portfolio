@@ -48,7 +48,7 @@ const closeModal = () => {
 window.onload = () => {
   syntaxDataFetch();
   projectsDataFetch();
-  rainAnim(150);
+  setRainAnim(150);
 };
 
 // if (document.querySelector('body').clientWidth < 485 && document.querySelector('.nav-links').style.display == 'flex') {
@@ -60,6 +60,7 @@ window.onload = () => {
 window.onresize = () => {
   const bodyWidth = document.querySelector('body').clientWidth;
   setGalaxy();
+  positionAllParticles();
 
   if (bodyWidth >= 485) {
     document.querySelector('.nav-links').style.display = 'flex';
