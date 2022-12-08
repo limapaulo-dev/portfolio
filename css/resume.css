@@ -231,7 +231,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-bottom: 2em;
 }
 
 section:last-child {
@@ -248,13 +247,13 @@ div.panels-divisor {
 section#left-panel {
   width: 100%;
   margin-bottom: 0;
+  gap: 1.5em;
 }
 
 section#right-panel {
   width: 70%;
   margin-bottom: 0;
 }
-
 
 h2 {
   font-weight: 500;
@@ -634,6 +633,9 @@ a:last-child {
 
 /* print resume page */
 @media print {
+  * {
+
+  }
   body {
     width: 8.25in;
     height: 11.75in;
@@ -652,6 +654,6 @@ a:last-child {
 
   div.panels-divisor {
     width: 0.3em;
-    height: 76vh;
+    height: 85vh;
   }
 }
