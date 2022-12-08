@@ -31,6 +31,12 @@ const createParticles = (numbParticles, parent) => {
 };
 
 const positionAllParticles = () => {
+  const headerAnim = document.querySelector('.header-animation');
+  headerAnim.classList.add('animation-fade');
+  setTimeout(() => {
+    headerAnim.classList.remove('animation-fade');
+  }, '1000');
+
   const rainParticles = Array.from(document.querySelectorAll('.rain-particle'));
   rainParticles.map(positionSingleParticle);
 };

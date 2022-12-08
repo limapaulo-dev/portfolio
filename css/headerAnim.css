@@ -5,6 +5,10 @@
   overflow: hidden;
 }
 
+.animation-fade {
+  animation: animation-fade 1s linear;
+}
+
 .rain-particle {
   position: absolute;
   border-radius: 100%;
@@ -81,11 +85,14 @@
   }
 }
 
-@keyframes block-explode {
+@keyframes animation-fade {
   0% {
-    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
   }
   100% {
-    transform: translate3d(-700%, 230%, 0);
+    opacity: 1;
   }
 }

@@ -66,7 +66,6 @@ window.onresize = () => {
     document.querySelector('.nav-links').style.display = 'flex';
     // hamburgIconAnimate('flex');
   } else {
-    
     hamburgIconAnimate('flex');
     document.querySelector('.nav-links').style.display = 'none';
   }
