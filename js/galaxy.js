@@ -99,7 +99,7 @@ const showSyntaxInfo = async (syntaxName) => {
 
   const syntaxDataRaw = await fetch('/data/syntaxData.json');
   const syntaxDataObj = await syntaxDataRaw.json();
-  const syntaxData = syntaxDataObj['syntaxData'];
+  const syntaxData = syntaxDataObj['syntax data'];
   const filteredSyntaxArray = syntaxData.filter((syntaxObj) => syntaxObj.name === syntaxName);
 
   setTimeout(() => {

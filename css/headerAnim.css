@@ -1,0 +1,93 @@
+.header-animation {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.rain-particle {
+  position: absolute;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: raindrop 5s ease-in infinite;
+  padding: 30px;
+}
+
+.rain-particle:hover {
+  filter: brightness(5);
+}
+
+.rain-particle:hover .particle-trail{
+
+  /* animation-play-state: paused;
+  transform: scaleY(0) */
+}
+
+.rain-particle:hover .particle-point{
+
+  /* animation-play-state: paused; */
+  /* transform: scaleY(0); */
+}
+
+.particle-trail {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(transparent, #6d6d6d);
+  border-radius: 5px;
+  animation: trail-glow 6s ease-in-out infinite;
+  transition: 1s ease;
+  transform-origin:  bottom;
+}
+
+/* .particle-point {
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  transition: 1s ease;
+  animation: trail-glow 6s ease-in-out infinite;
+  background: #b1b1b1;
+} */
+
+@keyframes trail-glow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes raindrop {
+  0% {
+    transform: translateY(-250px);
+    /* opacity: 1; */
+  /* } 90% {
+    opacity: 0;*/
+  } 
+  100% {
+    transform: translateY(calc(100vh + 600px));
+  }
+}
+
+@keyframes brightness-rain {
+  0% {
+    filter: brightness(0);
+  }
+  100% {
+    filter: brightness(5);
+  }
+}
+
+@keyframes block-explode {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-700%, 230%, 0);
+  }
+}

@@ -48,6 +48,7 @@ const closeModal = () => {
 window.onload = () => {
   syntaxDataFetch();
   projectsDataFetch();
+  rainAnim(150);
 };
 
 // if (document.querySelector('body').clientWidth < 485 && document.querySelector('.nav-links').style.display == 'flex') {
@@ -64,9 +65,12 @@ window.onresize = () => {
     document.querySelector('.nav-links').style.display = 'flex';
     // hamburgIconAnimate('flex');
   } else {
+    
     hamburgIconAnimate('flex');
     document.querySelector('.nav-links').style.display = 'none';
   }
+
+
 };
 
 // window.onscroll = () => {

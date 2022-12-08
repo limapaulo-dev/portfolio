@@ -15,21 +15,21 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/galaxy.css" />
     <link rel="stylesheet" type="text/css" href="css/modal.css" />
+    <link rel="stylesheet" type="text/css" href="css/headerAnim.css" />
   </head>
   <body>
     <section id="header">
-      <h1>Hi, I'm <span class="secondary">Paulo Lima</span>,</h1>
-      <h1>a <span class="primary">front-end</span> developer.</h1>
+      <div class="header-animation">
+      </div>
+      <div class="header-title">
+        <h1>Hi, I'm <span class="secondary">Paulo Lima</span>,</h1>
+        <h1>a <span class="primary">front-end</span> developer.</h1>
+      </div>
     </section>
     <nav id="navbar">
       <div class="nav-icon" onclick="">
         <img src="img/warhol-vector.svg" alt="paulo lima" />
       </div>
-      <!-- <div class="hamburger-menu" onclick="hamburgIconSwap()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="hamburger-menu-open" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-        </svg>
-      </div> -->
       <div class="hamburger-menu" onclick="hamburgIconSwap()">
         <div class="hamburger-icon line-1"></div>
         <div class="hamburger-icon line-2"></div>
@@ -161,6 +161,7 @@
     <script src="js/functions.js"></script>
     <script src="js/galaxy.js"></script>
     <script src="js/projects.js"></script>
+    <script src="js/headerAnim.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
