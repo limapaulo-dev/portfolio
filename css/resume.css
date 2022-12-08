@@ -231,7 +231,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 section:last-child {
@@ -254,6 +254,7 @@ section#right-panel {
   width: 70%;
   margin-bottom: 0;
 }
+
 
 h2 {
   font-weight: 500;
@@ -284,6 +285,13 @@ h5 {
   margin-bottom: 0.2em;
 }
 
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.7em;
+}
+
 .right-panel-section h4 {
   line-height: 1.2em;
 }
@@ -305,7 +313,7 @@ p a {
 }
 
 section p:last-child {
-  margin-bottom: 2em;
+  margin-bottom: 0em;
 }
 
 #experience p:last-child {
@@ -641,8 +649,9 @@ a:last-child {
   header nav {
     display: none;
   }
+
   div.panels-divisor {
     width: 0.3em;
-    height: 87vh;
+    height: 76vh;
   }
 }
