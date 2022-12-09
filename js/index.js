@@ -39,7 +39,9 @@ const closeModal = () => {
 let pageLoad = true;
 
 window.onload = () => {
-  // setRainAnim();
+  setTimeout(() => {
+    setRainAnim();
+  }, 1000);
 };
 
 window.onresize = () => {
