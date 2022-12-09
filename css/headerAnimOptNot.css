@@ -1,0 +1,62 @@
+.header-animation {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+
+.animation-fade {
+  animation: animation-fade 1s linear;
+}
+
+.rain-particle {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: raindrop 5s ease-in infinite, trail-glow 5s ease-in-out infinite;
+  transition: 0.5s ease;
+  background: linear-gradient(transparent, #6d6d6d);
+  border-radius: 5px;
+  transform-origin:  bottom;
+}
+
+.rain-particle:hover {
+  filter: brightness(5);
+}
+
+@keyframes trail-glow {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scaleY(0.5);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes raindrop {
+  0% {
+    transform: translateY(-250px);
+    opacity: 1;
+  } 
+  100% {
+    opacity: 0;
+    transform: translateY(calc(100vh + 600px));
+  }
+}
+
+@keyframes animation-fade {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -48,7 +48,7 @@ const closeModal = () => {
 window.onload = () => {
   syntaxDataFetch();
   projectsDataFetch();
-  setRainAnim(150);
+  setRainAnim();
 };
 
 // if (document.querySelector('body').clientWidth < 485 && document.querySelector('.nav-links').style.display == 'flex') {
@@ -58,45 +58,51 @@ window.onload = () => {
 // }
 
 window.onresize = () => {
+
   const newBodyWidth = document.querySelector('body').clientWidth;
+  let throttled = false;
 
-  if (bodyWidth !== newBodyWidth) {
-    console.log("bodyWidth changed")
-    setRainAnim(500);
-  }
-  setGalaxy();
+  if (!throttled) {
+    if (bodyWidth !== newBodyWidth) {
+      console.log('bodyWidth changed');
+      setRainAnim();
+    }
+    setGalaxy();
+  
+    if (newBodyWidth >= 485) {
+      document.querySelector('.nav-links').style.display = 'flex';
+      // hamburgIconAnimate('flex');
+    } else {
+      hamburgIconAnimate('flex');
+      document.querySelector('.nav-links').style.display = 'none';
+    }
 
-  if (newBodyWidth >= 485) {
-    document.querySelector('.nav-links').style.display = 'flex';
-    // hamburgIconAnimate('flex');
-  } else {
-    hamburgIconAnimate('flex');
-    document.querySelector('.nav-links').style.display = 'none';
+    throttled = true;
   }
+  
+  setTimeout(function() {
+    throttled = false;
+  }, 500);
 };
 
 window.onscroll = () => {
   const headerAnim = document.querySelector('.header-animation');
 
-  if (!elementInView(headerAnim)) {
-    pauseRainAnim();
-  } else {
-    runRainAnim();
+  if (!elementInView(headerAnim) && headerAnim.innerHTML !== '') {
+    clearParticles();
+  } else if (elementInView(headerAnim) && headerAnim.innerHTML == ''){
+    setRainAnim();
   }
   const syntaxGalaxy = document.querySelector('.syntax-galaxy');
+  const syntaxOrbit = document.querySelector('.syntax-orbit');
 
-  if (!elementInView(syntaxGalaxy)) {
+  if (!elementInView(syntaxGalaxy) && syntaxOrbit.style.animationPlayState === 'running') {
+    console.log('pause galaxy')
     pauseGalaxy();
-  } else {
+  } else if (elementInView(syntaxGalaxy) && syntaxOrbit.style.animationPlayState === 'paused'){
+    console.log('set galaxy')
     setGalaxy();
   }
-
-  // const bodyWidht = document.querySelector('body').clientWidth;
-
-  // if (bodyWidht < 485 && document.querySelector('.nav-links').style.display == 'flex') {
-  //   document.querySelector('.nav-links').style.display = 'none';
-  //   hamburgIconAnimate('flex');
-  // }
 };
 
 window.onclick = (event) => {

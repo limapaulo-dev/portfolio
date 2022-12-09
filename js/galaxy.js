@@ -88,15 +88,19 @@ const pauseOrbitAnim = () => {
   syntaxOrbit.style.animationPlayState = 'paused';
 };
 
-const setGalaxy = () => {
+const setGalaxy = (animRunTimeout) => {
   const syntaxCosmos = Array.from(document.querySelectorAll('.syntax-cosmos'));
   syntaxCosmos.map(positionSyntaxCosmos);
 
   setTimeout(() => {
     syntaxCosmos.map(runCosmosAnim);
     runOrbitAnim();
-  }, 500);
+  }, animRunTimeout);
 };
+
+const clearGalaxy = () => {
+  document.querySelector('.syntax-orbit').innerHTML = '';
+}
 
 const pauseGalaxy = () => {
   const syntaxCosmos = Array.from(document.querySelectorAll('.syntax-cosmos'));

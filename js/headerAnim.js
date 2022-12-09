@@ -36,7 +36,7 @@ const calcParticlesHeigh = () => {
   }
 };
 
-const createParticles = (numbParticles, parent) => {
+const createParticles = async (numbParticles, parent) => {
   parent.innerHTML = '';
   let i = 0;
 
@@ -68,7 +68,7 @@ const createParticles = (numbParticles, parent) => {
   }
 };
 
-const positionAllParticles = () => {
+const positionAllParticles = async () => {
   const headerAnim = document.querySelector('.header-animation');
   headerAnim.classList.add('animation-fade');
   setTimeout(() => {
