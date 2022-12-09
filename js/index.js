@@ -57,9 +57,9 @@ window.onresize = () => {
       // console.log('bodyWidth changed');
 
       if (!elementInView(headerAnim)) {
-        // clearParticles();
+        clearParticles();
       } else if (elementInView(headerAnim)) {
-        // setRainAnim();
+        setRainAnim();
         console.log('set RainAnim')
       }
 
@@ -96,9 +96,9 @@ window.onscroll = () => {
   }
 
   if (!elementInView(headerAnim) && headerAnim.innerHTML !== '') {
-    // clearParticles();
+    clearParticles();
   } else if (elementInView(headerAnim) && headerAnim.innerHTML == '') {
-    // setRainAnim();
+    setRainAnim();
   }
 
   if (!elementInView(syntaxGalaxy) && syntaxOrbit.style.animationPlayState === 'running') {
