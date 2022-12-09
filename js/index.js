@@ -58,17 +58,28 @@ window.onload = () => {
 // }
 
 window.onresize = () => {
-
   const newBodyWidth = document.querySelector('body').clientWidth;
   let throttled = false;
 
   if (!throttled) {
     if (bodyWidth !== newBodyWidth) {
       console.log('bodyWidth changed');
-      setRainAnim();
+
+      if (!elementInView(headerAnim)) {
+        clearParticles();
+      } else if (elementInView(headerAnim)) {
+        setRainAnim();
+      }
+
+      if (!elementInView(syntaxGalaxy)) {
+        console.log('pause galaxy');
+        pauseGalaxy();
+      } else if (elementInView(syntaxGalaxy)) {
+        console.log('set galaxy');
+        setGalaxy();
+      }
     }
-    setGalaxy();
-  
+
     if (newBodyWidth >= 485) {
       document.querySelector('.nav-links').style.display = 'flex';
       // hamburgIconAnimate('flex');
@@ -79,28 +90,24 @@ window.onresize = () => {
 
     throttled = true;
   }
-  
-  setTimeout(function() {
+
+  setTimeout(function () {
     throttled = false;
   }, 500);
 };
 
 window.onscroll = () => {
-  const headerAnim = document.querySelector('.header-animation');
-
   if (!elementInView(headerAnim) && headerAnim.innerHTML !== '') {
     clearParticles();
-  } else if (elementInView(headerAnim) && headerAnim.innerHTML == ''){
+  } else if (elementInView(headerAnim) && headerAnim.innerHTML == '') {
     setRainAnim();
   }
-  const syntaxGalaxy = document.querySelector('.syntax-galaxy');
-  const syntaxOrbit = document.querySelector('.syntax-orbit');
 
   if (!elementInView(syntaxGalaxy) && syntaxOrbit.style.animationPlayState === 'running') {
-    console.log('pause galaxy')
+    console.log('pause galaxy');
     pauseGalaxy();
-  } else if (elementInView(syntaxGalaxy) && syntaxOrbit.style.animationPlayState === 'paused'){
-    console.log('set galaxy')
+  } else if (elementInView(syntaxGalaxy) && syntaxOrbit.style.animationPlayState === 'paused') {
+    console.log('set galaxy');
     setGalaxy();
   }
 };
