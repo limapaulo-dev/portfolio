@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
   console.log('DOM fully loaded and parsed');
   setTimeout(() => {
     setRainAnim();
-  }, 500);
+  }, 2000);
 });
 
 window.onresize = () => {
