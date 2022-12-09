@@ -41,14 +41,14 @@ let pageLoad = true;
 window.onload = () => {};
 
 window.addEventListener('DOMContentLoaded', () => {
+  console.log("page fully loaded")
   setTimeout(() => {
     setRainAnim();
-  }, 1000);
+  }, 500);
 });
 
 window.onresize = () => {
   const newBodyWidth = document.querySelector('body').clientWidth;
-  console.log('page resized');
   // let throttled = false;
   if (bodyWidth !== newBodyWidth) {
     if (!elementInView(headerAnim)) {
