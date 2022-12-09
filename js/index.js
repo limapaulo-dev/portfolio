@@ -38,14 +38,13 @@ const closeModal = () => {
 
 let pageLoad = true;
 
-window.onload = () => {
-};
+window.onload = () => {};
 
 window.addEventListener('DOMContentLoaded', () => {
   console.log('DOM fully loaded and parsed');
   setTimeout(() => {
     setRainAnim();
-  }, 2000);
+  }, 5000);
 });
 
 window.onresize = () => {
@@ -59,14 +58,16 @@ window.onresize = () => {
       if (!elementInView(headerAnim)) {
         clearParticles();
       } else if (elementInView(headerAnim)) {
-        setRainAnim();
-        console.log('set RainAnim')
+        setTimeout(() => {
+          setRainAnim();
+        }, 200);
+        console.log('set RainAnim');
       }
 
       if (!elementInView(syntaxGalaxy)) {
         pauseGalaxy();
       } else if (elementInView(syntaxGalaxy)) {
-        // console.log('set galaxy');
+        console.log('set galaxy');
         setGalaxy();
       }
     }

@@ -99,7 +99,7 @@ const createParticles = (numbParticles, parent) => {
   parent.appendChild(particlesFragment);
 };
 
-const positionAllParticles = async () => {
+const positionAllParticles = () => {
   const headerAnim = document.querySelector('.header-animation');
   headerAnim.classList.add('animation-fade');
   setTimeout(() => {
@@ -115,7 +115,7 @@ const positionSingleParticle = (particle) => {
   particle.style.left = `${randomPosX}px`;
 };
 
-const setRainAnim = async () => {
+const setRainAnim = () => {
   const headerAnim = document.querySelector('.header-animation');
   const numbParticles = calcNumbParticles();
   createParticles(numbParticles, headerAnim);
