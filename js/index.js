@@ -41,51 +41,37 @@ let pageLoad = true;
 window.onload = () => {};
 
 window.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM fully loaded and parsed');
   setTimeout(() => {
     setRainAnim();
-  }, 5000);
+  }, 1000);
 });
 
 window.onresize = () => {
   const newBodyWidth = document.querySelector('body').clientWidth;
-  let throttled = false;
-
-  if (!throttled) {
-    if (bodyWidth !== newBodyWidth) {
-      // console.log('bodyWidth changed');
-
-      if (!elementInView(headerAnim)) {
-        clearParticles();
-      } else if (elementInView(headerAnim)) {
-        setTimeout(() => {
-          setRainAnim();
-        }, 200);
-        console.log('set RainAnim');
-      }
-
-      if (!elementInView(syntaxGalaxy)) {
-        pauseGalaxy();
-      } else if (elementInView(syntaxGalaxy)) {
-        console.log('set galaxy');
-        setGalaxy();
-      }
+  console.log('page resized');
+  // let throttled = false;
+  if (bodyWidth !== newBodyWidth) {
+    if (!elementInView(headerAnim)) {
+      clearParticles();
+    } else if (elementInView(headerAnim)) {
+      setRainAnim();
     }
-
-    if (newBodyWidth >= 485) {
-      document.querySelector('.nav-links').style.display = 'flex';
-      // hamburgIconAnimate('flex');
-    } else {
-      hamburgIconAnimate('flex');
-      document.querySelector('.nav-links').style.display = 'none';
+    
+    if (!elementInView(syntaxGalaxy)) {
+      pauseGalaxy();
+    } else if (elementInView(syntaxGalaxy)) {
+      setGalaxy();
     }
-
-    throttled = true;
+    bodyWidth = document.querySelector('body').clientWidth;
   }
 
-  setTimeout(function () {
-    throttled = false;
-  }, 1000);
+  if (newBodyWidth >= 485) {
+    document.querySelector('.nav-links').style.display = 'flex';
+    // hamburgIconAnimate('flex');
+  } else {
+    hamburgIconAnimate('flex');
+    document.querySelector('.nav-links').style.display = 'none';
+  }
 };
 
 window.onscroll = () => {
