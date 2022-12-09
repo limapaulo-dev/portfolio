@@ -41,7 +41,7 @@ let pageLoad = true;
 window.onload = () => {};
 
 window.addEventListener('DOMContentLoaded', () => {
-  console.log("page fully loaded")
+  console.log('page fully loaded');
   setTimeout(() => {
     setRainAnim();
   }, 500);
@@ -56,7 +56,7 @@ window.onresize = () => {
     } else if (elementInView(headerAnim)) {
       setRainAnim();
     }
-    
+
     if (!elementInView(syntaxGalaxy)) {
       pauseGalaxy();
     } else if (elementInView(syntaxGalaxy)) {
