@@ -1,3 +1,41 @@
+const calcNumbParticles = () => {
+  let bodyWidth = document.querySelector('body').clientWidth;
+
+  if (bodyWidth <= 500) {
+    return 100;
+  } else if (bodyWidth <= 1000) {
+    return 150;
+  } else if (bodyWidth <= 1500) {
+    return 200;
+  } else {
+    return 250;
+  }
+};
+
+const calcParticlesWidth = () => {
+  let bodyWidth = document.querySelector('body').clientWidth;
+
+  if (bodyWidth <= 500) {
+    return 1;
+  } else if (bodyWidth <= 1200) {
+    return 2;
+  } else {
+    return 3;
+  }
+};
+
+const calcParticlesHeigh = () => {
+  let bodyWidth = document.querySelector('body').clientWidth;
+
+  if (bodyWidth <= 500) {
+    return 70;
+  } else if (bodyWidth <= 1200) {
+    return 100;
+  } else {
+    return 130;
+  }
+};
+
 const createParticles = (numbParticles, parent) => {
   parent.innerHTML = '';
   let i = 0;
@@ -8,12 +46,12 @@ const createParticles = (numbParticles, parent) => {
     particle.classList.add('rain-particle');
     particle.style.animationDelay = `-${rainDropDelay}s`;
 
+    const randomHeight = calcParticlesHeigh() + Math.random() * 70;
     const glowDelay = Math.random() * 2;
     const particleTrail = document.createElement('div');
     particleTrail.classList.add('particle-trail');
     particleTrail.style.animationDelay = `-${glowDelay}s`;
-
-    const randomWidth = 1.5 + Math.random() * 3;
+    particleTrail.style.height = `${randomHeight}px`;
 
     // const particlePoint = document.createElement('div');
     // particlePoint.classList.add('particle-point');
@@ -21,7 +59,7 @@ const createParticles = (numbParticles, parent) => {
     // particlePoint.style.animationDelay = `-${glowDelay}s`;
 
     // particlePoint.style.backgroundColor = colors[Math.floor(Math.random() * 2)];
-
+    const randomWidth = 1.5 + Math.random() * calcParticlesWidth();
     particle.appendChild(particleTrail);
     // particle.appendChild(particlePoint);
     particle.style.width = `${randomWidth}px`;
@@ -47,7 +85,6 @@ const pauseRainAnim = () => {
 
   const particleTrail = Array.from(document.querySelectorAll('.particle-trail'));
   particleTrail.map(elementPauseAnim);
-
 };
 
 const runRainAnim = () => {
@@ -63,8 +100,15 @@ const positionSingleParticle = (particle) => {
   particle.style.left = `${randomPosX}px`;
 };
 
-const setRainAnim = (numbParticles) => {
+const setRainAnim = (animRunTimeout) => {
   const headerAnim = document.querySelector('.header-animation');
+
+  const numbParticles = calcNumbParticles();
+
   createParticles(numbParticles, headerAnim);
   positionAllParticles();
+
+  setTimeout(() => {
+    runRainAnim();
+  }, animRunTimeout);
 };

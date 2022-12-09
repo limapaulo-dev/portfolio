@@ -62,7 +62,7 @@ window.onresize = () => {
 
   if (bodyWidth !== newBodyWidth) {
     console.log("bodyWidth changed")
-    positionAllParticles();
+    setRainAnim(500);
   }
   setGalaxy();
 

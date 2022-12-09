@@ -16,7 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: raindrop 5s ease-in infinite;
+  animation: raindrop 5s ease-in infinite paused;
   padding: 30px;
   transition: 0.3s ease;
 }
@@ -30,7 +30,7 @@
   height: 200px;
   background: linear-gradient(transparent, #6d6d6d);
   border-radius: 5px;
-  animation: trail-glow 6s ease-in-out infinite;
+  animation: trail-glow 6s ease-in-out infinite paused;
   transition: 1s ease;
   transform-origin:  bottom;
 }
@@ -48,9 +48,11 @@
   0%,
   100% {
     opacity: 1;
+    transform: scaleY(0.5);
   }
   50% {
     opacity: 0.3;
+    transform: scaleY(1);
   }
 }
 
