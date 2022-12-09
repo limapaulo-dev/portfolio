@@ -41,7 +41,6 @@ let pageLoad = true;
 window.onload = () => {};
 
 window.addEventListener('DOMContentLoaded', () => {
-  console.log('page fully loaded');
   setTimeout(() => {
     setRainAnim();
   }, 500);
