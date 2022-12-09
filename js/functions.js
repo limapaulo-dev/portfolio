@@ -11,6 +11,15 @@ const sortStrArr = (a, b) => {
   }
 };
 
+function elementInView(element) {
+  var elementBounding = element.getBoundingClientRect();
+  var elementTop = elementBounding.top;
+  var elementBottom = elementBounding.bottom;
+
+  isVisible = elementTop < window.innerHeight && elementBottom >= 0;
+  return isVisible;
+}
+
 const radians = (radius) => (Math.PI / 180) * radius;
 
 elementPauseAnim = (element) => {

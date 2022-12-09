@@ -1,12 +1,3 @@
-function elementInView(element) {
-  var elementBounding = element.getBoundingClientRect();
-  var elementTop = elementBounding.top;
-  var elementBottom = elementBounding.bottom;
-
-  isVisible = elementTop < window.innerHeight && elementBottom >= 0;
-  return isVisible;
-}
-
 const hamburgIconAnimate = (state) => {
   const line1 = document.querySelector('.hamburger-icon.line-1');
   const line2 = document.querySelector('.hamburger-icon.line-2');
@@ -48,14 +39,8 @@ const closeModal = () => {
 let pageLoad = true;
 
 window.onload = () => {
-  setRainAnim();
+  // setRainAnim();
 };
-
-// if (document.querySelector('body').clientWidth < 485 && document.querySelector('.nav-links').style.display == 'flex') {
-//   window.onscroll = () => {
-//     console.log('is true');
-//   };
-// }
 
 window.onresize = () => {
   const newBodyWidth = document.querySelector('body').clientWidth;
@@ -63,18 +48,19 @@ window.onresize = () => {
 
   if (!throttled) {
     if (bodyWidth !== newBodyWidth) {
-      console.log('bodyWidth changed');
+      // console.log('bodyWidth changed');
 
       if (!elementInView(headerAnim)) {
-        clearParticles();
+        // clearParticles();
       } else if (elementInView(headerAnim)) {
-        setRainAnim();
+        // setRainAnim();
+        console.log('set RainAnim')
       }
 
       if (!elementInView(syntaxGalaxy)) {
         pauseGalaxy();
       } else if (elementInView(syntaxGalaxy)) {
-        console.log('set galaxy');
+        // console.log('set galaxy');
         setGalaxy();
       }
     }
@@ -96,25 +82,24 @@ window.onresize = () => {
 };
 
 window.onscroll = () => {
-
   if (pageLoad) {
     syntaxDataFetch();
     projectsDataFetch();
-    console.log('stuff loading');
+    // console.log('stuff loading');
     pageLoad = false;
   }
 
   if (!elementInView(headerAnim) && headerAnim.innerHTML !== '') {
-    clearParticles();
+    // clearParticles();
   } else if (elementInView(headerAnim) && headerAnim.innerHTML == '') {
-    setRainAnim();
+    // setRainAnim();
   }
 
   if (!elementInView(syntaxGalaxy) && syntaxOrbit.style.animationPlayState === 'running') {
-    console.log('pause galaxy');
+    // console.log('pause galaxy');
     pauseGalaxy();
   } else if (elementInView(syntaxGalaxy) && syntaxOrbit.style.animationPlayState === 'paused') {
-    console.log('set galaxy onscroll');
+    // console.log('set galaxy onscroll');
     setGalaxy();
   }
 };
@@ -124,38 +109,3 @@ window.onclick = (event) => {
     modal.style.display = 'none';
   }
 };
-
-// const navIcons = [
-//   {
-//     iconName: 'contemplative',
-//     src: 'img/png/contemplative.png',
-//   },
-//   {
-//     iconName: 'crazyHappy',
-//     src: 'img/png/crazyhappy.png',
-//   },
-//   {
-//     iconName: 'crookedNeck',
-//     src: 'img/png/crookedneck.png',
-//   },
-//   {
-//     iconName: 'normalHappy',
-//     src: 'img/png/normalhappy.png',
-//   },
-//   {
-//     iconName: 'stunningBoyo',
-//     src: 'img/png/stunningboyo.png',
-//   },
-// ];
-
-// const navIconSwap = () => {
-//   const currentNavIcon = document.querySelector('.nav-icon img').src;
-//   const getRandIconSrc = () => navIcons[Math.floor(Math.random() * 4)].src;
-//   let newIcon = getRandIconSrc();
-
-//   while (currentNavIcon.endsWith(newIcon)) {
-//     newIcon = getRandIconSrc();
-//   }
-//   document.querySelector('.nav-icon img').src = newIcon;
-
-// }
