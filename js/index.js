@@ -39,10 +39,14 @@ const closeModal = () => {
 let pageLoad = true;
 
 window.onload = () => {
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM fully loaded and parsed');
   setTimeout(() => {
     setRainAnim();
-  }, 1000);
-};
+  }, 500);
+});
 
 window.onresize = () => {
   const newBodyWidth = document.querySelector('body').clientWidth;
