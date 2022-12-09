@@ -2,11 +2,11 @@ const calcNumbParticles = () => {
   let bodyWidth = document.querySelector('body').clientWidth;
 
   if (bodyWidth <= 500) {
-    return 100;
+    return 170;
   } else if (bodyWidth <= 1000) {
-    return 150;
-  } else if (bodyWidth <= 1500) {
     return 200;
+  } else if (bodyWidth <= 1500) {
+    return 225;
   } else {
     return 250;
   }
