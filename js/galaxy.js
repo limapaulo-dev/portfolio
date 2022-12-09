@@ -66,9 +66,26 @@ const animateSyntaxCosmos = (cosmos) => {
   cosmos.querySelector('.syntax-content').style.animationPlayState = 'running';
 };
 
-const animateOrbit = () => {
+const runCosmosAnim = (cosmos) => {
+  cosmos.style.animationPlayState = 'running';
+  cosmos.querySelector('.syntax-block').style.animationPlayState = 'running';
+  cosmos.querySelector('.syntax-content').style.animationPlayState = 'running';
+};
+
+const pauseCosmosAnim = (cosmos) => {
+  cosmos.style.animationPlayState = 'paused';
+  cosmos.querySelector('.syntax-block').style.animationPlayState = 'paused';
+  cosmos.querySelector('.syntax-content').style.animationPlayState = 'paused';
+};
+
+const runOrbitAnim = () => {
   const syntaxOrbit = document.querySelector('.syntax-orbit');
   syntaxOrbit.style.animationPlayState = 'running';
+};
+
+const pauseOrbitAnim = () => {
+  const syntaxOrbit = document.querySelector('.syntax-orbit');
+  syntaxOrbit.style.animationPlayState = 'paused';
 };
 
 const setGalaxy = () => {
@@ -76,10 +93,16 @@ const setGalaxy = () => {
   syntaxCosmos.map(positionSyntaxCosmos);
 
   setTimeout(() => {
-    syntaxCosmos.map(animateSyntaxCosmos);
-    animateOrbit();
+    syntaxCosmos.map(runCosmosAnim);
+    runOrbitAnim();
   }, 500);
-}
+};
+
+const pauseGalaxy = () => {
+  const syntaxCosmos = Array.from(document.querySelectorAll('.syntax-cosmos'));
+  syntaxCosmos.map(pauseCosmosAnim);
+  pauseOrbitAnim();
+};
 
 const syntaxDataFetch = async () => {
   const syntaxDataRaw = await fetch('/data/syntaxData.json');

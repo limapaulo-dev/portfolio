@@ -41,6 +41,23 @@ const positionAllParticles = () => {
   rainParticles.map(positionSingleParticle);
 };
 
+const pauseRainAnim = () => {
+  const rainParticles = Array.from(document.querySelectorAll('.rain-particle'));
+  rainParticles.map(elementPauseAnim);
+
+  const particleTrail = Array.from(document.querySelectorAll('.particle-trail'));
+  particleTrail.map(elementPauseAnim);
+
+};
+
+const runRainAnim = () => {
+  const rainParticles = Array.from(document.querySelectorAll('.rain-particle'));
+  rainParticles.map(elementRunAnim);
+
+  const particleTrail = Array.from(document.querySelectorAll('.particle-trail'));
+  particleTrail.map(elementRunAnim);
+};
+
 const positionSingleParticle = (particle) => {
   const randomPosX = Math.floor(Math.random() * window.innerWidth);
   particle.style.left = `${randomPosX}px`;

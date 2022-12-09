@@ -12,3 +12,11 @@ const sortStrArr = (a, b) => {
 };
 
 const radians = (radius) => (Math.PI / 180) * radius;
+
+elementPauseAnim = (element) => {
+  element.style.animationPlayState = 'paused';
+};
+
+elementRunAnim = (element) => {
+  element.style.animationPlayState = 'running';
+};

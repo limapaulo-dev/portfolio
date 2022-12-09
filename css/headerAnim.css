@@ -25,17 +25,6 @@
   filter: brightness(5);
 }
 
-.rain-particle:hover .particle-trail{
-  /* animation-play-state: paused;
-  transform: scaleY(0) */
-}
-
-.rain-particle:hover .particle-point{
-
-  /* animation-play-state: paused; */
-  /* transform: scaleY(0); */
-}
-
 .particle-trail {
   width: 100%;
   height: 200px;
@@ -73,15 +62,6 @@
   100% {
     opacity: 0;
     transform: translateY(calc(100vh + 600px));
-  }
-}
-
-@keyframes brightness-rain {
-  0% {
-    filter: brightness(0);
-  }
-  100% {
-    filter: brightness(5);
   }
 }
 

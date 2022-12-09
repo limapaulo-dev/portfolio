@@ -58,30 +58,46 @@ window.onload = () => {
 // }
 
 window.onresize = () => {
-  const bodyWidth = document.querySelector('body').clientWidth;
-  setGalaxy();
-  positionAllParticles();
+  const newBodyWidth = document.querySelector('body').clientWidth;
 
-  if (bodyWidth >= 485) {
+  if (bodyWidth !== newBodyWidth) {
+    console.log("bodyWidth changed")
+    positionAllParticles();
+  }
+  setGalaxy();
+
+  if (newBodyWidth >= 485) {
     document.querySelector('.nav-links').style.display = 'flex';
     // hamburgIconAnimate('flex');
   } else {
     hamburgIconAnimate('flex');
     document.querySelector('.nav-links').style.display = 'none';
   }
-
-
 };
 
-// window.onscroll = () => {
+window.onscroll = () => {
+  const headerAnim = document.querySelector('.header-animation');
 
-//   const bodyWidht = document.querySelector('body').clientWidth;
+  if (!elementInView(headerAnim)) {
+    pauseRainAnim();
+  } else {
+    runRainAnim();
+  }
+  const syntaxGalaxy = document.querySelector('.syntax-galaxy');
 
-//   if (bodyWidht < 485 && document.querySelector('.nav-links').style.display == 'flex') {
-//     document.querySelector('.nav-links').style.display = 'none';
-//     hamburgIconAnimate('flex');
-//   }
-// };
+  if (!elementInView(syntaxGalaxy)) {
+    pauseGalaxy();
+  } else {
+    setGalaxy();
+  }
+
+  // const bodyWidht = document.querySelector('body').clientWidth;
+
+  // if (bodyWidht < 485 && document.querySelector('.nav-links').style.display == 'flex') {
+  //   document.querySelector('.nav-links').style.display = 'none';
+  //   hamburgIconAnimate('flex');
+  // }
+};
 
 window.onclick = (event) => {
   if (event.target == modal) {

@@ -6,3 +6,6 @@ const secondaryColor = "#f72585";
 
 const colors = [primaryColor, secondaryColor];
 
+let bodyWidth = document.querySelector('body').clientWidth;
+let bodyHeight = document.querySelector('body').clientHeight;
+
