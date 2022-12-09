@@ -45,9 +45,9 @@ const closeModal = () => {
   modal.style.display = 'none';
 };
 
+let pageLoad = true;
+
 window.onload = () => {
-  syntaxDataFetch();
-  projectsDataFetch();
   setRainAnim();
 };
 
@@ -72,7 +72,6 @@ window.onresize = () => {
       }
 
       if (!elementInView(syntaxGalaxy)) {
-        console.log('pause galaxy');
         pauseGalaxy();
       } else if (elementInView(syntaxGalaxy)) {
         console.log('set galaxy');
@@ -93,10 +92,18 @@ window.onresize = () => {
 
   setTimeout(function () {
     throttled = false;
-  }, 500);
+  }, 1000);
 };
 
 window.onscroll = () => {
+
+  if (pageLoad) {
+    syntaxDataFetch();
+    projectsDataFetch();
+    console.log('stuff loading');
+    pageLoad = false;
+  }
+
   if (!elementInView(headerAnim) && headerAnim.innerHTML !== '') {
     clearParticles();
   } else if (elementInView(headerAnim) && headerAnim.innerHTML == '') {
@@ -107,7 +114,7 @@ window.onscroll = () => {
     console.log('pause galaxy');
     pauseGalaxy();
   } else if (elementInView(syntaxGalaxy) && syntaxOrbit.style.animationPlayState === 'paused') {
-    console.log('set galaxy');
+    console.log('set galaxy onscroll');
     setGalaxy();
   }
 };
