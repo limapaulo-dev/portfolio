@@ -15,14 +15,17 @@ const hamburgIconAnimate = (state) => {
 };
 
 const hamburgIconSwap = () => {
+  const newBodyWidth = document.querySelector('body').clientWidth;
   const navLinksDisplay = document.querySelector('.nav-links').style.display;
 
-  if (navLinksDisplay === '' || navLinksDisplay === 'none') {
-    hamburgIconAnimate(navLinksDisplay);
-    document.querySelector('.nav-links').style.display = 'flex';
-  } else {
-    hamburgIconAnimate(navLinksDisplay);
-    document.querySelector('.nav-links').style.display = 'none';
+  if (newBodyWidth <= 485) {
+    if (navLinksDisplay === '' || navLinksDisplay === 'none') {
+      hamburgIconAnimate(navLinksDisplay);
+      document.querySelector('.nav-links').style.display = 'flex';
+    } else {
+      hamburgIconAnimate(navLinksDisplay);
+      document.querySelector('.nav-links').style.display = 'none';
+    }
   }
 };
 
