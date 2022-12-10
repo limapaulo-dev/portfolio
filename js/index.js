@@ -90,9 +90,11 @@ window.onscroll = () => {
   if (!elementInView(githubIcon) && githubIcon.classList.contains('contact-icons-anim') && isMobile()) {
     githubIcon.classList.remove('contact-icons-anim');
     emailIcon.classList.remove('contact-icons-anim');
+    linkedinIcon.classList.remove('contact-icons-anim');
   } else if (elementInView(githubIcon) && !githubIcon.classList.contains('contact-icons-anim') && isMobile()) {
     githubIcon.classList.add('contact-icons-anim');
     emailIcon.classList.add('contact-icons-anim');
+    linkedinIcon.classList.add('contact-icons-anim');
   }
 
   if (anyProjectThumb !== null) {
