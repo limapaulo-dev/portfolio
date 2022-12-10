@@ -16,3 +16,4 @@ const syntaxOrbit = document.querySelector('.syntax-orbit');
 const githubIcon = document.querySelector('.bi-github');
 const emailIcon = document.querySelector('.bi-envelope-fill');
 
+const modal = document.querySelector('.project-modal');

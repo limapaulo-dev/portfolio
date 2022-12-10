@@ -48,7 +48,6 @@ const projectsShowModal = async (projectValue) => {
 
   modalimg.setAttribute('src', filteredProjectsData[0].img[0]);
   modalTitle.innerHTML = filteredProjectsData[0].name;
-  console.log(filteredProjectsData[0].name);
   modalSubtitle.innerHTML = filteredProjectsData[0].syntaxes;
   modalText.innerHTML = filteredProjectsData[0].abstract;
   modalPage.setAttribute('href', filteredProjectsData[0].link);
@@ -64,13 +63,6 @@ const projectsDataFetch = async () => {
   projectsData.map(createProjectsThumbnail);
 };
 
-const showModal = () => {
-  modal.style.display = 'block';
-};
-const closeModal = () => {
-  modal.style.display = 'none';
-};
-
 const projectsThumbRunAnim = () => {
   const thumblight = Array.from(document.querySelectorAll('.border-light'));
   thumblight.map((element) => {
@@ -83,4 +75,12 @@ const projectsThumbStopAnim = () => {
   thumblight.map((element) => {
     element.classList.remove('projects-light-anim');
   });
+};
+
+
+const showProjectsModal = () => {
+  modal.style.display = 'block';
+};
+const closeProjectsModal = () => {
+  modal.style.display = 'none';
 };

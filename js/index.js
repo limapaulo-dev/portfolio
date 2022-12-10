@@ -98,16 +98,8 @@ window.onscroll = () => {
   if (anyProjectThumb !== null) {
     if (!elementInView(anyProjectThumb) && anyProjectLight.classList.contains('projects-light-anim') && isMobile()) {
       projectsThumbStopAnim();
-      console.log('this happenend');
     } else if (elementInView(anyProjectThumb) && !anyProjectLight.classList.contains('projects-light-anim') && isMobile()) {
       projectsThumbRunAnim();
-      console.log('this also happenend');
     }
-  }
-};
-
-window.onclick = (event) => {
-  if (event.target == modal) {
-    modal.style.display = 'none';
   }
 };
