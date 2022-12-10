@@ -29,19 +29,7 @@ const hamburgIconSwap = () => {
   }
 };
 
-const modal = document.querySelector('.project-modal');
-
-const showModal = () => {
-  modal.style.display = 'block';
-};
-
-const closeModal = () => {
-  modal.style.display = 'none';
-};
-
 let pageLoad = true;
-
-window.onload = () => {};
 
 // window.addEventListener('DOMContentLoaded', () => {
 //   setRainAnim();
@@ -75,6 +63,9 @@ window.onresize = () => {
 };
 
 window.onscroll = () => {
+  let anyProjectThumb = document.querySelector('.project-thumbnail');
+  let anyProjectLight = document.querySelector('.border-light');
+
   if (pageLoad) {
     syntaxDataFetch();
     projectsDataFetch();
@@ -94,6 +85,24 @@ window.onscroll = () => {
   } else if (elementInView(syntaxGalaxy) && syntaxOrbit.style.animationPlayState === 'paused') {
     // console.log('set galaxy onscroll');
     setGalaxy();
+  }
+
+  if (!elementInView(githubIcon) && githubIcon.classList.contains('contact-icons-anim')) {
+    githubIcon.classList.remove('contact-icons-anim');
+    emailIcon.classList.remove('contact-icons-anim');
+  } else if (elementInView(githubIcon) && !githubIcon.classList.contains('contact-icons-anim')) {
+    githubIcon.classList.add('contact-icons-anim');
+    emailIcon.classList.add('contact-icons-anim');
+  }
+
+  if (anyProjectThumb !== null) {
+    if (!elementInView(anyProjectThumb) && anyProjectLight.classList.contains('projects-light-anim')) {
+      projectsThumbStopAnim();
+      console.log("this happenend");
+    } else if (elementInView(anyProjectThumb) && !anyProjectLight.classList.contains('projects-light-anim')) {
+      projectsThumbRunAnim();
+      console.log("this also happenend");
+    }
   }
 };
 

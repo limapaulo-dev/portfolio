@@ -39,17 +39,16 @@ const projectsShowModal = async (projectValue) => {
   const projectsData = projectsDataObj['projects data'];
 
   const filteredProjectsData = projectsData.filter((projectObj) => projectObj.value === projectValue);
-  
+
   const modalimg = document.querySelector('.modal-img');
   const modalTitle = document.querySelector('.modal-project-title');
   const modalSubtitle = document.querySelector('.modal-project-subtitle');
   const modalText = document.querySelector('.modal-project-text');
   const modalPage = document.querySelector('.modal-project-page');
 
-
   modalimg.setAttribute('src', filteredProjectsData[0].img[0]);
   modalTitle.innerHTML = filteredProjectsData[0].name;
-  console.log(filteredProjectsData[0].name)
+  console.log(filteredProjectsData[0].name);
   modalSubtitle.innerHTML = filteredProjectsData[0].syntaxes;
   modalText.innerHTML = filteredProjectsData[0].abstract;
   modalPage.setAttribute('href', filteredProjectsData[0].link);
@@ -65,3 +64,23 @@ const projectsDataFetch = async () => {
   projectsData.map(createProjectsThumbnail);
 };
 
+const showModal = () => {
+  modal.style.display = 'block';
+};
+const closeModal = () => {
+  modal.style.display = 'none';
+};
+
+const projectsThumbRunAnim = () => {
+  const thumblight = Array.from(document.querySelectorAll('.border-light'));
+  thumblight.map((element) => {
+    element.classList.add('projects-light-anim');
+  });
+};
+
+const projectsThumbStopAnim = () => {
+  const thumblight = Array.from(document.querySelectorAll('.border-light'));
+  thumblight.map((element) => {
+    element.classList.remove('projects-light-anim');
+  });
+};

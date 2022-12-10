@@ -12,3 +12,7 @@ let bodyHeight = document.querySelector('body').clientHeight;
 const headerAnim = document.querySelector('.header-animation');
 const syntaxGalaxy = document.querySelector('.syntax-galaxy');
 const syntaxOrbit = document.querySelector('.syntax-orbit');
+
+const githubIcon = document.querySelector('.bi-github');
+const emailIcon = document.querySelector('.bi-envelope-fill');
+

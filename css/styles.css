@@ -582,6 +582,10 @@ section#portfolio {
   transition: 1s linear;
 }
 
+.projects-light-anim {
+  animation: light-turn 2s ease-in-out;
+}
+
 .portfolio-projects .project-thumbnail:hover .border-light {
   animation: light-turn 2s ease-in-out;
 }
@@ -692,9 +696,17 @@ section#contact {
   transition: 0.5s ease;
 }
 
+.contact-icons-anim {
+  animation: icons-turn 1s ease-in-out;
+}
+
 .contact-icons a:active svg,
 .contact-icons a:hover svg {
   animation: icons-turn 1s ease-in-out;
+}
+
+svg.bi-github {
+  animation-delay: 0.2s;
 }
 
 @keyframes icons-turn {
