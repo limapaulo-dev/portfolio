@@ -43,7 +43,7 @@ window.onload = () => {};
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     setRainAnim();
-  }, 500);
+  }, 2000);
 });
 
 window.onresize = () => {
