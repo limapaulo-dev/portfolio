@@ -40,9 +40,9 @@ let pageLoad = true;
 
 window.onload = () => {};
 
-window.addEventListener('DOMContentLoaded', () => {
-  setRainAnim();
-});
+// window.addEventListener('DOMContentLoaded', () => {
+//   setRainAnim();
+// });
 
 window.onresize = () => {
   const newBodyWidth = document.querySelector('body').clientWidth;
