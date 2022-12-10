@@ -87,21 +87,21 @@ window.onscroll = () => {
     setGalaxy();
   }
 
-  if (!elementInView(githubIcon) && githubIcon.classList.contains('contact-icons-anim')) {
+  if (!elementInView(githubIcon) && githubIcon.classList.contains('contact-icons-anim') && isMobile()) {
     githubIcon.classList.remove('contact-icons-anim');
     emailIcon.classList.remove('contact-icons-anim');
-  } else if (elementInView(githubIcon) && !githubIcon.classList.contains('contact-icons-anim')) {
+  } else if (elementInView(githubIcon) && !githubIcon.classList.contains('contact-icons-anim') && isMobile()) {
     githubIcon.classList.add('contact-icons-anim');
     emailIcon.classList.add('contact-icons-anim');
   }
 
   if (anyProjectThumb !== null) {
-    if (!elementInView(anyProjectThumb) && anyProjectLight.classList.contains('projects-light-anim')) {
+    if (!elementInView(anyProjectThumb) && anyProjectLight.classList.contains('projects-light-anim') && isMobile()) {
       projectsThumbStopAnim();
-      console.log("this happenend");
-    } else if (elementInView(anyProjectThumb) && !anyProjectLight.classList.contains('projects-light-anim')) {
+      console.log('this happenend');
+    } else if (elementInView(anyProjectThumb) && !anyProjectLight.classList.contains('projects-light-anim') && isMobile()) {
       projectsThumbRunAnim();
-      console.log("this also happenend");
+      console.log('this also happenend');
     }
   }
 };
