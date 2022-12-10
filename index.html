@@ -13,8 +13,11 @@
     <link class="icon" rel="icon" type="image/svg+xml" href="img/warhol-vector-circle.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="DNS-prefetch" href="//fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;600;700;800&family=Merriweather:ital,wght@1,300;1,400&display=swap" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;600;700;800&family=Merriweather:ital,wght@1,300;1,400&display=swap" rel="stylesheet" defer/> -->
+
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;600;700;800&family=Merriweather:ital,wght@1,300;1,400&display=swap" onload="this.rel='stylesheet'" />
 
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/galaxy.css" />
@@ -60,14 +63,14 @@
         </div>
       </div>
       <div class="skills-panel">
-        <div class="syntax-galaxy">
+        <div class="syntax-galaxy" id="syntax-galaxy-id">
           <div class="sun">
             <div class="sun-fake-moving"></div>
           </div>
           <div class="syntax-orbit"></div>
         </div>
         <div class="syntax-info">
-          <a><span class="arrow">&#9650;</span> Click the Cosmos<span class="arrow">&#9650;</span></a>
+          <a href="#syntax-galaxy-id"><span class="arrow">&#9650;</span> Click the Cosmos<span class="arrow">&#9650;</span></a>
         </div>
       </div>
     </section>
