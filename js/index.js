@@ -41,9 +41,7 @@ let pageLoad = true;
 window.onload = () => {};
 
 window.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
-    setRainAnim();
-  }, 2000);
+  setRainAnim();
 });
 
 window.onresize = () => {
