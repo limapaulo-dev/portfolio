@@ -75,7 +75,7 @@
 
 .syntax-orbit {
   box-sizing: border-box;
-  border: 3.3px #f72585 dotted;
+  border: 3.6px #f72585 dotted;
   border-radius: 100%;
   width: 15em;
   min-width: 15em;
@@ -330,7 +330,7 @@
   }
 
   .syntax-orbit {
-    border: 3.2px #f72585 dotted;
+    border: 2.7px #f72585 dotted;
     width: 12em;
     min-width: 12em;
     height: 12em;
