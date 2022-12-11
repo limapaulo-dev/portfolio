@@ -709,6 +709,10 @@ svg.bi-github {
   animation-delay: 0.2s;
 }
 
+svg.bi-linkedin {
+  animation-delay: 0.4s;
+}
+
 @keyframes icons-turn {
   0%,
   100% {
