@@ -644,7 +644,9 @@ a:last-child {
     display: block;
   }
 
-
+  header {
+    margin-left: 1.5em;
+  }
 
   header nav {
     display: none;
