@@ -139,7 +139,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  padding: 1.5em;
   width: 825px;
   max-width: 825px;
   height: auto;
@@ -150,8 +150,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1em;
-  margin-bottom: 1em;
+  gap: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 header img {
@@ -162,15 +162,10 @@ header img {
   transition: 1s ease;
 }
 
-header .header-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-}
-
 header h1 {
   font-size: 3em;
   font-weight: 700;
+  margin-bottom: 0.3em;
   color: #00adff;
   transition: 1s ease;
 }
@@ -216,27 +211,11 @@ header nav a:active {
   color: #f5f3f4;
 }
 
-header .contact {
-  display: flex;
-  gap: 1em;
-}
-
-header .contact-row {
-  display: flex;
-  flex-direction: column;
-}
-
-header .contact a {
-  font-size: 0.9em;
-  color: #f5f3f4;
-}
-
 section.full-panel {
-  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  padding: 1em;
+  flex-direction: row;
+  gap: 1.5em;
+  padding: 1.5em;
 
   height: 100%;
   border-radius: 10px;
@@ -259,7 +238,7 @@ section:last-child {
 }
 
 div.panels-divisor {
-  width: 0.2em;
+  width: 0.3em;
   height: 100%;
   align-self: center;
   background-color: #161a1d;
@@ -268,81 +247,67 @@ div.panels-divisor {
 section#left-panel {
   width: 100%;
   margin-bottom: 0;
-  gap: 0.6em;
+  gap: 1.5em;
+}
+
+section#right-panel {
+  width: 70%;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 0.9em;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1em;
+  margin-bottom: 0.2em;
+}
+
+h4 a {
+  font-weight: 500;
+  font-size: 1em;
+  margin-bottom: 0.2em;
+}
+
+h5 {
+  font-size: 0.9em;
+  line-height: 1.6em;
+  font-weight: 400;
+  margin-bottom: 1em;
 }
 
 .left-panel-section h5 {
   margin-bottom: 0.2em;
 }
 
-#projects-section {
+#projects {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 0.7em;
 }
 
-section#right-panel {
-  margin-bottom: 0;
-  display: flex;
-  flex-direction: row;
-  flex-basis: 100%;
-  gap: 1em;
-}
-
-h2 {
-  font-weight: 500;
-  font-size: 1em;
-  margin-bottom: 0.4em;
-}
-
-h4 {
-  display: inline-block;
-  font-weight: 500;
-  font-size: 0.9em;
-  margin-bottom: 0.2em;
-}
-
-h4 a {
-  font-weight: 500;
-  font-size: 0.95em;
-  margin-bottom: 0.2em;
-}
-
-h5 {
-  display: inline-block;
-  font-size: 0.85em;
-  line-height: 1.6em;
-  font-weight: 400;
-  margin-bottom: 0.7em;
-}
-
-#skills.right-panel-section  {
-  width: 99%;
-}
-
-/* .right-panel-section .education-contact {
-  width: 20%;
-} */
-
 .right-panel-section h4 {
   line-height: 1.2em;
 }
 
 .right-panel-section h5 {
-  margin-bottom: 0.7em;
+  margin-bottom: 1em;
 }
 
 p {
   text-align: justify;
-  font-size: 0.85em;
+  font-size: 0.95em;
   line-height: 1.4em;
   font-weight: 300;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.5em;
 }
 
-p a,
-li a {
+p a {
   display: inline-block;
 }
 
@@ -350,36 +315,8 @@ section p:last-child {
   margin-bottom: 0em;
 }
 
-ul {
-  list-style-type: disc;
-  list-style-position: inside;
-}
-
-li {
-  font-size: 0.8em;
-  line-height: 1.4em;
-  font-weight: 400;
-  text-align: justify;
-}
-
-li a {
-  font-size: 1em;
-}
-
-.projects-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-}
-
-span.blue-hyphen {
-  font-size: 0.9em;
-  font-weight: 900;
-  color: #00adff;
-}
-
-#experience p {
-  margin-bottom: 0.2em;
+#experience p:last-child {
+  margin-bottom: 0em;
 }
 
 a {
@@ -393,15 +330,6 @@ a {
   align-items: center;
 }
 
-#skills h5 {
-  font-weight: 300;
-  margin-bottom: 0.4em;
-}
-
-#skills h5:last-child {
-  margin-bottom: 0;
-}
-
 svg {
   width: 1em;
   margin-right: 0.5em;
@@ -412,9 +340,8 @@ a:last-child {
 }
 
 .footer {
-  position: absolute;
-  bottom: 15px;
-  right: 10px;
+  display: flex;
+  flex-direction: column;
   color: #acacac;
   height: 100%;
   align-content: flex-end;
@@ -706,6 +633,9 @@ a:last-child {
 
 /* print resume page */
 @media print {
+  * {
+
+  }
   body {
     width: 8.25in;
     height: 11.75in;
@@ -715,18 +645,15 @@ a:last-child {
   }
 
   header {
-    margin-left: 0em;
+    margin-left: 1.5em;
   }
 
   header nav {
     display: none;
   }
-  /* header img {
-    display: none;
-  } */
 
   div.panels-divisor {
     width: 0.3em;
-    height: 20vh;
+    height: 85vh;
   }
 }
