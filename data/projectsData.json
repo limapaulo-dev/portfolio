@@ -1,6 +1,17 @@
 ﻿{
   "projects data": [
     {
+      "name": "Prado Estates",
+      "value": "PradoEstates",
+      "thumbnail": "img/pradoestates/landscape.webp",
+      "thumbnailSyntaxes": "Wordpress PHP CSS",
+      "syntaxes": "Wordpress PHP CSS",
+      "abstract": "Prado Estates is a London-based property sourcing company's, the website was designed to attract potential customers and improve the business SEO rankings.",
+      "img": ["img/pradoestates/responsive.webp"],
+      "link": "https://pradoestates.co.uk/",
+      "API": [{}]
+    },
+    {
       "name": "WhatsAppDirect",
       "value": "WhatsAppDirect",
       "thumbnail": "img/whatsappdirect/landscape.webp",

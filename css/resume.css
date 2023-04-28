@@ -254,6 +254,13 @@ section {
   justify-content: flex-start;
 }
 
+section.full-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
 section:last-child {
   margin-bottom: 0;
 }
