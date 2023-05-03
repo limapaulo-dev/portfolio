@@ -326,13 +326,13 @@ nav div > * {
   transition: 0.5s ease;
 }
 
-nav div a:nth-child(4) {
+nav div a:nth-child(5) {
   color: #f72585;
   transition: 0.5s ease;
 }
 
-nav div a:nth-child(4):hover,
-nav div a:nth-child(4):active {
+nav div a:nth-child(5):hover,
+nav div a:nth-child(5):active {
   color: #00adff;
 }
 

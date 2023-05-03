@@ -31,7 +31,7 @@
       "name": "QML Pricing",
       "value": "QMLPricing",
       "thumbnail": "img/qml-pricing/landscape.webp",
-      "thumbnailSyntaxes": "HTML CSS JS Bootstrap",
+      "thumbnailSyntaxes": "QML Phyton Javascript",
       "syntaxes": "QML Phyton Javascript",
       "abstract": "QML Pricing is a windows application that automated the process of calculating health care insurances for B2B and B2C customers. It offers accurate prices for a vast options of products and customers profiles. Results can be easily send to customers by Whatsapp or Email.",
       "img": ["img/qml-pricing/landscape.webp"],
