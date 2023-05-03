@@ -152,7 +152,6 @@ header {
   align-items: center;
   gap: 1em;
   margin-bottom: 1em;
-  transition: 1s ease;
 }
 
 header img {
@@ -166,21 +165,18 @@ header .header-content {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  transition: 1s ease;
 }
 
 header h1 {
   font-size: 3em;
   font-weight: 700;
   color: #00adff;
-  transition: 1s ease;
 }
 
 header h2 {
   font-weight: 400;
   font-size: 1.03em;
   margin-bottom: 0;
-  transition: 1s ease;
 }
 
 header nav {
@@ -199,6 +195,7 @@ header nav .navigation-border {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 1s ease;
 }
 
 header nav div:hover,
@@ -209,6 +206,7 @@ header nav div:active {
 header a {
   color: #494949;
   font-size: 1em;
+  transition: 1s ease;
 }
 
 header nav a:hover,
@@ -579,6 +577,16 @@ a:last-child {
   } */
 }
 
+@media (max-width: 700px) {
+  main {
+  }
+
+  header .contact a {
+    font-size: 0.55em;
+    margin-bottom: 0.3em;
+  }
+}
+
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.8em;
@@ -616,8 +624,13 @@ a:last-child {
 
   header nav .navigation-border {
     height: 7em;
-    width: 7em;
+    width: 5em;
     border: 2px #494949 dotted;
+  }
+
+  header nav div:hover,
+  header nav div:active {
+    border: 2px #f5f3f4 dotted;
   }
 
   header a {
@@ -644,6 +657,43 @@ a:last-child {
     font-size: 0.6em;
     margin-bottom: 0.2em;
   }
+
+  .course-date h4 {
+    font-size: 0.8em;
+  }
+
+
+}
+
+@media (max-width: 470px) {
+  main {
+  }
+
+  header {
+  }
+
+  header h1 {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #00adff;
+  }
+
+  header h2 {
+    font-weight: 400;
+    font-size: 0.6em;
+  }
+
+  header .contact a {
+    font-size: 0.57em;
+  }
+
+  section.full-panel {
+  }
+
+  .course-date h4, .course-date h5 {
+    font-size: 0.7em;
+  }
+
 }
 
 @media (max-width: 360px) {
