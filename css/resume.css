@@ -143,7 +143,7 @@ main {
   width: 825px;
   max-width: 825px;
   height: auto;
-  max-height: autox;
+  max-height: auto;
 }
 
 header {
@@ -152,12 +152,12 @@ header {
   align-items: center;
   gap: 1em;
   margin-bottom: 1em;
+  transition: 1s ease;
 }
 
 header img {
   width: 8em;
   border: 3px #f5f3f4 solid;
-  background-color: #161a1d;
   border-radius: 10px;
   transition: 1s ease;
 }
@@ -166,6 +166,7 @@ header .header-content {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+  transition: 1s ease;
 }
 
 header h1 {
@@ -179,6 +180,7 @@ header h2 {
   font-weight: 400;
   font-size: 1.03em;
   margin-bottom: 0;
+  transition: 1s ease;
 }
 
 header nav {
@@ -188,7 +190,7 @@ header nav {
   align-items: flex-end;
 }
 
-header nav div {
+header nav .navigation-border {
   height: 8em;
   width: 8em;
   border: 3px #494949 dotted;
@@ -197,7 +199,6 @@ header nav div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: 1s ease;
 }
 
 header nav div:hover,
@@ -208,7 +209,6 @@ header nav div:active {
 header a {
   color: #494949;
   font-size: 1em;
-  transition: 1s ease;
 }
 
 header nav a:hover,
@@ -367,6 +367,7 @@ li {
   line-height: 1.4em;
   font-weight: 300;
   text-align: justify;
+  list-style-position: inside;
 }
 
 li a {
@@ -380,6 +381,12 @@ li a {
 }
 
 span.blue-hyphen {
+  font-size: 0.9em;
+  font-weight: 900;
+  color: #00adff;
+}
+
+span.blue-parentheses {
   font-size: 0.9em;
   font-weight: 900;
   color: #00adff;
@@ -514,23 +521,133 @@ a:last-child {
 @media (max-width: 2500px) {
 }
 
-@media (max-width: 570px) {
+@media (max-width: 770px) {
   main {
-    padding: 0.5em;
     width: 100%;
     max-width: 100%;
     height: 100%;
     max-height: 100%;
   }
+
+  header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #00adff;
+  }
+
+  header h2 {
+    font-weight: 400;
+    font-size: 1em;
+  }
+
+  header .contact a {
+    font-size: 0.75em;
+  }
+
+  .job-title-date {
+    flex-wrap: wrap;
+  }
+
+  .job-title-date .blue-hyphen {
+    display: none;
+  }
+
+  .job-title-date h4 {
+    order: 0;
+  }
+
+  .job-title-date .date {
+    order: 1;
+  }
+
+  .job-title-date h5 {
+    order: 2;
+    flex-basis: 100%;
+  }
+
+  /* 
+  h2 {
+    font-size: 1em;
+  }
+
+  .job-title-date h4{
+    font-size: 0.8em;
+  }
+
+  .job-title-date h5{
+    font-size: 0.8em;
+  } */
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #00adff;
+  }
+
+  header h2 {
+    font-size: 0.85em;
+  }
+
+  header .contact {
+    flex-direction: column;
+    gap: 0.1em;
+  }
+
+  header .contact a {
+    font-size: 0.7em;
+    margin-bottom: 0.3em;
+  }
+}
+
+@media (max-width: 570px) {
+  main {
+  }
+
+  header img {
+    width: 7em;
+    border: 2px #f5f3f4 solid;
+  }
+
+  header .header-content {
+    gap: 0.35em;
+  }
+
+  header nav .navigation-border {
+    height: 7em;
+    width: 7em;
+    border: 2px #494949 dotted;
+  }
+
+  header a {
+    color: #494949;
+    font-size: 0.8em;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #00adff;
+  }
+
+  header h2 {
+    font-weight: 400;
+    font-size: 0.7em;
+  }
+
+  header .contact {
+    gap: 0.05em;
+  }
+
+  header .contact a {
+    font-size: 0.6em;
+    margin-bottom: 0.2em;
+  }
 }
 
 @media (max-width: 360px) {
   main {
-    padding: 0.5em;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    max-height: 100%;
   }
 }
 
