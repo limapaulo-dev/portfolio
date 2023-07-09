@@ -515,8 +515,27 @@ a:last-child {
   line-height: 0;
 }
 
+/* print resume page */
+@media print {
+  body {
+    width: 8.25in;
+    height: 11.75in;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+
+  header {
+    margin-left: 0em;
+  }
+
+  header nav {
+    display: none;
+  }
+}
+
 /*  responsive layout  */
-@media (max-width: 2500px) {
+/* @media (max-width: 2500px) {
 }
 
 @media (max-width: 770px) {
@@ -562,19 +581,6 @@ a:last-child {
     order: 2;
     flex-basis: 100%;
   }
-
-  /* 
-  h2 {
-    font-size: 1em;
-  }
-
-  .job-title-date h4{
-    font-size: 0.8em;
-  }
-
-  .job-title-date h5{
-    font-size: 0.8em;
-  } */
 }
 
 @media (max-width: 700px) {
@@ -699,23 +705,5 @@ a:last-child {
 @media (max-width: 360px) {
   main {
   }
-}
+} */
 
-/* print resume page */
-@media print {
-  body {
-    width: 8.25in;
-    height: 11.75in;
-    padding: 0;
-    margin: 0;
-    display: block;
-  }
-
-  header {
-    margin-left: 0em;
-  }
-
-  header nav {
-    display: none;
-  }
-}
