@@ -124,7 +124,7 @@ table {
 }
 
 * {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 }
 
 body {
@@ -233,7 +233,7 @@ section.full-panel {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 0.2em;
   padding: 1em;
 
   height: 100%;
@@ -298,7 +298,12 @@ section#right-panel {
 h2 {
   font-weight: 500;
   font-size: 1em;
+  margin-top: 0.9em;
   margin-bottom: 0.4em;
+}
+
+#summary h2 {
+  margin-top: 0em;
 }
 
 h4 {
@@ -317,7 +322,7 @@ h4 a {
 h5 {
   display: inline-block;
   font-size: 0.85em;
-  line-height: 1.6em;
+  line-height: 1.45em;
   font-weight: 400;
   margin-bottom: 0.7em;
 }
@@ -341,7 +346,7 @@ h5 {
 p {
   text-align: justify;
   font-size: 0.85em;
-  line-height: 1.4em;
+  line-height: 1.35em;
   font-weight: 300;
   margin-bottom: 0.2em;
 }
@@ -352,7 +357,7 @@ li a {
 }
 
 section p:last-child {
-  margin-bottom: 0.8em;
+  margin-bottom: 0.3em;
 }
 
 ul {
@@ -362,10 +367,9 @@ ul {
 
 li {
   font-size: 0.85em;
-  line-height: 1.4em;
+  line-height: 1.35em;
   font-weight: 300;
   text-align: justify;
-  list-style-position: inside;
 }
 
 li a {
@@ -401,22 +405,41 @@ span.black-hyphen {
   align-items: center;
   gap: 0.3em;
   border-bottom: #161a1d27 2px solid;
+  margin-top: 0.7em;
+}
+
+#Health-Care.job-title-date {
+  margin-top: 0.2em;
 }
 
 .job-title-date .date {
   margin-left: auto;
 }
 
+#experience .yoe-dates {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+}
+
 #experience p {
   margin-bottom: 0.2em;
 }
 
-#experience li {
-  margin-bottom: 0.17em;
+#experience p:first-of-type {
+  margin-top: 0.2em;
 }
 
-#experience li:last-child {
-  margin-bottom: 0.8em;
+#experience ul {
+  list-style-position: outside;
+  padding-left: 1em;
+}
+
+#experience li {
+  margin-bottom: 0.25em;
+}
+
+#experience li:first-of-type {
+  margin-top: 0.2em;
 }
 
 a {
@@ -432,7 +455,7 @@ a {
 
 #skills h5 {
   font-weight: 300;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.2em;
 }
 
 #skills h5:last-child {
@@ -449,11 +472,11 @@ a:last-child {
 }
 
 #education {
-  margin-top: 0.8em;
+  margin-top: 0.2em;
 }
 
 #education h5 {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 #education h5:last-child {
@@ -706,4 +729,3 @@ a:last-child {
   main {
   }
 } */
-
