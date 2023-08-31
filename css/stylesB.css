@@ -1,0 +1,114 @@
+body {
+  background-color: #000c13;
+}
+
+.primary {
+  color: #4cc9f0;
+}
+
+.secondary {
+  color: #ffb703;
+}
+
+.primary-block {
+  background-color: #4cc9f0;
+}
+
+.secondary-block {
+  background-color: #ffb703;
+}
+
+nav {
+  border-bottom: #4cc9f0 solid 2px;
+  background-color: #00060a;
+}
+
+.nav-icon img {
+  border: 2px #ffb703 solid;
+  background-color: #ffb703;
+}
+
+.nav-icon img:hover,
+.nav-icon img:active {
+  background-color: #4cc9f0;
+  border: 2px #4cc9f0 solid;
+}
+
+.hamburger-menu:hover .hamburger-icon {
+  background-color: #ffb703;
+}
+
+nav div a:nth-child(5) {
+  color: #ffb703;
+}
+
+nav div a:nth-child(5):hover,
+nav div a:nth-child(5):active {
+  color: #4cc9f0;
+}
+
+nav div a:hover,
+nav div a:active {
+  color: #ffb703;
+}
+
+.pic-summary {
+  border: 3px #4cc9f0 solid;
+  background-color: #4cc9f0;
+}
+
+.skills-range div p {
+  background-color: #ffb703;
+}
+
+.skills-range .skill-confidence {
+  background-color: #4cc9f0;
+}
+
+section#portfolio {
+  background-color: #00060a;
+}
+
+.portfolio-projects .thumbnail-body {
+  background-color: #000c13;
+}
+
+.portfolio-projects .project-thumbnail {
+  border: 3px #4cc9f0 solid;
+}
+
+.portfolio-projects p {
+  color: #ffb703;
+}
+
+.portfolio-projects .project-thumbnail:hover,
+.portfolio-projects .project-thumbnail:active {
+  border: 3px #ffb703 solid;
+}
+
+.portfolio-projects .project-thumbnail:hover p,
+.portfolio-projects .project-thumbnail:active p {
+  color: #4cc9f0;
+}
+
+.contact-icons > a {
+  background-color: #ffb703;
+}
+
+.contact-icons > a:active,
+.contact-icons > a:hover {
+  background-color: #4cc9f0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00060a;
+  height: 2.5em;
+}
+
+footer a:hover,
+footer a:active {
+  color: #ffb703;
+}
